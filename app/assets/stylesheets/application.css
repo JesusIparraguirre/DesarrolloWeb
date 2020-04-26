@@ -28,6 +28,36 @@
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
+
+@media only screen and (min-width: 1200px) {
+    .busc{
+        width: 1000px;
+    }
+}
+@media only screen and (min-width: 720px) and (max-width: 1199px) {
+    .busc{
+        width: 400px;
+    }
+}
+
+.titulo-carrito{
+    font-size: 1.6875rem;
+    font-weight: 600;
+    color: #333;
+    font-family: "Nunito Sans", sans-serif!important;
+    letter-spacing: -0.2px;
+}
+
+.titulo-cantidad{
+    font-size: 1.5625rem;
+    color: #333;
+    font-weight: 700;
+    line-height: 30px;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif!important;
+    letter-spacing: -0.2px;
+}
+
 .btn.btn-tema{
     background-color:  rgb(236, 28, 36);
 }

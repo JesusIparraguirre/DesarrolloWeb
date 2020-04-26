@@ -21,3 +21,1426 @@ Completed 200 OK in 8454ms (Views: 8242.3ms | ActiveRecord: 4.0ms | Allocations:
 Completed 200 OK in 6632ms (Views: 6618.3ms | ActiveRecord: 10.4ms | Allocations: 84099)
 
 
+Started GET "/" for ::1 at 2020-04-25 23:05:26 -0500
+  [1m[35m (40.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 3992.7ms | Allocations: 50220)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 6281ms (ActiveRecord: 4.4ms | Allocations: 233212)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `carrito' for #<#<Class:0x00000000087f89f8>:0x000000000877d3e8>):
+    31:         <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+    32:         </div>
+    33:         <li class="nav-item">
+    34:         <a class="navbar-brand ml-4" <%= link_to "Tienda Online", carrito/index %><i class="material-icons md-light">shopping_cart</i></a>
+    35:         </li>
+    36:         <% if user_signed_in? %>
+    37:         <li class="nav-item dropdown">
+  
+app/views/layouts/application.html.erb:34
+Started GET "/" for ::1 at 2020-04-25 23:05:52 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 28.2ms | Allocations: 3034)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 442ms (Views: 438.4ms | ActiveRecord: 0.4ms | Allocations: 16212)
+
+
+Started GET "/carrito/index" for ::1 at 2020-04-25 23:05:58 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/carrito/index"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-04-25 23:06:01 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 51.9ms | Allocations: 2750)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 132ms (Views: 131.0ms | ActiveRecord: 0.3ms | Allocations: 9034)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:06:08 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 63.4ms | Allocations: 2990)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 249ms (Views: 246.0ms | ActiveRecord: 0.4ms | Allocations: 10654)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:06:27 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 29.6ms | Allocations: 2992)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 199ms (Views: 192.3ms | ActiveRecord: 0.4ms | Allocations: 10671)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:06:41 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 16.3ms | Allocations: 2987)
+Completed 500 Internal Server Error in 159ms (ActiveRecord: 0.3ms | Allocations: 5694)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Proyecto</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+  
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark pt-4 pb-4 tema">
+        <div class="col-lg-1"></div>
+        <a class="navbar-brand ml-5 pl-5" <%= link_to "Tienda Online", root_path %></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+       
+        <div class="ml-3" style="width:1050px">
+        <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+        </div>
+        <li class="nav-item">
+        <a class="navbar-brand ml-4" <%= link_to , "/carrito/index" %><i class="material-icons md-light">shopping_cart</i></a>
+        </li>
+        <% if user_signed_in? %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons md-light">account_circle</i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" <%= link_to "Cierra sesion", destroy_user_session_path, method:"delete" %></a>
+          </div>
+        </li>
+        <% else %>
+        <li class="nav-item">
+        <a type="button" class="navbar-brand ml-2 mr-3" data-toggle="modal" data-target="#exampleModalLong"><i class="material-icons md-light">account_circle</i></a>
+        </li>
+        <% end %>
+
+        
+        </ul>
+        </div>
+      </nav>
+      
+    </header>
+    <!--
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+            <h4 class="titulo-login">Iniciar Sesion</h4>
+          </div>
+          <div class="modal-body">
+            <%= form_for(:user, :url => session_path(:user)) do |f| %>
+              <label class="mt-0">E-mail</label>
+              <%= f.text_field :email, class:"form-control" %>
+              <label class="mt-4">Contraseña</label>
+              <%= f.password_field :password, class:"form-control" %>
+              
+              <div class="d-flex justify-content-between mt-3">
+                <div>
+                <%= f.check_box :remember_me %>
+                <%= f.label :Recuerdame %>
+                </div>
+                <div>
+                <%= link_to "¿Olvidó su contraseña?", new_password_path(:user) %>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <%= f.submit 'Iniciar sesion',class:"btn btn-outline-danger" %>
+              <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <%= yield %>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>Proyecto</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:    
+11:        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+12:          rel="stylesheet">
+13:          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+14:    
+15:      </head>
+16:    
+17:      <body>
+18:      
+19:        <header>
+20:          <nav class="navbar navbar-expand-lg navbar-dark pt-4 pb-4 tema">
+21:            <div class="col-lg-1"></div>
+22:            <a class="navbar-brand ml-5 pl-5" <%= link_to "Tienda Online", root_path %></a>
+23:            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+24:              <span class="navbar-toggler-icon"></span>
+25:            </button>
+26:    
+27:            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+28:            <ul class="navbar-nav mr-auto">
+29:           
+30:            <div class="ml-3" style="width:1050px">
+31:            <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+32:            </div>
+33:            <li class="nav-item">
+34:            <a class="navbar-brand ml-4" <%= link_to , "/carrito/index" %><i class="material-icons md-light">shopping_cart</i></a>
+35:            </li>
+36:            <% if user_signed_in? %>
+37:            <li class="nav-item dropdown">
+38:              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+39:                <i class="material-icons md-light">account_circle</i>
+40:              </a>
+41:              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+42:                <a class="dropdown-item" <%= link_to "Cierra sesion", destroy_user_session_path, method:"delete" %></a>
+43:              </div>
+44:            </li>
+45:            <% else %>
+46:            <li class="nav-item">
+47:            <a type="button" class="navbar-brand ml-2 mr-3" data-toggle="modal" data-target="#exampleModalLong"><i class="material-icons md-light">account_circle</i></a>
+48:            </li>
+49:            <% end %>
+50:    
+51:            
+52:            </ul>
+53:            </div>
+54:          </nav>
+55:          
+56:        </header>
+57:        <!--
+58:        <p class="notice"><%= notice %></p>
+59:        <p class="alert"><%= alert %></p>
+60:        -->
+61:        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+62:          <div class="modal-dialog" role="document">
+63:            <div class="modal-content">
+64:              <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+65:                <h4 class="titulo-login">Iniciar Sesion</h4>
+66:              </div>
+67:              <div class="modal-body">
+68:                <%= form_for(:user, :url => session_path(:user)) do |f| %>
+69:                  <label class="mt-0">E-mail</label>
+70:                  <%= f.text_field :email, class:"form-control" %>
+71:                  <label class="mt-4">Contraseña</label>
+72:                  <%= f.password_field :password, class:"form-control" %>
+73:                  
+74:                  <div class="d-flex justify-content-between mt-3">
+75:                    <div>
+76:                    <%= f.check_box :remember_me %>
+77:                    <%= f.label :Recuerdame %>
+78:                    </div>
+79:                    <div>
+80:                    <%= link_to "¿Olvidó su contraseña?", new_password_path(:user) %>
+81:                    </div>
+82:                  </div>
+83:                </div>
+84:                <div class="modal-footer">
+85:                  <%= f.submit 'Iniciar sesion',class:"btn btn-outline-danger" %>
+86:                  <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+87:                </div>
+88:                <% end %>
+89:              </div>
+90:            </div>
+91:          </div>
+92:        </div>
+93:    
+94:        
+95:    
+96:        <%= yield %>
+97:        
+98:        
+99:        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+100:        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+101:        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+102:      </body>
+103:    </html>
+  
+app/views/layouts/application.html.erb:34: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:106: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:106: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:106: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:106: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:106: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:106: syntax error, unexpected end, expecting ')'
+Started GET "/" for ::1 at 2020-04-25 23:07:07 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 50.7ms | Allocations: 8885)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 123ms (Views: 113.3ms | ActiveRecord: 4.9ms | Allocations: 16805)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:07:15 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 74.4ms | Allocations: 2988)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 252ms (Views: 248.0ms | ActiveRecord: 1.1ms | Allocations: 10664)
+
+
+Started GET "/carrito/index" for ::1 at 2020-04-25 23:07:18 -0500
+Processing by CarritoController#index as HTML
+  Rendering carrito/index.html.erb within layouts/application
+  Rendered carrito/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 80)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 106ms (Views: 102.4ms | ActiveRecord: 0.0ms | Allocations: 7082)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:07:35 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 85.8ms | Allocations: 2998)
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 0.5ms | Allocations: 5724)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Proyecto</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+  
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark pt-4 pb-4 tema">
+        <div class="col-lg-1"></div>
+        <a class="navbar-brand ml-5 pl-5" <%= link_to "Tienda Online", root_path %></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+       
+        <div class="ml-3" style="width:1050px">
+        <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+        </div>
+        <li class="nav-item">
+        <a class="navbar-brand ml-4" <%= link_to "<i class="material-icons md-light">", "/carrito/index" %><i class="material-icons md-light">shopping_cart</i></a>
+        </li>
+        <% if user_signed_in? %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons md-light">account_circle</i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" <%= link_to "Cierra sesion", destroy_user_session_path, method:"delete" %></a>
+          </div>
+        </li>
+        <% else %>
+        <li class="nav-item">
+        <a type="button" class="navbar-brand ml-2 mr-3" data-toggle="modal" data-target="#exampleModalLong"><i class="material-icons md-light">account_circle</i></a>
+        </li>
+        <% end %>
+
+        
+        </ul>
+        </div>
+      </nav>
+      
+    </header>
+    <!--
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+            <h4 class="titulo-login">Iniciar Sesion</h4>
+          </div>
+          <div class="modal-body">
+            <%= form_for(:user, :url => session_path(:user)) do |f| %>
+              <label class="mt-0">E-mail</label>
+              <%= f.text_field :email, class:"form-control" %>
+              <label class="mt-4">Contraseña</label>
+              <%= f.password_field :password, class:"form-control" %>
+              
+              <div class="d-flex justify-content-between mt-3">
+                <div>
+                <%= f.check_box :remember_me %>
+                <%= f.label :Recuerdame %>
+                </div>
+                <div>
+                <%= link_to "¿Olvidó su contraseña?", new_password_path(:user) %>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <%= f.submit 'Iniciar sesion',class:"btn btn-outline-danger" %>
+              <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <%= yield %>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>Proyecto</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:    
+11:        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+12:          rel="stylesheet">
+13:          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+14:    
+15:      </head>
+16:    
+17:      <body>
+18:      
+19:        <header>
+20:          <nav class="navbar navbar-expand-lg navbar-dark pt-4 pb-4 tema">
+21:            <div class="col-lg-1"></div>
+22:            <a class="navbar-brand ml-5 pl-5" <%= link_to "Tienda Online", root_path %></a>
+23:            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+24:              <span class="navbar-toggler-icon"></span>
+25:            </button>
+26:    
+27:            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+28:            <ul class="navbar-nav mr-auto">
+29:           
+30:            <div class="ml-3" style="width:1050px">
+31:            <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+32:            </div>
+33:            <li class="nav-item">
+34:            <a class="navbar-brand ml-4" <%= link_to "<i class="material-icons md-light">", "/carrito/index" %><i class="material-icons md-light">shopping_cart</i></a>
+35:            </li>
+36:            <% if user_signed_in? %>
+37:            <li class="nav-item dropdown">
+38:              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+39:                <i class="material-icons md-light">account_circle</i>
+40:              </a>
+41:              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+42:                <a class="dropdown-item" <%= link_to "Cierra sesion", destroy_user_session_path, method:"delete" %></a>
+43:              </div>
+44:            </li>
+45:            <% else %>
+46:            <li class="nav-item">
+47:            <a type="button" class="navbar-brand ml-2 mr-3" data-toggle="modal" data-target="#exampleModalLong"><i class="material-icons md-light">account_circle</i></a>
+48:            </li>
+49:            <% end %>
+50:    
+51:            
+52:            </ul>
+53:            </div>
+54:          </nav>
+55:          
+56:        </header>
+57:        <!--
+58:        <p class="notice"><%= notice %></p>
+59:        <p class="alert"><%= alert %></p>
+60:        -->
+61:        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+62:          <div class="modal-dialog" role="document">
+63:            <div class="modal-content">
+64:              <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+65:                <h4 class="titulo-login">Iniciar Sesion</h4>
+66:              </div>
+67:              <div class="modal-body">
+68:                <%= form_for(:user, :url => session_path(:user)) do |f| %>
+69:                  <label class="mt-0">E-mail</label>
+70:                  <%= f.text_field :email, class:"form-control" %>
+71:                  <label class="mt-4">Contraseña</label>
+72:                  <%= f.password_field :password, class:"form-control" %>
+73:                  
+74:                  <div class="d-flex justify-content-between mt-3">
+75:                    <div>
+76:                    <%= f.check_box :remember_me %>
+77:                    <%= f.label :Recuerdame %>
+78:                    </div>
+79:                    <div>
+80:                    <%= link_to "¿Olvidó su contraseña?", new_password_path(:user) %>
+81:                    </div>
+82:                  </div>
+83:                </div>
+84:                <div class="modal-footer">
+85:                  <%= f.submit 'Iniciar sesion',class:"btn btn-outline-danger" %>
+86:                  <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+87:                </div>
+88:                <% end %>
+89:              </div>
+90:            </div>
+91:          </div>
+92:        </div>
+93:    
+94:        
+95:    
+96:        <%= yield %>
+97:        
+98:        
+99:        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+100:        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+101:        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+102:      </body>
+103:    </html>
+  
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected ',', expecting ')'
+Started GET "/" for ::1 at 2020-04-25 23:07:41 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 20.6ms | Allocations: 2987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 126ms (Views: 123.4ms | ActiveRecord: 0.3ms | Allocations: 10664)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:09:37 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 77.8ms | Allocations: 2987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 437ms (Views: 431.5ms | ActiveRecord: 0.5ms | Allocations: 10660)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:09:43 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 37.1ms | Allocations: 2740)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 106ms (Views: 104.2ms | ActiveRecord: 0.5ms | Allocations: 9017)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:09:51 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 44.9ms | Allocations: 2987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 306ms (Views: 301.9ms | ActiveRecord: 2.0ms | Allocations: 10654)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:10:00 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 19.9ms | Allocations: 2993)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 233ms (Views: 227.2ms | ActiveRecord: 0.3ms | Allocations: 10667)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:10:17 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 36.4ms | Allocations: 2987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 309ms (Views: 300.4ms | ActiveRecord: 0.6ms | Allocations: 10622)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:10:33 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 40.7ms | Allocations: 2987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 279ms (Views: 275.0ms | ActiveRecord: 0.4ms | Allocations: 10645)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:12:08 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 174.5ms | Allocations: 2990)
+Completed 500 Internal Server Error in 537ms (ActiveRecord: 0.3ms | Allocations: 5689)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Proyecto</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+  
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark pt-4 pb-4 tema">
+        <div class="col-lg-1"></div>
+        <a class="navbar-brand ml-5 pl-5" <%= link_to "Tienda Online", root_path %></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+       
+        <div class=" col-xl-12 col-lg-10 col-sm-6">
+        <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+        </div>
+        <li class="nav-item">
+        <%= link_to "<i class="material-icons md-light">shopping_cart</i>".html_safe, "/carrito/index" %>
+        </li>
+        <% if user_signed_in? %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons md-light">account_circle</i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" <%= link_to "Cierra sesion", destroy_user_session_path, method:"delete" %></a>
+          </div>
+        </li>
+        <% else %>
+        <li class="nav-item">
+        <a type="button" class="navbar-brand ml-2 mr-3" data-toggle="modal" data-target="#exampleModalLong"><i class="material-icons md-light">account_circle</i></a>
+        </li>
+        <% end %>
+
+        
+        </ul>
+        </div>
+      </nav>
+      
+    </header>
+    <!--
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+            <h4 class="titulo-login">Iniciar Sesion</h4>
+          </div>
+          <div class="modal-body">
+            <%= form_for(:user, :url => session_path(:user)) do |f| %>
+              <label class="mt-0">E-mail</label>
+              <%= f.text_field :email, class:"form-control" %>
+              <label class="mt-4">Contraseña</label>
+              <%= f.password_field :password, class:"form-control" %>
+              
+              <div class="d-flex justify-content-between mt-3">
+                <div>
+                <%= f.check_box :remember_me %>
+                <%= f.label :Recuerdame %>
+                </div>
+                <div>
+                <%= link_to "¿Olvidó su contraseña?", new_password_path(:user) %>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <%= f.submit 'Iniciar sesion',class:"btn btn-outline-danger" %>
+              <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <%= yield %>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>Proyecto</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:    
+11:        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+12:          rel="stylesheet">
+13:          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+14:    
+15:      </head>
+16:    
+17:      <body>
+18:      
+19:        <header>
+20:          <nav class="navbar navbar-expand-lg navbar-dark pt-4 pb-4 tema">
+21:            <div class="col-lg-1"></div>
+22:            <a class="navbar-brand ml-5 pl-5" <%= link_to "Tienda Online", root_path %></a>
+23:            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+24:              <span class="navbar-toggler-icon"></span>
+25:            </button>
+26:    
+27:            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+28:            <ul class="navbar-nav mr-auto">
+29:           
+30:            <div class=" col-xl-12 col-lg-10 col-sm-6">
+31:            <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+32:            </div>
+33:            <li class="nav-item">
+34:            <%= link_to "<i class="material-icons md-light">shopping_cart</i>".html_safe, "/carrito/index" %>
+35:            </li>
+36:            <% if user_signed_in? %>
+37:            <li class="nav-item dropdown">
+38:              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+39:                <i class="material-icons md-light">account_circle</i>
+40:              </a>
+41:              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+42:                <a class="dropdown-item" <%= link_to "Cierra sesion", destroy_user_session_path, method:"delete" %></a>
+43:              </div>
+44:            </li>
+45:            <% else %>
+46:            <li class="nav-item">
+47:            <a type="button" class="navbar-brand ml-2 mr-3" data-toggle="modal" data-target="#exampleModalLong"><i class="material-icons md-light">account_circle</i></a>
+48:            </li>
+49:            <% end %>
+50:    
+51:            
+52:            </ul>
+53:            </div>
+54:          </nav>
+55:          
+56:        </header>
+57:        <!--
+58:        <p class="notice"><%= notice %></p>
+59:        <p class="alert"><%= alert %></p>
+60:        -->
+61:        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+62:          <div class="modal-dialog" role="document">
+63:            <div class="modal-content">
+64:              <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+65:                <h4 class="titulo-login">Iniciar Sesion</h4>
+66:              </div>
+67:              <div class="modal-body">
+68:                <%= form_for(:user, :url => session_path(:user)) do |f| %>
+69:                  <label class="mt-0">E-mail</label>
+70:                  <%= f.text_field :email, class:"form-control" %>
+71:                  <label class="mt-4">Contraseña</label>
+72:                  <%= f.password_field :password, class:"form-control" %>
+73:                  
+74:                  <div class="d-flex justify-content-between mt-3">
+75:                    <div>
+76:                    <%= f.check_box :remember_me %>
+77:                    <%= f.label :Recuerdame %>
+78:                    </div>
+79:                    <div>
+80:                    <%= link_to "¿Olvidó su contraseña?", new_password_path(:user) %>
+81:                    </div>
+82:                  </div>
+83:                </div>
+84:                <div class="modal-footer">
+85:                  <%= f.submit 'Iniciar sesion',class:"btn btn-outline-danger" %>
+86:                  <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+87:                </div>
+88:                <% end %>
+89:              </div>
+90:            </div>
+91:          </div>
+92:        </div>
+93:    
+94:        
+95:    
+96:        <%= yield %>
+97:        
+98:        
+99:        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+100:        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+101:        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+102:      </body>
+103:    </html>
+  
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:106: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:106: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:106: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:106: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:106: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:34: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:34: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:106: syntax error, unexpected end, expecting ')'
+Started GET "/" for ::1 at 2020-04-25 23:12:23 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 19.6ms | Allocations: 2987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 869ms (Views: 865.2ms | ActiveRecord: 0.4ms | Allocations: 10663)
+
+
+Started GET "/carrito/index" for ::1 at 2020-04-25 23:12:28 -0500
+Processing by CarritoController#index as HTML
+  Rendering carrito/index.html.erb within layouts/application
+  Rendered carrito/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 77)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 67.2ms | ActiveRecord: 0.0ms | Allocations: 7080)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:12:29 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 17.1ms | Allocations: 2744)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 78.9ms | ActiveRecord: 0.5ms | Allocations: 9024)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:13:25 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 18.9ms | Allocations: 2987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 156ms (Views: 153.3ms | ActiveRecord: 0.4ms | Allocations: 10665)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:14:04 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 18.8ms | Allocations: 2987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 184ms (Views: 180.7ms | ActiveRecord: 0.4ms | Allocations: 10671)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:14:11 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 35.4ms | Allocations: 2990)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 281ms (Views: 276.6ms | ActiveRecord: 0.4ms | Allocations: 10743)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:14:14 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 27.4ms | Allocations: 2987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 140ms (Views: 137.5ms | ActiveRecord: 0.3ms | Allocations: 10668)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:14:20 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 19.3ms | Allocations: 2987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 169ms (Views: 166.7ms | ActiveRecord: 0.3ms | Allocations: 10659)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:14:24 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 27.0ms | Allocations: 2990)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 119ms (Views: 116.0ms | ActiveRecord: 0.4ms | Allocations: 10674)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:14:39 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 19.4ms | Allocations: 2987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 196ms (Views: 192.7ms | ActiveRecord: 0.3ms | Allocations: 10669)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:14:42 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 25.6ms | Allocations: 2987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 118ms (Views: 115.3ms | ActiveRecord: 0.5ms | Allocations: 10659)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:14:54 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 38.1ms | Allocations: 2993)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 220ms (Views: 215.8ms | ActiveRecord: 0.5ms | Allocations: 10675)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:15:04 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 27.7ms | Allocations: 2987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 104ms (Views: 98.9ms | ActiveRecord: 0.9ms | Allocations: 10649)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:16:13 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 18.1ms | Allocations: 2987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 564ms (Views: 560.9ms | ActiveRecord: 0.4ms | Allocations: 30489)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:16:19 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 50.4ms | Allocations: 2741)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 112ms (Views: 110.9ms | ActiveRecord: 0.3ms | Allocations: 9001)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:17:56 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 25.0ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2006ms (Views: 2003.9ms | ActiveRecord: 0.8ms | Allocations: 28922)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:18:05 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 25.0ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 85ms (Views: 83.5ms | ActiveRecord: 0.8ms | Allocations: 8998)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:18:13 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 648ms (Views: 646.5ms | ActiveRecord: 0.4ms | Allocations: 28900)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:18:24 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 46.0ms | Allocations: 2992)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 350ms (Views: 347.2ms | ActiveRecord: 0.3ms | Allocations: 10629)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:18:33 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 27.6ms | Allocations: 2987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 171ms (Views: 168.2ms | ActiveRecord: 0.3ms | Allocations: 10637)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:19:01 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 2740)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 429ms (Views: 426.3ms | ActiveRecord: 0.3ms | Allocations: 28559)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:19:10 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1318ms (Views: 1316.5ms | ActiveRecord: 0.3ms | Allocations: 27687)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:19:43 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 14.5ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 596ms (Views: 594.8ms | ActiveRecord: 0.4ms | Allocations: 27319)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:19:51 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 16.5ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 70ms (Views: 67.4ms | ActiveRecord: 1.4ms | Allocations: 8988)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:20:09 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 646ms (Views: 645.2ms | ActiveRecord: 0.3ms | Allocations: 28123)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:20:37 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 54.9ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1547ms (Views: 1545.5ms | ActiveRecord: 0.4ms | Allocations: 27680)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:20:50 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 20.8ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 104ms (Views: 100.4ms | ActiveRecord: 2.1ms | Allocations: 8988)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:20:56 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 473ms (Views: 471.4ms | ActiveRecord: 0.3ms | Allocations: 28481)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:22:23 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 68.6ms | Allocations: 2994)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 785ms (Views: 778.6ms | ActiveRecord: 0.9ms | Allocations: 30979)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:22:51 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 45.0ms | Allocations: 2740)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 544ms (Views: 542.5ms | ActiveRecord: 0.3ms | Allocations: 29373)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:23:14 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 24.6ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 404ms (Views: 402.4ms | ActiveRecord: 0.3ms | Allocations: 28513)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:23:21 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 26.3ms | Allocations: 2740)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 460ms (Views: 458.2ms | ActiveRecord: 0.7ms | Allocations: 27228)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:23:24 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 18.6ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 80.0ms | ActiveRecord: 0.3ms | Allocations: 9434)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:24:07 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 33.9ms | Allocations: 2989)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 590ms (Views: 586.2ms | ActiveRecord: 0.9ms | Allocations: 29740)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:24:29 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 21.6ms | Allocations: 2741)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 76.7ms | ActiveRecord: 2.0ms | Allocations: 8989)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:25:00 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 23.8ms | Allocations: 2993)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 242ms (Views: 238.7ms | ActiveRecord: 0.3ms | Allocations: 10627)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:25:05 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (3.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 27.9ms | Allocations: 2987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 248ms (Views: 240.4ms | ActiveRecord: 3.2ms | Allocations: 10635)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:25:10 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 17.1ms | Allocations: 2987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 187ms (Views: 183.9ms | ActiveRecord: 0.2ms | Allocations: 10627)
+
+
+Started GET "/carrito/index" for ::1 at 2020-04-25 23:25:14 -0500
+Processing by CarritoController#index as HTML
+  Rendering carrito/index.html.erb within layouts/application
+  Rendered carrito/index.html.erb within layouts/application (Duration: 21.0ms | Allocations: 77)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 78.2ms | ActiveRecord: 0.0ms | Allocations: 7050)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:25:15 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 17.8ms | Allocations: 2744)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 70.6ms | ActiveRecord: 0.7ms | Allocations: 9002)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:25:25 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 19.8ms | Allocations: 2987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 182ms (Views: 179.4ms | ActiveRecord: 0.3ms | Allocations: 10627)
+
+
+Started GET "/" for ::1 at 2020-04-25 23:25:30 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 110.0ms | Allocations: 2987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 194ms (Views: 188.8ms | ActiveRecord: 0.3ms | Allocations: 10637)
+
+
+Started GET "/carrito/index" for ::1 at 2020-04-25 23:25:54 -0500
+Processing by CarritoController#index as HTML
+  Rendering carrito/index.html.erb within layouts/application
+  Rendered carrito/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 55.2ms | ActiveRecord: 0.0ms | Allocations: 7061)
+
+
+Started GET "/carrito/index" for ::1 at 2020-04-25 23:26:56 -0500
+Processing by CarritoController#index as HTML
+  Rendering carrito/index.html.erb within layouts/application
+  Rendered carrito/index.html.erb within layouts/application (Duration: 65.6ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 225ms (Views: 220.1ms | ActiveRecord: 0.0ms | Allocations: 7775)
+
+
+Started GET "/carrito/index" for ::1 at 2020-04-25 23:27:06 -0500
+Processing by CarritoController#index as HTML
+  Rendering carrito/index.html.erb within layouts/application
+  Rendered carrito/index.html.erb within layouts/application (Duration: 21.2ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 94ms (Views: 91.1ms | ActiveRecord: 0.0ms | Allocations: 7770)
+
+
+Started GET "/carrito/index" for ::1 at 2020-04-25 23:27:26 -0500
+Processing by CarritoController#index as HTML
+  Rendering carrito/index.html.erb within layouts/application
+  Rendered carrito/index.html.erb within layouts/application (Duration: 92.1ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 208ms (Views: 204.7ms | ActiveRecord: 0.0ms | Allocations: 7764)
+
+
+Started GET "/carrito/index" for ::1 at 2020-04-25 23:28:28 -0500
+Processing by CarritoController#index as HTML
+  Rendering carrito/index.html.erb within layouts/application
+  Rendered carrito/index.html.erb within layouts/application (Duration: 22.9ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 613ms (Views: 607.9ms | ActiveRecord: 0.0ms | Allocations: 27284)
+
+
+Started GET "/carrito/index" for ::1 at 2020-04-25 23:29:29 -0500
+Processing by CarritoController#index as HTML
+  Rendering carrito/index.html.erb within layouts/application
+  Rendered carrito/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 537ms (Views: 536.0ms | ActiveRecord: 0.0ms | Allocations: 25348)
+
+
+Started GET "/carrito/index" for ::1 at 2020-04-25 23:29:48 -0500
+Processing by CarritoController#index as HTML
+  Rendering carrito/index.html.erb within layouts/application
+  Rendered carrito/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 987ms (Views: 985.9ms | ActiveRecord: 0.0ms | Allocations: 26186)
+
+
+Started GET "/carrito/index" for ::1 at 2020-04-25 23:30:27 -0500
+Processing by CarritoController#index as HTML
+  Rendering carrito/index.html.erb within layouts/application
+  Rendered carrito/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 420ms (Views: 418.7ms | ActiveRecord: 0.0ms | Allocations: 24640)
+
+
+Started GET "/carrito/index" for ::1 at 2020-04-25 23:30:33 -0500
+Processing by CarritoController#index as HTML
+  Rendering carrito/index.html.erb within layouts/application
+  Rendered carrito/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 442ms (Views: 441.1ms | ActiveRecord: 0.0ms | Allocations: 26251)
+
+
+Started GET "/carrito/index" for ::1 at 2020-04-25 23:30:38 -0500
+Processing by CarritoController#index as HTML
+  Rendering carrito/index.html.erb within layouts/application
+  Rendered carrito/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 588ms (Views: 587.3ms | ActiveRecord: 0.0ms | Allocations: 25785)
+
+
+Started GET "/carrito/index" for ::1 at 2020-04-25 23:30:57 -0500
+Processing by CarritoController#index as HTML
+  Rendering carrito/index.html.erb within layouts/application
+  Rendered carrito/index.html.erb within layouts/application (Duration: 58.3ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 129ms (Views: 124.1ms | ActiveRecord: 0.0ms | Allocations: 7788)
+
+

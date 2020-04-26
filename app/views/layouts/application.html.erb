@@ -27,11 +27,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
        
-        <div class="ml-3" style="width:1050px">
+        <div class="busc">
         <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
         </div>
         <li class="nav-item">
-        <a class="navbar-brand ml-4"><i class="material-icons md-light">shopping_cart</i></a>
+        <%= link_to "<i class='material-icons md-light'>shopping_cart</i>".html_safe, "/carrito/index", class:"navbar-brand ml-4 mr-2" %>
         </li>
         <% if user_signed_in? %>
         <li class="nav-item dropdown">
