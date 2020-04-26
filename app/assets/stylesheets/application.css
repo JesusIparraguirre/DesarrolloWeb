@@ -58,6 +58,24 @@
     letter-spacing: -0.2px;
 }
 
+.cabecera{
+    font-size: 1rem;
+    color: #949494;
+    font-weight: 600;
+    line-height: 35px;
+    font-family: "Nunito Sans", sans-serif!important;
+    letter-spacing: -0.2px;
+}
+
+.cupon-desc{
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #707070;
+    line-height: 20px;
+    font-family: "Nunito Sans", sans-serif!important;
+    letter-spacing: -0.2px;
+}
+
 .btn.btn-tema{
     background-color:  rgb(236, 28, 36);
 }
