@@ -1,0 +1,23 @@
+Started GET "/" for ::1 at 2020-04-25 22:50:21 -0500
+  [1m[35m (43.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+Started GET "/" for ::1 at 2020-04-25 22:50:25 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (10.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 4946.3ms | Allocations: 61493)
+  Rendered productos/index.html.erb within layouts/application (Duration: 6348.9ms | Allocations: 73497)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8454ms (Views: 8242.3ms | ActiveRecord: 4.0ms | Allocations: 97665)
+
+
+Completed 200 OK in 6632ms (Views: 6618.3ms | ActiveRecord: 10.4ms | Allocations: 84099)
+
+

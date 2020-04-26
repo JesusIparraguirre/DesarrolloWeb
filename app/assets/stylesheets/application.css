@@ -1,0 +1,156 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ /* Rules for sizing the icon. */
+.material-icons.md-12 { font-size: 12px; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.btn.btn-tema{
+    background-color:  rgb(236, 28, 36);
+}
+
+.banner-tema{
+    background: #ec1c24;
+    border: 0;
+    border-radius: 5px;
+}
+.banner-titulo{
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #fff!important;
+    font-family: "Nunito Sans", sans-serif!important;
+    line-height: 50px;
+}
+
+.busqueda{
+    width: 900px;
+}
+
+.titulo-producto{
+    color: #000;
+    font-size: 0.85rem;
+    line-height: 17px;
+    height: 50px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    font-family: "Nunito Sans", sans-serif!important;
+    letter-spacing: -0.2px
+}
+.precio-titulo{
+    
+    font-weight: 600;
+    display: flex;
+    font-size: 12px;
+    line-height: 40px;
+    font-family: "Nunito Sans", sans-serif!important;
+    letter-spacing: -0.2px;
+}
+.precio-numero{
+    font-size: .875rem;
+    line-height: 40px;
+    color: #f01612;
+    font-family: "Nunito Sans", sans-serif!important;
+    letter-spacing: -0.2px;
+}
+#buscador{
+    border-radius: 1.15rem;
+    border: none;
+}
+
+a{
+    font-family: "Nunito Sans", sans-serif;
+}
+.marca{
+    font-size: .9375rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #6B6B6B;
+    text-transform: uppercase;
+}
+.cod-pro{
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #6b6b6b;
+    color: #6b6b6b;
+    font-size: 13px;
+    font-size: .8125rem;
+    white-space: nowrap;
+}
+.caracteristicas-title{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: "Nunito Sans", sans-serif!important;
+    letter-spacing: -0.2px;
+}
+.caracteristicas{
+    color: #6b6b6b;
+    font-family: "Nunito Sans", sans-serif!important;
+    letter-spacing: -0.2px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.precio{
+    color: #f01612;
+    font-family: "Nunito Sans", sans-serif!important;
+    font-weight: 300;
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size: 20px;
+}
+.nom-pro{
+    color: #333;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: "Nunito Sans", sans-serif!important;
+}
+.cantidad{
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    opacity: 1;
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-align: center;
+}
+.btn-mas{
+    background-color: #666;
+    font-family: font-icon;
+}
+.btn-menos{
+    background-color: #d3d3d3;
+    font-family: font-icon;
+}
+.tema{
+    background-color:  rgb(236, 28, 36);
+}
+.titulo-login{
+    text-align: center;
+    color: #f01612;
+    font-weight: 300;
+    clear: both;
+    margin: 10px 0px;
+}

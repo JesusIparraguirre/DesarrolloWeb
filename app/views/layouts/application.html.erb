@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Proyecto</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+  
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark pt-4 pb-4 tema">
+        <div class="col-lg-1"></div>
+        <a class="navbar-brand ml-5 pl-5" <%= link_to "Tienda Online", root_path %></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+       
+        <div class="ml-3" style="width:1050px">
+        <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+        </div>
+        <li class="nav-item">
+        <a class="navbar-brand ml-4"><i class="material-icons md-light">shopping_cart</i></a>
+        </li>
+        <% if user_signed_in? %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons md-light">account_circle</i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" <%= link_to "Cierra sesion", destroy_user_session_path, method:"delete" %></a>
+          </div>
+        </li>
+        <% else %>
+        <li class="nav-item">
+        <a type="button" class="navbar-brand ml-2 mr-3" data-toggle="modal" data-target="#exampleModalLong"><i class="material-icons md-light">account_circle</i></a>
+        </li>
+        <% end %>
+
+        
+        </ul>
+        </div>
+      </nav>
+      
+    </header>
+    <!--
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+            <h4 class="titulo-login">Iniciar Sesion</h4>
+          </div>
+          <div class="modal-body">
+            <%= form_for(:user, :url => session_path(:user)) do |f| %>
+              <label class="mt-0">E-mail</label>
+              <%= f.text_field :email, class:"form-control" %>
+              <label class="mt-4">Contraseña</label>
+              <%= f.password_field :password, class:"form-control" %>
+              
+              <div class="d-flex justify-content-between mt-3">
+                <div>
+                <%= f.check_box :remember_me %>
+                <%= f.label :Recuerdame %>
+                </div>
+                <div>
+                <%= link_to "¿Olvidó su contraseña?", new_password_path(:user) %>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <%= f.submit 'Iniciar sesion',class:"btn btn-outline-danger" %>
+              <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <%= yield %>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

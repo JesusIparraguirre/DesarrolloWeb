@@ -1,0 +1,50 @@
+<div class="container mt-5">
+    <div class="d-flex justify-content-center">
+        <div class="row">
+            <div class="column">
+                <%= image_tag(@producto.urlimagen) %> 
+            </div>
+
+
+            <div class="column">
+                <div class="row">
+                    <p class="nom-pro"><%= @producto.nombre  %></p>
+                </div>
+                <div class="row">
+                    <p class="marca">GLORIA</p>
+                    <p class="cod-pro">Codigo de producto: <%= @producto.id %></p>
+                </div>
+                <div class="row">
+                <p class="caracteristicas-title">Características:</p>
+                </div>
+                <div class="row">
+                <p class="caracteristicas"><%= @producto.descripcion  %></p>
+                </div>
+                <div class="row justify-content-between">
+                    <p class="caracteristicas">Precio: </p>
+                    <p class="precio">S/. <%= @producto.precio  %></p>
+                </div>
+                <div class="row" >
+                    <div class="col-sm-3 p-0">
+                        <input class="form-control" style="height:100%" type="text" value="1">
+                    </div>
+                    <div class="column p-0">
+                        <div class="col-sm-3">
+                        <button type="button" class="btn btn-dark p-0 pl-2 pr-2" style="border:none;"><i class="material-icons md-light md-12">add</i></button>
+                        </div>
+                        <div class="col-sm-3 h-25">
+                        <button type="button" class="btn btn-secondary p-0 pl-2 pr-2" style="border:none;"><i class="material-icons md-light md-12">remove</i></button>
+                        </div>
+                    </div>
+                    <div class="row m-1">
+                         
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn text-light p-1 pl-4 pr-4" style="background-color:  rgb(236, 28, 36);font-weight: 600;">AGREGAR AL CARRITO</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
