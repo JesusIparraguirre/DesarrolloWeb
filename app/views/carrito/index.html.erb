@@ -5,46 +5,64 @@
         <p class="titulo-carrito ml-3 mt-2">Mi carrito</p>
     </div>
 </div>
-<div class="row">
-    <div class="container">
-        <div class="col-12 mt-3 ">
-            <p class="titulo-cantidad">Tienes n items</p>
+<div class="col-12 mt-4">
+    <div class="row">
+        <div class="col-8">
+            <div class="col-12 mt-3 ml-3">
+                <p class="titulo-cantidad">Tienes n items</p>
+            </div>
+            <div class="col-12 mt-5 ml-3">
+                <table class="table ">
+                <thead>
+                <tr class="cabecera">
+                    <th scope="col">Producto</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Subtotal</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
         </div>
-        <div class="col-12 mt-5">
-            <table class="table ">
-            <thead>
-            <tr class="cabecera">
-                <th scope="col">Producto</th>
-                <th scope="col">Precio</th>
-                <th scope="col">Cantidad</th>
-                <th scope="col">Subtotal</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-            </tr>
-            </tbody>
-            </table>
+        
+        <div class="col-2 bg-light ml-5 mt-5 rounded">
+            <div class="column mt-4">
+                <p class="cupon-desc">Cupon de descuento</p>
+                <div class="d-flex justify-content-between">
+                    <input type="text" class="form-control mr-3" placeholder="Cupon de descuento">
+                    <p></p>
+                    <button type="button" class="btn btn-outline btn-danger ">AGREGAR</button>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                    <p class="subtotal">Subtotal</p>
+                    <p class="subtotal">S/.10000</p>
+                </div>
+                <div class="d-flex justify-content-between pt-3" style="border-top: 1px solid #b3b3b3;">
+                    <p class="total-label">Total</p>
+                    <p class="total-prec">S/.10000</p>
+                </div>
+            </div>
         </div>
-    </div>
-    
-    <div class="column bg-light">
-    <p class="cupon-desc">Cupon de descuento</p>
+
     </div>
 </div>

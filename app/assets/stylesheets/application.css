@@ -67,6 +67,34 @@
     letter-spacing: -0.2px;
 }
 
+.total-prec{
+    color: #f01612;
+    font-size: 1.4375rem;
+    font-weight: 700;
+    line-height: 25px;
+    font-family: "Nunito Sans", sans-serif!important;
+    letter-spacing: -0.2px;
+}
+
+.total-label{
+    color: #333;
+    font-size: 1.4375rem;
+    font-weight: 700;
+    line-height: 25px;
+    font-family: "Nunito Sans", sans-serif!important;
+    letter-spacing: -0.2px;
+}
+
+.subtotal{
+    color: #707070;
+    font-size: 1.15rem;
+    line-height: 20px;
+    padding: 15px 0;
+    font-weight: 600;
+    font-family: "Nunito Sans", sans-serif!important;
+    letter-spacing: -0.2px;
+}
+
 .cupon-desc{
     font-size: 1.125rem;
     font-weight: 700;
