@@ -3120,3 +3120,176 @@ Processing by ProductosController#index as HTML
 Completed 200 OK in 86ms (Views: 84.6ms | ActiveRecord: 0.3ms | Allocations: 8983)
 
 
+Started GET "/" for ::1 at 2020-04-28 01:23:02 -0500
+  [1m[35m (30.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (89.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 11764.5ms | Allocations: 44238)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15844ms (Views: 14888.2ms | ActiveRecord: 98.7ms | Allocations: 59177)
+
+
+Started GET "/" for ::1 at 2020-04-28 01:24:13 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 37.6ms | Allocations: 2752)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 110ms (Views: 108.3ms | ActiveRecord: 0.4ms | Allocations: 9009)
+
+
+Started GET "/" for ::1 at 2020-04-28 01:25:22 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 34.2ms | Allocations: 2750)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1208ms (Views: 1206.6ms | ActiveRecord: 0.4ms | Allocations: 30313)
+
+
+Started GET "/" for ::1 at 2020-04-28 01:25:35 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 681ms (Views: 680.1ms | ActiveRecord: 0.3ms | Allocations: 28702)
+
+
+Started GET "/" for ::1 at 2020-04-28 01:25:41 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 13.5ms | Allocations: 2750)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 620ms (Views: 618.6ms | ActiveRecord: 0.4ms | Allocations: 30335)
+
+
+Started GET "/" for ::1 at 2020-04-28 01:25:46 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 25.7ms | Allocations: 2750)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 582ms (Views: 579.8ms | ActiveRecord: 0.7ms | Allocations: 29879)
+
+
+Started GET "/productos/3" for ::1 at 2020-04-28 01:25:51 -0500
+Processing by ProductosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (8.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/productos_controller.rb:7:in `show'
+  Rendering productos/show.html.erb within layouts/application
+  Rendered productos/show.html.erb within layouts/application (Duration: 33.1ms | Allocations: 966)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 310ms (Views: 88.9ms | ActiveRecord: 8.5ms | Allocations: 8550)
+
+
+Started GET "/productos/3" for ::1 at 2020-04-28 01:25:54 -0500
+Processing by ProductosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/productos_controller.rb:7:in `show'
+  Rendering productos/show.html.erb within layouts/application
+  Rendered productos/show.html.erb within layouts/application (Duration: 6.2ms | Allocations: 754)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 70ms (Views: 64.9ms | ActiveRecord: 0.6ms | Allocations: 7526)
+
+
+Started GET "/" for ::1 at 2020-04-28 01:25:58 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 21.9ms | Allocations: 2741)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 70.6ms | ActiveRecord: 0.3ms | Allocations: 8996)
+
+
+Started GET "/productos/2" for ::1 at 2020-04-28 01:26:02 -0500
+Processing by ProductosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/productos_controller.rb:7:in `show'
+  Rendering productos/show.html.erb within layouts/application
+  Rendered productos/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 754)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 53.1ms | ActiveRecord: 0.3ms | Allocations: 7527)
+
+
+Started GET "/" for ::1 at 2020-04-28 01:26:04 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 65.3ms | ActiveRecord: 0.4ms | Allocations: 8986)
+
+
+Started GET "/" for ::1 at 2020-04-28 01:26:06 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 71.2ms | ActiveRecord: 0.3ms | Allocations: 8988)
+
+
+Started GET "/" for ::1 at 2020-04-28 01:26:13 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 25.7ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 95ms (Views: 93.7ms | ActiveRecord: 0.7ms | Allocations: 9028)
+
+
+Started GET "/" for ::1 at 2020-04-28 01:26:34 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 603ms (Views: 601.4ms | ActiveRecord: 0.5ms | Allocations: 27823)
+
+
+Started GET "/" for ::1 at 2020-04-28 01:26:40 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 27.0ms | Allocations: 2739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 608ms (Views: 606.7ms | ActiveRecord: 0.7ms | Allocations: 28628)
+
+
+Started GET "/carrito/index" for ::1 at 2020-04-28 01:26:47 -0500
+Processing by CarritoController#index as HTML
+  Rendering carrito/index.html.erb within layouts/application
+  Rendered carrito/index.html.erb within layouts/application (Duration: 55.0ms | Allocations: 234)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 112ms (Views: 109.3ms | ActiveRecord: 0.0ms | Allocations: 7208)
+
+
+Started GET "/" for ::1 at 2020-04-28 01:26:59 -0500
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:6
+  Rendered productos/index.html.erb within layouts/application (Duration: 21.4ms | Allocations: 2744)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 73.6ms | ActiveRecord: 0.4ms | Allocations: 8992)
+
+

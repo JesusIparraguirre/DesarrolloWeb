@@ -34,11 +34,12 @@
         width: 1000px;
     }
 }
-@media only screen and (min-width: 720px) and (max-width: 1199px) {
+@media only screen and (min-width: 720px) {
     .busc{
-        width: 400px;
+        width: 550px;
     }
 }
+
 
 .titulo-carrito{
     font-size: 1.6875rem;
