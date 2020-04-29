@@ -1,7 +1,10 @@
 class ProductsController < ApplicationController
     def index
+        @producto = Product.new
         @productos = Product.all
         @categorias = Categorium.all
+        @carrito = Carrito.new
+        @carritos = Carrito.all
     end
     #GET /productos/:id
     def show

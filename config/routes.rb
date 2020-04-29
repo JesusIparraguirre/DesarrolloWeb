@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'productos/index'
   get 'productos/show'
 
-  get 'carrito/index'
+  get 'carritos/index'
 
   get 'categorias/show'
 

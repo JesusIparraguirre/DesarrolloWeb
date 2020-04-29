@@ -32,13 +32,14 @@
                     <h5 class="titulo-producto mt-4" style="text-align: center;"><%= producto.nombre %></h5>
                 </div>
                 <div class="card-body">
+                    <%= form_for(@carrito) do |f| %>
                     <div class="d-flex justify-content-between">
                         <p class="precio-titulo" style="color: #737373;">Precio: </p>
                         <p class="precio-numero">S/.<%= producto.precio %></p>  
                     </div>    
-                    <div class="row" >
+                    <div class="row">
                         <div class="col-sm-3 p-0">
-                            <input class="form-control" style="height:100%;background-color: #f2f2f2;font-size: .875rem;text-align: center;border:0;font-weight: 600;" type="text" value="1">
+                            <%= f.text_field :cantidad , class:"form-control", style:'height:100%;background-color: #f2f2f2;font-size: .875rem;text-align: center;border:0;font-weight: 600;', value:'1'%>
                         </div>
                         <div class="column p-0">
                             <div class="col-sm-3">
@@ -50,8 +51,16 @@
                         </div>
                         <div class="row m-1">
                         </div>
-                        <button type="button" class="btn text-light p-1 pl-4 pr-4" style="background-color:  #ec1c24;font-weight: 600;">AGREGAR</button>
+                        <%= f.text_field :nombre , class:"form-control", style:'display:none', value:producto.nombre%>
+                        <%= f.text_field :precio , class:"form-control", style:'display:none', value:producto.precio%>
+                        <% if user_signed_in? %>
+                        <%= f.text_field :user , class:"form-control", style:'display:none', value:current_user.id%>
+                        <%= f.submit "AGREGAR",class:'btn text-light p-1 pl-4 pr-4', style:'background-color:  #ec1c24;font-weight: 600;'%>
+                        <% else %>
+                        <button class="btn text-light p-1 pl-4 pr-4 disabled" style="background-color:  #ec1c24;font-weight: 600;" disabled>AGREGAR</button>
+                        <% end %>
                     </div>
+                    <% end %>
                 </div>
             </div>
         <% end %>

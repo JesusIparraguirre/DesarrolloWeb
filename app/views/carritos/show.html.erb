@@ -1,4 +1,3 @@
-
 <div class="col-12 bg-light">
     <div clasS="row ml-4">
         <i class='material-icons md-dark md-48 mt-2'>shopping_cart</i>
@@ -10,6 +9,7 @@
         <div class="col-8">
             <div class="col-12 mt-3 ml-3">
                 <p class="titulo-cantidad">Tienes n items</p>
+                <%= @usuario %>
             </div>
             <div class="col-12 mt-5 ml-3">
                 <table class="table ">
@@ -23,15 +23,23 @@
                 </thead>
                 <tbody>
 
+                <% if @carritos.nil? %>
+                <tr>
+                    <th>NO TIENE NADA EN EL CARRITO</th>
+                </tr>
+                <% else %>
                 <% @carritos.each do |carrito| %>
                 <tr>
-                    <th scope="row"><%= producto.nombre %></th>
-                    <td><%= producto.precio %></td>
-                    <td><%= producto.cantidad %></td>
-                    <td>@<%= producto.subtotal %></td>
+                    <th><%= carrito.nombre %></th>
+                    <td><%= carrito.precio %></td>
+                    <td><%= carrito.cantidad %></td>
+                    <td><%= carrito.cantidad*carrito.precio %></td>
                 </tr>
+                <% @sub =+ carrito.cantidad*carrito.precio%>
                 <% end %> 
 
+                <% end %> 
+                <%= @sub %>
                 
                 
                 </tbody>

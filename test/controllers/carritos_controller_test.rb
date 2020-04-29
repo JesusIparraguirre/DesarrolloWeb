@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CarritoControllerTest < ActionDispatch::IntegrationTest
+class CarritosControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
