@@ -3420,3 +3420,72 @@ Completed 200 OK in 3505ms (Views: 3387.6ms | ActiveRecord: 0.0ms | Allocations:
   [1m[35m (273.1ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" LIMIT ?[0m  [["LIMIT", 11]]
   [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (20.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddCategoriaRefToProducts (20200429004330)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "products" ADD "categoria_id" integer[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_products_on_categoria_id" ON "products" ("categoria_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aproducts" ("id" integer NOT NULL PRIMARY KEY, "nombre" varchar DEFAULT NULL, "descripcion" text DEFAULT NULL, "precio" float DEFAULT NULL, "stock" integer DEFAULT NULL, "urlimagen" text DEFAULT NULL, "categoria" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "categoria_id" integer DEFAULT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "tindex_aproducts_on_categoria_id" ON "aproducts" ("categoria_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aproducts" ("id","nombre","descripcion","precio","stock","urlimagen","categoria","created_at","updated_at","categoria_id")
+                     SELECT "id","nombre","descripcion","precio","stock","urlimagen","categoria","created_at","updated_at","categoria_id" FROM "products"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "products"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer NOT NULL PRIMARY KEY, "nombre" varchar DEFAULT NULL, "descripcion" text DEFAULT NULL, "precio" float DEFAULT NULL, "stock" integer DEFAULT NULL, "urlimagen" text DEFAULT NULL, "categoria" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "categoria_id" integer DEFAULT NULL, CONSTRAINT "fk_rails_f4ab300325"
+FOREIGN KEY ("categoria_id")
+  REFERENCES "categoria" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_products_on_categoria_id" ON "products" ("categoria_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "products" ("id","nombre","descripcion","precio","stock","urlimagen","categoria","created_at","updated_at","categoria_id")
+                     SELECT "id","nombre","descripcion","precio","stock","urlimagen","categoria","created_at","updated_at","categoria_id" FROM "aproducts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aproducts"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200429004330"]]
+  [1m[35m (103.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-04-28 20:12:50 -0500
+  [1m[35m (35.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:11
+  Rendered productos/index.html.erb within layouts/application (Duration: 6745.1ms | Allocations: 61883)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/jesus/Desktop/DesarrolloWeb/public/packs
+[Webpacker] Hash: 32e57f147dbdcbbf0c82
+Version: webpack 4.42.1
+Time: 11170ms
+Built at: 28/04/2020 20:13:31
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bbe9c4a129ab949e0636.js    124 KiB  application  [emitted] [immutable]  application
+js/application-bbe9c4a129ab949e0636.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-bbe9c4a129ab949e0636.js js/application-bbe9c4a129ab949e0636.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 41801ms (Views: 41710.3ms | ActiveRecord: 2.9ms | Allocations: 92696)
+
+
+Started GET "/" for ::1 at 2020-04-28 20:22:49 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductosController#index as HTML
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/productos/index.html.erb:11
+  Rendered productos/index.html.erb within layouts/application (Duration: 106.7ms | Allocations: 3032)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 602ms (Views: 599.3ms | ActiveRecord: 0.4ms | Allocations: 11047)
+
+
