@@ -5,13 +5,13 @@
             <div class="col">   
                 <a class="tienda-categorias mr-2">Tienda</a>
                 <a>|</a>
-                <a class="title-categoria-banner ml-2" style="color: #f01612;">Categorias</a>
+                <a class="title-categoria-banner ml-2" style="color: #f01612;"><%= @categoria.nombre %></a>
             </div>
             <% @categorias.each do |categoria| %>
             <div class="col mt-3">
             <%= link_to categoria_path(categoria.id) do %>
-                <%= categoria.nombre %>
-                <% end %>
+            <%= categoria.nombre %>
+            <% end %>
             </div>
             <% end %>
         </div>

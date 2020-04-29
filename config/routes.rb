@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   resources:productos
-  resources:categoria
+  resources:categorias
+
   
   get 'login/index', as: 'login'
 
@@ -10,7 +11,7 @@ Rails.application.routes.draw do
 
   get 'carrito/index'
 
-  get 'categoria/show'
+  get 'categorias/show'
 
   get 'administrador/index'
   get 'administrador/stock'
