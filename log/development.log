@@ -27213,3 +27213,1671 @@ Processing by ProductsController#index as HTML
 Completed 200 OK in 82ms (Views: 80.3ms | ActiveRecord: 0.6ms | Allocations: 13010)
 
 
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddNombresToUsers (20200429214519)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.7ms)[0m  [1m[35mALTER TABLE "users" ADD "nombres" varchar[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200429214519"]]
+  [1m[35m (124.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Update All (0.6ms)[0m  [1m[33mUPDATE "users" SET "rol" = ?[0m  [["rol", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddApellidosToUsers (20200429214702)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (23.9ms)[0m  [1m[35mALTER TABLE "users" ADD "apellidos" varchar[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200429214702"]]
+  [1m[35m (146.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddCelularToUsers (20200429214735)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.3ms)[0m  [1m[35mALTER TABLE "users" ADD "celular" varchar[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200429214735"]]
+  [1m[35m (87.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddRolToUsers (20200429214840)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.6ms)[0m  [1m[35mALTER TABLE "users" ADD "rol" integer[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200429214840"]]
+  [1m[35m (128.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Update All (139.5ms)[0m  [1m[33mUPDATE "users" SET "rol" = ?[0m  [["rol", 1]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (66.9ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 4]]
+  [1m[35m (125.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (63.7ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 3]]
+  [1m[35m (141.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (2.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 2]]
+  [1m[35m (104.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (5.1ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 1]]
+  [1m[35m (168.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (1.8ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Leche gloria"], ["descripcion", "producto lacteo de la marca gloria"], ["precio", 3.5], ["stock", 300], ["urlimagen", "leche-gloria.jpg"], ["categoria", 4], ["created_at", "2020-04-29 21:56:01.986617"], ["updated_at", "2020-04-29 21:56:01.986617"]]
+  [1m[35m (106.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (53.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 1]]
+  [1m[35m (118.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (5.2ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Leche gloria"], ["descripcion", "producto lacteo de la marca gloria"], ["precio", 3.5], ["stock", 300], ["urlimagen", "leche-gloria.jpg"], ["categoria", 4], ["created_at", "2020-04-29 21:56:38.076678"], ["updated_at", "2020-04-29 21:56:38.076678"]]
+  [1m[35m (127.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (1.6ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 1]]
+  [1m[35m (102.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (5.2ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Leche gloria"], ["descripcion", "producto lacteo de la marca gloria"], ["precio", 3.5], ["stock", 300], ["urlimagen", "leche-gloria.jpg"], ["created_at", "2020-04-29 21:56:59.591044"], ["updated_at", "2020-04-29 21:56:59.591044"], ["categoria_id", 4]]
+  [1m[35m (187.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (2.9ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Fideos Don Vittorio"], ["descripcion", "Fideos de maiz de la marca don vittorio"], ["precio", 5.5], ["stock", 500], ["urlimagen", "fideos-donvictorio.jpg"], ["created_at", "2020-04-29 21:58:54.054342"], ["updated_at", "2020-04-29 21:58:54.054342"], ["categoria_id", 6]]
+  [1m[35m (109.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (5.3ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Atun Florida"], ["descripcion", "Atun enlatado en trozos de la marca Florida"], ["precio", 6.0], ["stock", 1500], ["urlimagen", "atun-florida.webp"], ["created_at", "2020-04-29 22:00:30.061300"], ["updated_at", "2020-04-29 22:00:30.061300"], ["categoria_id", 6]]
+  [1m[35m (151.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2020-04-29 17:01:03 -0500
+  [1m[35m (11.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 286.9ms | Allocations: 19561)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 838ms (Views: 733.8ms | ActiveRecord: 7.8ms | Allocations: 49000)
+
+
+Started GET "/" for ::1 at 2020-04-29 17:01:15 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (1.7ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 35.7ms | Allocations: 4754)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 91ms (Views: 87.6ms | ActiveRecord: 2.1ms | Allocations: 11969)
+
+
+Started GET "/" for ::1 at 2020-04-29 17:02:11 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 34.3ms | Allocations: 4748)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 86ms (Views: 83.9ms | ActiveRecord: 0.7ms | Allocations: 11984)
+
+
+  [1m[35m (7.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (5.3ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Leche Ideal"], ["descripcion", "producto lacteo de la marca Nestle"], ["precio", 3.8], ["stock", 380], ["urlimagen", "leche-ideal.webp"], ["created_at", "2020-04-29 22:06:01.980164"], ["updated_at", "2020-04-29 22:06:01.980164"], ["categoria_id", 4]]
+  [1m[35m (138.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (9.5ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Leche condensada gloria"], ["descripcion", "producto lacteo de la marca gloria"], ["precio", 4.5], ["stock", 400], ["urlimagen", "leche-condensada-gloria.jpg"], ["created_at", "2020-04-29 22:07:00.777203"], ["updated_at", "2020-04-29 22:07:00.777203"], ["categoria_id", 4]]
+  [1m[35m (210.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (3.2ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Leche condensada nestle"], ["descripcion", "producto lacteo de la marca Nestle"], ["precio", 4.9], ["stock", 450], ["urlimagen", "leche-condensada-nestle.jpg"], ["created_at", "2020-04-29 22:07:47.735779"], ["updated_at", "2020-04-29 22:07:47.735779"], ["categoria_id", 4]]
+  [1m[35m (143.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Destroy (3.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 5]]
+  [1m[35m (101.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (5.2ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Leche condensada gloria"], ["descripcion", "producto lacteo de la marca gloria"], ["precio", 4.5], ["stock", 300], ["urlimagen", "leche-condensada-gloria.webp"], ["created_at", "2020-04-29 22:09:22.759816"], ["updated_at", "2020-04-29 22:09:22.759816"], ["categoria_id", 4]]
+  [1m[35m (173.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (7.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-04-29 17:10:26 -0500
+  [1m[35m (6.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 7603.6ms | Allocations: 59122)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7851ms (Views: 7767.3ms | ActiveRecord: 5.1ms | Allocations: 88569)
+
+
+Started GET "/categorias/1" for ::1 at 2020-04-29 17:10:49 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategorium Load (1.8ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 97.8ms | Allocations: 2703)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 167ms (Views: 148.8ms | ActiveRecord: 2.5ms | Allocations: 11838)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 17:10:52 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ?[0m  [["id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 10.0ms | Allocations: 2284)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 69ms (Views: 55.7ms | ActiveRecord: 0.9ms | Allocations: 10090)
+
+
+Started GET "/categorias/3" for ::1 at 2020-04-29 17:10:54 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ?[0m  [["id", 3]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 11.5ms | Allocations: 2281)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 70ms (Views: 58.6ms | ActiveRecord: 0.9ms | Allocations: 10059)
+
+
+Started GET "/categorias/4" for ::1 at 2020-04-29 17:10:55 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategorium Load (0.6ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ?[0m  [["id", 4]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 12.9ms | Allocations: 2282)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 56.1ms | ActiveRecord: 1.4ms | Allocations: 10082)
+
+
+Started GET "/categorias/5" for ::1 at 2020-04-29 17:10:58 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ?[0m  [["id", 5]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 11.4ms | Allocations: 1484)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 70ms (Views: 58.8ms | ActiveRecord: 0.9ms | Allocations: 9380)
+
+
+Started GET "/categorias/6" for ::1 at 2020-04-29 17:10:59 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ?[0m  [["id", 6]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 17.0ms | Allocations: 2277)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 91ms (Views: 77.6ms | ActiveRecord: 1.2ms | Allocations: 10055)
+
+
+Started GET "/categorias/7" for ::1 at 2020-04-29 17:11:00 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ?[0m  [["id", 7]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 10.7ms | Allocations: 2278)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 68.7ms | ActiveRecord: 1.0ms | Allocations: 10052)
+
+
+Started GET "/categorias/6" for ::1 at 2020-04-29 17:11:02 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ?[0m  [["id", 6]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 16.1ms | Allocations: 2278)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 59.0ms | ActiveRecord: 1.1ms | Allocations: 10044)
+
+
+Started GET "/categorias/5" for ::1 at 2020-04-29 17:11:03 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ?[0m  [["id", 5]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 11.9ms | Allocations: 1482)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 69ms (Views: 56.6ms | ActiveRecord: 1.2ms | Allocations: 9360)
+
+
+Started GET "/categorias/6" for ::1 at 2020-04-29 17:11:05 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ?[0m  [["id", 6]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 16.1ms | Allocations: 2278)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 61.6ms | ActiveRecord: 1.1ms | Allocations: 10052)
+
+
+Started GET "/categorias/1" for ::1 at 2020-04-29 17:11:07 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 11.2ms | Allocations: 2281)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 56.3ms | ActiveRecord: 0.9ms | Allocations: 10055)
+
+
+Started GET "/categorias/1" for ::1 at 2020-04-29 17:11:09 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 12.6ms | Allocations: 2281)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 77ms (Views: 60.5ms | ActiveRecord: 1.1ms | Allocations: 10127)
+
+
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/categorias/1" for ::1 at 2020-04-29 17:13:30 -0500
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 1]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 24.0ms | Allocations: 2185)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 347ms (Views: 253.5ms | ActiveRecord: 4.4ms | Allocations: 37121)
+
+
+Started GET "/categorias/4" for ::1 at 2020-04-29 17:13:33 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 4]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 40.9ms | Allocations: 10252)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 101ms (Views: 84.3ms | ActiveRecord: 3.3ms | Allocations: 18044)
+
+
+Started GET "/categorias/1" for ::1 at 2020-04-29 17:13:39 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategorium Load (0.6ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 1]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 12.8ms | Allocations: 1484)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 58.0ms | ActiveRecord: 1.2ms | Allocations: 9376)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 17:13:40 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 13.5ms | Allocations: 1484)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 76ms (Views: 60.0ms | ActiveRecord: 0.9ms | Allocations: 9378)
+
+
+Started GET "/categorias/3" for ::1 at 2020-04-29 17:13:40 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 3]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1484)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 82ms (Views: 68.7ms | ActiveRecord: 1.4ms | Allocations: 9386)
+
+
+Started GET "/categorias/5" for ::1 at 2020-04-29 17:13:40 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.6ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 5]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1482)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 60.8ms | ActiveRecord: 1.4ms | Allocations: 9350)
+
+
+Started GET "/categorias/4" for ::1 at 2020-04-29 17:13:41 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 4]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 23.6ms | Allocations: 4336)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 85ms (Views: 73.1ms | ActiveRecord: 1.0ms | Allocations: 12114)
+
+
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (4.4ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Leche Pura Vida"], ["descripcion", "producto lacteo de la marca Pura Vida"], ["precio", 2.8], ["stock", 600], ["urlimagen", "leche-pura-vida.jpg"], ["created_at", "2020-04-29 22:15:14.836628"], ["updated_at", "2020-04-29 22:15:14.836628"], ["categoria_id", 4]]
+  [1m[35m (195.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (6.3ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Manzana Roja x Kilo"], ["descripcion", "Manzana de clase roja"], ["precio", 5.8], ["stock", 100], ["urlimagen", "manzana-roja.webp"], ["created_at", "2020-04-29 22:18:53.069435"], ["updated_at", "2020-04-29 22:18:53.069435"], ["categoria_id", 1]]
+  [1m[35m (170.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (2.3ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Manzana Americana Washington x Kilo"], ["descripcion", "Manzana de clase Americana Washington"], ["precio", 8.7], ["stock", 50], ["urlimagen", "manzana-americana.webp"], ["created_at", "2020-04-29 22:19:43.522941"], ["updated_at", "2020-04-29 22:19:43.522941"], ["categoria_id", 1]]
+  [1m[35m (166.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (24.2ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Naranja para Jugo x Kilo"], ["descripcion", "Naranja para jugo de la distribuidora La Pecosita"], ["precio", 5.7], ["stock", 80], ["urlimagen", "naranja-jugo.jpg"], ["created_at", "2020-04-29 22:21:40.191200"], ["updated_at", "2020-04-29 22:21:40.191200"], ["categoria_id", 1]]
+  [1m[35m (137.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (2.3ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Tomate Cherry x 300gr"], ["descripcion", "Tomates Cherry Incatom 300gr x caja"], ["precio", 6.3], ["stock", 40], ["urlimagen", "tomate-cherry.webp"], ["created_at", "2020-04-29 22:23:59.636931"], ["updated_at", "2020-04-29 22:23:59.636931"], ["categoria_id", 1]]
+  [1m[35m (248.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (2.8ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Lechuga x 100gr"], ["descripcion", "Lechuga ecologica de huerto"], ["precio", 3.2], ["stock", 90], ["urlimagen", "lechuga.webp"], ["created_at", "2020-04-29 22:25:39.056655"], ["updated_at", "2020-04-29 22:25:39.056655"], ["categoria_id", 1]]
+  [1m[35m (144.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (5.2ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Zapallo Macre x 100gr"], ["descripcion", "Zapallo Macre de huerto"], ["precio", 1.5], ["stock", 120], ["urlimagen", "zapallo.webp"], ["created_at", "2020-04-29 22:28:04.684715"], ["updated_at", "2020-04-29 22:28:04.684715"], ["categoria_id", 1]]
+  [1m[35m (201.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (5.5ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Cafe instantaneo Wong"], ["descripcion", "Cafe instantaneo de la marca wong 50g"], ["precio", 5.5], ["stock", 250], ["urlimagen", "cafe-wong.webp"], ["created_at", "2020-04-29 22:29:29.361147"], ["updated_at", "2020-04-29 22:29:29.361147"], ["categoria_id", 3]]
+  [1m[35m (191.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (43.7ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Cafe Sello Rojo"], ["descripcion", "Cafe molido de la marca Sello Rojo"], ["precio", 9.5], ["stock", 150], ["urlimagen", "cafe-sello-rojo.webp"], ["created_at", "2020-04-29 22:30:39.971937"], ["updated_at", "2020-04-29 22:30:39.971937"], ["categoria_id", 3]]
+  [1m[35m (113.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (59.3ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Mantequilla Laive Light"], ["descripcion", "Mantequilla light de la marca Laive"], ["precio", 16.5], ["stock", 350], ["urlimagen", "mantequilla-laive-light.webp"], ["created_at", "2020-04-29 22:32:07.056075"], ["updated_at", "2020-04-29 22:32:07.056075"], ["categoria_id", 3]]
+  [1m[35m (167.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (5.2ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Mantequilla Gloria"], ["descripcion", "Mantequilla clasica de la marca Gloria"], ["precio", 14.8], ["stock", 280], ["urlimagen", "mantequilla-gloria.webp"], ["created_at", "2020-04-29 22:33:10.450485"], ["updated_at", "2020-04-29 22:33:10.450485"], ["categoria_id", 3]]
+  [1m[35m (169.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (2.4ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Mermelada Gloria"], ["descripcion", "Mermelada de frese de la marca Gloria"], ["precio", 9.7], ["stock", 300], ["urlimagen", "mermelada-gloria.webp"], ["created_at", "2020-04-29 22:34:19.955179"], ["updated_at", "2020-04-29 22:34:19.955179"], ["categoria_id", 3]]
+  [1m[35m (107.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (1.6ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Mermelada de durazno Wong"], ["descripcion", "Mermelada de durazno de la marca Wong"], ["precio", 8.5], ["stock", 500], ["urlimagen", "mermelada-durazno-wong.webp"], ["created_at", "2020-04-29 22:35:15.906112"], ["updated_at", "2020-04-29 22:35:15.906112"], ["categoria_id", 3]]
+  [1m[35m (134.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (4.3ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Agua Cielo sin gas"], ["descripcion", "Agua embotellada de la marca Cielo sin gas 500ml"], ["precio", 1.5], ["stock", 1000], ["urlimagen", "cielo-sin-gas.webp"], ["created_at", "2020-04-29 22:36:58.573248"], ["updated_at", "2020-04-29 22:36:58.573248"], ["categoria_id", 5]]
+  [1m[35m (152.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (2.9ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Cerveza Cusqueña"], ["descripcion", "Cerveza de cebada de la marca Cusqueña"], ["precio", 4.5], ["stock", 800], ["urlimagen", "cerveza-cusquena.webp"], ["created_at", "2020-04-29 22:38:51.670013"], ["updated_at", "2020-04-29 22:38:51.670013"], ["categoria_id", 5]]
+  [1m[35m (146.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (5.1ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Inca Kola"], ["descripcion", "Gaseosa Inca Kola de 1 litro"], ["precio", 6.5], ["stock", 850], ["urlimagen", "incakola-1l.webp"], ["created_at", "2020-04-29 22:40:15.814208"], ["updated_at", "2020-04-29 22:40:15.814208"], ["categoria_id", 5]]
+  [1m[35m (156.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (20.8ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Coca Cola 500ml"], ["descripcion", "Gaseosa Coca Kola de 500 ml"], ["precio", 2.5], ["stock", 450], ["urlimagen", "cocacola-500ml.webp"], ["created_at", "2020-04-29 22:41:32.980968"], ["updated_at", "2020-04-29 22:41:32.980968"], ["categoria_id", 5]]
+  [1m[35m (113.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (5.4ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Jugo de Naranja ECO Fresh 500 ml"], ["descripcion", "Jugo de naranja embotellado de la marca eco fresh"], ["precio", 3.5], ["stock", 350], ["urlimagen", "jugo-naranja-ecofresh.webp"], ["created_at", "2020-04-29 22:42:52.634151"], ["updated_at", "2020-04-29 22:42:52.634151"], ["categoria_id", 5]]
+  [1m[35m (146.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (5.2ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Arroz Costeño 5kg"], ["descripcion", "Arroz graneado de la marca Costeño de 5 kilos"], ["precio", 18.5], ["stock", 250], ["urlimagen", "arroz-costeño-5kg.webp"], ["created_at", "2020-04-29 22:45:54.640793"], ["updated_at", "2020-04-29 22:45:54.640793"], ["categoria_id", 6]]
+  [1m[35m (158.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (1.9ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Arroz Wong 1kg"], ["descripcion", "Arroz superior de la marca Wong de 1 kilo"], ["precio", 5.5], ["stock", 750], ["urlimagen", "arroz-wong-1kg.webp"], ["created_at", "2020-04-29 22:47:32.930528"], ["updated_at", "2020-04-29 22:47:32.930528"], ["categoria_id", 6]]
+  [1m[35m (107.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (42.8ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Stevita"], ["descripcion", "Endulcorante de la marca Stevita"], ["precio", 19.0], ["stock", 450], ["urlimagen", "stevita.webp"], ["created_at", "2020-04-29 22:48:58.798459"], ["updated_at", "2020-04-29 22:48:58.798459"], ["categoria_id", 6]]
+  [1m[35m (174.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (1.9ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Aceite de Oliva extra virgen"], ["descripcion", "Aceite de oliva extra virgen de la marca Calabrian de 500ml"], ["precio", 25.5], ["stock", 250], ["urlimagen", "aceite-oliva-calabrian.webp"], ["created_at", "2020-04-29 22:50:40.136669"], ["updated_at", "2020-04-29 22:50:40.136669"], ["categoria_id", 6]]
+  [1m[35m (165.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (5.1ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Aceite Primor 1L"], ["descripcion", "Aceite de la marca Primor de 1 litro"], ["precio", 9.5], ["stock", 540], ["urlimagen", "aceite-primor-1kg.webp"], ["created_at", "2020-04-29 22:51:52.359838"], ["updated_at", "2020-04-29 22:51:52.359838"], ["categoria_id", 6]]
+  [1m[35m (121.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (5.1ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Ayudin liquido 1.2 litros"], ["descripcion", "Ayudin liquido de la marca Ayudin"], ["precio", 8.7], ["stock", 210], ["urlimagen", "ayudin.webp"], ["created_at", "2020-04-29 22:53:20.303289"], ["updated_at", "2020-04-29 22:53:20.303289"], ["categoria_id", 7]]
+  [1m[35m (245.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (1.9ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Mascarilla N95"], ["descripcion", "Mascarilla de clase N95"], ["precio", 25.5], ["stock", 500], ["urlimagen", "mascarilla-n95.jpg"], ["created_at", "2020-04-29 22:54:39.272812"], ["updated_at", "2020-04-29 22:54:39.272812"], ["categoria_id", 7]]
+  [1m[35m (100.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/categorias/4" for ::1 at 2020-04-29 17:55:02 -0500
+  [1m[35m (8.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategorium Load (0.6ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 4]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 3400.8ms | Allocations: 86297)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4153ms (Views: 4002.3ms | ActiveRecord: 4.1ms | Allocations: 109378)
+
+
+Started GET "/categorias/5" for ::1 at 2020-04-29 17:55:10 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 5]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 31.4ms | Allocations: 5238)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 86ms (Views: 75.9ms | ActiveRecord: 1.0ms | Allocations: 13130)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 17:55:17 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 13.3ms | Allocations: 1482)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 79ms (Views: 64.2ms | ActiveRecord: 1.1ms | Allocations: 9466)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 17:55:19 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.2ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 12.6ms | Allocations: 1482)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 78ms (Views: 59.8ms | ActiveRecord: 0.9ms | Allocations: 9464)
+
+
+Started GET "/categorias/1" for ::1 at 2020-04-29 17:55:20 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 1]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 46.1ms | Allocations: 5985)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 113ms (Views: 96.7ms | ActiveRecord: 1.3ms | Allocations: 13877)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 17:55:21 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1484)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 76ms (Views: 58.7ms | ActiveRecord: 1.1ms | Allocations: 9504)
+
+
+Started GET "/categorias/3" for ::1 at 2020-04-29 17:55:22 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 3]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 63.7ms | Allocations: 9738)
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.9ms | Allocations: 10790)
+
+
+  
+ActionView::Template::Error (The asset "mermelada-durazno-wong.webp" is not present in the asset pipeline.):
+    27:             <div class="card ml-3 mr-3" style="width: 17rem;">
+    28:                 <div class="card-body">
+    29:                     <%= link_to product_path(producto.id) do %>
+    30:                     <img class="card-img-top" <%= image_tag(producto.urlimagen) %> 
+    31:                     <% end %>
+    32:                     <h5 class="titulo-producto mt-4" style="text-align: center;"><%= producto.nombre %></h5>
+    33:                 </div>
+  
+app/views/categorias/show.html.erb:30
+app/views/categorias/show.html.erb:29
+app/views/categorias/show.html.erb:26
+Started GET "/categorias/3" for ::1 at 2020-04-29 17:55:23 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 3]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 47.6ms | Allocations: 9592)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 1.5ms | Allocations: 10687)
+
+
+  
+ActionView::Template::Error (The asset "mermelada-durazno-wong.webp" is not present in the asset pipeline.):
+    27:             <div class="card ml-3 mr-3" style="width: 17rem;">
+    28:                 <div class="card-body">
+    29:                     <%= link_to product_path(producto.id) do %>
+    30:                     <img class="card-img-top" <%= image_tag(producto.urlimagen) %> 
+    31:                     <% end %>
+    32:                     <h5 class="titulo-producto mt-4" style="text-align: center;"><%= producto.nombre %></h5>
+    33:                 </div>
+  
+app/views/categorias/show.html.erb:30
+app/views/categorias/show.html.erb:29
+app/views/categorias/show.html.erb:26
+Started GET "/categorias/3" for ::1 at 2020-04-29 17:56:11 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.7ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 3]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 387.4ms | Allocations: 57334)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 456ms (Views: 444.2ms | ActiveRecord: 1.5ms | Allocations: 65136)
+
+
+Started GET "/categorias/1" for ::1 at 2020-04-29 17:56:14 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 1]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 31.1ms | Allocations: 5991)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 95ms (Views: 82.4ms | ActiveRecord: 0.9ms | Allocations: 13864)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 17:56:15 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1482)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 52.8ms | ActiveRecord: 0.9ms | Allocations: 9474)
+
+
+Started GET "/categorias/3" for ::1 at 2020-04-29 17:56:16 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 3]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 25.3ms | Allocations: 5953)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 86ms (Views: 73.1ms | ActiveRecord: 0.9ms | Allocations: 13827)
+
+
+Started GET "/categorias/4" for ::1 at 2020-04-29 17:56:17 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 4]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 29.1ms | Allocations: 5261)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 104ms (Views: 91.7ms | ActiveRecord: 1.1ms | Allocations: 13129)
+
+
+Started GET "/categorias/5" for ::1 at 2020-04-29 17:56:18 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.7ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 5]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 35.8ms | Allocations: 5241)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 153ms (Views: 138.9ms | ActiveRecord: 1.4ms | Allocations: 13103)
+
+
+Started GET "/categorias/6" for ::1 at 2020-04-29 17:56:19 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (1.1ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 6]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 60.7ms | Allocations: 6799)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 127ms (Views: 113.1ms | ActiveRecord: 2.1ms | Allocations: 14672)
+
+
+Started GET "/categorias/7" for ::1 at 2020-04-29 17:56:20 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 7]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 18.6ms | Allocations: 3101)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 79ms (Views: 66.6ms | ActiveRecord: 0.8ms | Allocations: 10984)
+
+
+Started GET "/categorias/3" for ::1 at 2020-04-29 17:56:21 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 3]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 25.0ms | Allocations: 6239)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 114ms (Views: 101.6ms | ActiveRecord: 1.1ms | Allocations: 14097)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 17:56:21 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (1.8ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1482)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 80ms (Views: 66.6ms | ActiveRecord: 2.4ms | Allocations: 9492)
+
+
+  [1m[35m (5.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (5.5ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Cerdo x kg"], ["descripcion", "Caarne de cerdo San Fernando"], ["precio", 15.5], ["stock", 100], ["urlimagen", "cerdo.webp"], ["created_at", "2020-04-29 22:58:34.557747"], ["updated_at", "2020-04-29 22:58:34.557747"], ["categoria_id", 2]]
+  [1m[35m (125.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (5.5ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "created_at", "updated_at", "categoria_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Alas x 200gr"], ["descripcion", "Alas de Pollo San Fernando"], ["precio", 2.5], ["stock", 200], ["urlimagen", "alas.webp"], ["created_at", "2020-04-29 22:59:12.273719"], ["updated_at", "2020-04-29 22:59:12.273719"], ["categoria_id", 2]]
+  [1m[35m (146.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/categorias/2" for ::1 at 2020-04-29 17:59:32 -0500
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 1168.1ms | Allocations: 82099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1421ms (Views: 1330.5ms | ActiveRecord: 3.7ms | Allocations: 105115)
+
+
+Started GET "/" for ::1 at 2020-04-29 17:59:39 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 159.6ms | Allocations: 38121)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 228ms (Views: 210.1ms | ActiveRecord: 2.5ms | Allocations: 51414)
+
+
+Started GET "/" for ::1 at 2020-04-29 18:01:35 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 156.5ms | Allocations: 38009)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 232ms (Views: 227.3ms | ActiveRecord: 0.7ms | Allocations: 47145)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 18:01:37 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  Rendered categorias/show.html.erb within layouts/application (Duration: 127.0ms | Allocations: 4206)
+Completed 500 Internal Server Error in 152ms (ActiveRecord: 0.3ms | Allocations: 5938)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 18:01:41 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  Rendered categorias/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1443)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.5ms | Allocations: 2478)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="col-12">
+<div class="row">
+    <div class="col-3">
+        <div class="container mt-5 ml-3">
+            <div class="col">   
+                <a class="tienda-categorias mr-2">Tienda</a>
+                <a>|</a>
+                <a class="title-categoria-banner ml-2" style="color: #f01612;"><%= @categoria.nombre %></a>
+            </div>
+            <% @categorias.each do |categoria| %>
+            <div class="col mt-3">
+            <%= link_to categoria_path(categoria.id) do %>
+            <%= categoria.nombre %>
+            <% end %>
+            </div>
+            <% end %>
+        </div>
+    </div>
+
+    <div class="col-9">
+    <div class="container mt-5">
+        <div class="col-12 banner-tema">
+            <h2 class="banner-titulo">Productos</h2>
+        </div>
+        <div class="row">
+        <% @productos.each do |producto| %>
+            <div class="card ml-3 mr-3" style="width: 17rem;">
+                <div class="card-body">
+                    <%= link_to product_path(producto.id) do %>
+                    <img class="card-img-top" <%= image_tag(producto.urlimagen) %> 
+                    <% end %>
+                    <h5 class="titulo-producto mt-4" style="text-align: center;"><%= producto.nombre %></h5>
+                </div>
+                <div class="card-body">
+
+                <%= form_for(@carrito) do |f| %>
+                    <div class="d-flex justify-content-between">
+                        <p class="precio-titulo" style="color: #737373;">Precio: </p>
+                        <p class="precio-numero">S/.<%= producto.precio %></p>  
+                    </div>    
+                    <div class="row">
+                        <div class="col-sm-3 p-0">
+                            <%= f.text_field :cantidad , class:"form-control", style:'height:100%;background-color: #f2f2f2;font-size: .875rem;text-align: center;border:0;font-weight: 600;', value:'1'%>
+                        </div>
+                        <div class="column p-0">
+                            <div class="col-sm-3">
+                            <button type="button" class="btn btn-dark p-0 pl-2 pr-2" style="border:none;"><i class="material-icons md-light md-12">add</i></button>
+                            </div>
+                            <div class="col-sm-3 h-25">
+                            <button type="button" class="btn btn-secondary p-0 pl-2 pr-2" style="border:none;"><i class="material-icons md-light md-12">remove</i></button>
+                            </div>
+                        </div>
+                        <div class="row m-1">
+                        </div>
+                        <%= f.text_field :nombre , class:"form-control", style:'display:none', value:producto.nombre%>
+                        <%= f.text_field :precio , class:"form-control", style:'display:none', value:producto.precio%>
+                        <% if user_signed_in? %>
+                        <%= f.text_field :user , class:"form-control", style:'display:none', value:current_user.id%>
+                        <%= f.submit "AGREGAR",class:'btn text-light p-1 pl-4 pr-4', style:'background-color:  #ec1c24;font-weight: 600;'%>
+                        <% else %>
+                        <button class="btn text-light p-1 pl-4 pr-4 disabled" style="background-color:  #ec1c24;font-weight: 600;" disabled>AGREGAR</button>
+                        <% end %>
+
+                </div>
+            </div>
+        <% end %>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+):
+1:    <div class="col-12">
+2:    <div class="row">
+3:        <div class="col-3">
+4:            <div class="container mt-5 ml-3">
+5:                <div class="col">   
+6:                    <a class="tienda-categorias mr-2">Tienda</a>
+7:                    <a>|</a>
+8:                    <a class="title-categoria-banner ml-2" style="color: #f01612;"><%= @categoria.nombre %></a>
+9:                </div>
+10:                <% @categorias.each do |categoria| %>
+11:                <div class="col mt-3">
+12:                <%= link_to categoria_path(categoria.id) do %>
+13:                <%= categoria.nombre %>
+14:                <% end %>
+15:                </div>
+16:                <% end %>
+17:            </div>
+18:        </div>
+19:    
+20:        <div class="col-9">
+21:        <div class="container mt-5">
+22:            <div class="col-12 banner-tema">
+23:                <h2 class="banner-titulo">Productos</h2>
+24:            </div>
+25:            <div class="row">
+26:            <% @productos.each do |producto| %>
+27:                <div class="card ml-3 mr-3" style="width: 17rem;">
+28:                    <div class="card-body">
+29:                        <%= link_to product_path(producto.id) do %>
+30:                        <img class="card-img-top" <%= image_tag(producto.urlimagen) %> 
+31:                        <% end %>
+32:                        <h5 class="titulo-producto mt-4" style="text-align: center;"><%= producto.nombre %></h5>
+33:                    </div>
+34:                    <div class="card-body">
+35:    
+36:                    <%= form_for(@carrito) do |f| %>
+37:                        <div class="d-flex justify-content-between">
+38:                            <p class="precio-titulo" style="color: #737373;">Precio: </p>
+39:                            <p class="precio-numero">S/.<%= producto.precio %></p>  
+40:                        </div>    
+41:                        <div class="row">
+42:                            <div class="col-sm-3 p-0">
+43:                                <%= f.text_field :cantidad , class:"form-control", style:'height:100%;background-color: #f2f2f2;font-size: .875rem;text-align: center;border:0;font-weight: 600;', value:'1'%>
+44:                            </div>
+45:                            <div class="column p-0">
+46:                                <div class="col-sm-3">
+47:                                <button type="button" class="btn btn-dark p-0 pl-2 pr-2" style="border:none;"><i class="material-icons md-light md-12">add</i></button>
+48:                                </div>
+49:                                <div class="col-sm-3 h-25">
+50:                                <button type="button" class="btn btn-secondary p-0 pl-2 pr-2" style="border:none;"><i class="material-icons md-light md-12">remove</i></button>
+51:                                </div>
+52:                            </div>
+53:                            <div class="row m-1">
+54:                            </div>
+55:                            <%= f.text_field :nombre , class:"form-control", style:'display:none', value:producto.nombre%>
+56:                            <%= f.text_field :precio , class:"form-control", style:'display:none', value:producto.precio%>
+57:                            <% if user_signed_in? %>
+58:                            <%= f.text_field :user , class:"form-control", style:'display:none', value:current_user.id%>
+59:                            <%= f.submit "AGREGAR",class:'btn text-light p-1 pl-4 pr-4', style:'background-color:  #ec1c24;font-weight: 600;'%>
+60:                            <% else %>
+61:                            <button class="btn text-light p-1 pl-4 pr-4 disabled" style="background-color:  #ec1c24;font-weight: 600;" disabled>AGREGAR</button>
+62:                            <% end %>
+63:    
+64:                    </div>
+65:                </div>
+66:            <% end %>
+67:            </div>
+68:        </div>
+69:        </div>
+70:    </div>
+71:    </div>
+  
+app/views/categorias/show.html.erb:73: syntax error, unexpected end-of-input, expecting end
+app/views/categorias/show.html.erb:73: syntax error, unexpected end-of-input, expecting end
+app/views/categorias/show.html.erb:73: syntax error, unexpected end-of-input, expecting end
+app/views/categorias/show.html.erb:73: syntax error, unexpected end-of-input, expecting end
+app/views/categorias/show.html.erb:73: syntax error, unexpected end-of-input, expecting end
+app/views/categorias/show.html.erb:73: syntax error, unexpected end-of-input, expecting end
+Started GET "/categorias/2" for ::1 at 2020-04-29 18:02:09 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  Rendered categorias/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1443)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 4.3ms | Allocations: 12817)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="col-12">
+<div class="row">
+    <div class="col-3">
+        <div class="container mt-5 ml-3">
+            <div class="col">   
+                <a class="tienda-categorias mr-2">Tienda</a>
+                <a>|</a>
+                <a class="title-categoria-banner ml-2" style="color: #f01612;"><%= @categoria.nombre %></a>
+            </div>
+            <% @categorias.each do |categoria| %>
+            <div class="col mt-3">
+            <%= link_to categoria_path(categoria.id) do %>
+            <%= categoria.nombre %>
+            <% end %>
+            </div>
+            <% end %>
+        </div>
+    </div>
+
+    <div class="col-9">
+    <div class="container mt-5">
+        <div class="col-12 banner-tema">
+            <h2 class="banner-titulo">Productos</h2>
+        </div>
+        <div class="row">
+        <% @productos.each do |producto| %>
+            <div class="card ml-3 mr-3" style="width: 17rem;">
+                <div class="card-body">
+                    <%= link_to product_path(producto.id) do %>
+                    <img class="card-img-top" <%= image_tag(producto.urlimagen) %> 
+                    <% end %>
+                    <h5 class="titulo-producto mt-4" style="text-align: center;"><%= producto.nombre %></h5>
+                </div>
+                <div class="card-body">
+
+                <%= form_for(@carrito) do |f| %>
+                    <div class="d-flex justify-content-between">
+                        <p class="precio-titulo" style="color: #737373;">Precio: </p>
+                        <p class="precio-numero">S/.<%= producto.precio %></p>  
+                    </div>    
+                    <div class="row">
+                        <div class="col-sm-3 p-0">
+                            <%= f.text_field :cantidad , class:"form-control", style:'height:100%;background-color: #f2f2f2;font-size: .875rem;text-align: center;border:0;font-weight: 600;', value:'1'%>
+                        </div>
+                        <div class="column p-0">
+                            <div class="col-sm-3">
+                            <button type="button" class="btn btn-dark p-0 pl-2 pr-2" style="border:none;"><i class="material-icons md-light md-12">add</i></button>
+                            </div>
+                            <div class="col-sm-3 h-25">
+                            <button type="button" class="btn btn-secondary p-0 pl-2 pr-2" style="border:none;"><i class="material-icons md-light md-12">remove</i></button>
+                            </div>
+                        </div>
+                        <div class="row m-1">
+                        </div>
+                        <%= f.text_field :nombre , class:"form-control", style:'display:none', value:producto.nombre%>
+                        <%= f.text_field :precio , class:"form-control", style:'display:none', value:producto.precio%>
+                        <% if user_signed_in? %>
+                        <%= f.text_field :user , class:"form-control", style:'display:none', value:current_user.id%>
+                        <%= f.submit "AGREGAR",class:'btn text-light p-1 pl-4 pr-4', style:'background-color:  #ec1c24;font-weight: 600;'%>
+                        <% else %>
+                        <button class="btn text-light p-1 pl-4 pr-4 disabled" style="background-color:  #ec1c24;font-weight: 600;" disabled>AGREGAR</button>
+                        <% end %>
+
+                </div>
+            </div>
+        <% end %>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+):
+1:    <div class="col-12">
+2:    <div class="row">
+3:        <div class="col-3">
+4:            <div class="container mt-5 ml-3">
+5:                <div class="col">   
+6:                    <a class="tienda-categorias mr-2">Tienda</a>
+7:                    <a>|</a>
+8:                    <a class="title-categoria-banner ml-2" style="color: #f01612;"><%= @categoria.nombre %></a>
+9:                </div>
+10:                <% @categorias.each do |categoria| %>
+11:                <div class="col mt-3">
+12:                <%= link_to categoria_path(categoria.id) do %>
+13:                <%= categoria.nombre %>
+14:                <% end %>
+15:                </div>
+16:                <% end %>
+17:            </div>
+18:        </div>
+19:    
+20:        <div class="col-9">
+21:        <div class="container mt-5">
+22:            <div class="col-12 banner-tema">
+23:                <h2 class="banner-titulo">Productos</h2>
+24:            </div>
+25:            <div class="row">
+26:            <% @productos.each do |producto| %>
+27:                <div class="card ml-3 mr-3" style="width: 17rem;">
+28:                    <div class="card-body">
+29:                        <%= link_to product_path(producto.id) do %>
+30:                        <img class="card-img-top" <%= image_tag(producto.urlimagen) %> 
+31:                        <% end %>
+32:                        <h5 class="titulo-producto mt-4" style="text-align: center;"><%= producto.nombre %></h5>
+33:                    </div>
+34:                    <div class="card-body">
+35:    
+36:                    <%= form_for(@carrito) do |f| %>
+37:                        <div class="d-flex justify-content-between">
+38:                            <p class="precio-titulo" style="color: #737373;">Precio: </p>
+39:                            <p class="precio-numero">S/.<%= producto.precio %></p>  
+40:                        </div>    
+41:                        <div class="row">
+42:                            <div class="col-sm-3 p-0">
+43:                                <%= f.text_field :cantidad , class:"form-control", style:'height:100%;background-color: #f2f2f2;font-size: .875rem;text-align: center;border:0;font-weight: 600;', value:'1'%>
+44:                            </div>
+45:                            <div class="column p-0">
+46:                                <div class="col-sm-3">
+47:                                <button type="button" class="btn btn-dark p-0 pl-2 pr-2" style="border:none;"><i class="material-icons md-light md-12">add</i></button>
+48:                                </div>
+49:                                <div class="col-sm-3 h-25">
+50:                                <button type="button" class="btn btn-secondary p-0 pl-2 pr-2" style="border:none;"><i class="material-icons md-light md-12">remove</i></button>
+51:                                </div>
+52:                            </div>
+53:                            <div class="row m-1">
+54:                            </div>
+55:                            <%= f.text_field :nombre , class:"form-control", style:'display:none', value:producto.nombre%>
+56:                            <%= f.text_field :precio , class:"form-control", style:'display:none', value:producto.precio%>
+57:                            <% if user_signed_in? %>
+58:                            <%= f.text_field :user , class:"form-control", style:'display:none', value:current_user.id%>
+59:                            <%= f.submit "AGREGAR",class:'btn text-light p-1 pl-4 pr-4', style:'background-color:  #ec1c24;font-weight: 600;'%>
+60:                            <% else %>
+61:                            <button class="btn text-light p-1 pl-4 pr-4 disabled" style="background-color:  #ec1c24;font-weight: 600;" disabled>AGREGAR</button>
+62:                            <% end %>
+63:    
+64:                    </div>
+65:                </div>
+66:            <% end %>
+67:            </div>
+68:        </div>
+69:        </div>
+70:    </div>
+71:    </div>
+  
+app/views/categorias/show.html.erb:73: syntax error, unexpected end-of-input, expecting end
+app/views/categorias/show.html.erb:73: syntax error, unexpected end-of-input, expecting end
+app/views/categorias/show.html.erb:73: syntax error, unexpected end-of-input, expecting end
+app/views/categorias/show.html.erb:73: syntax error, unexpected end-of-input, expecting end
+app/views/categorias/show.html.erb:73: syntax error, unexpected end-of-input, expecting end
+app/views/categorias/show.html.erb:73: syntax error, unexpected end-of-input, expecting end
+Started GET "/categorias/2" for ::1 at 2020-04-29 18:02:42 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.8ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:11:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  Rendered categorias/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1449)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 2.8ms | Allocations: 7602)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="col-12">
+<div class="row">
+    <div class="col-3">
+        <div class="container mt-5 ml-3">
+            <div class="col">   
+                <a class="tienda-categorias mr-2">Tienda</a>
+                <a>|</a>
+                <a class="title-categoria-banner ml-2" style="color: #f01612;"><%= @categoria.nombre %></a>
+            </div>
+            <% @categorias.each do |categoria| %>
+            <div class="col mt-3">
+            <%= link_to categoria_path(categoria.id) do %>
+            <%= categoria.nombre %>
+            <% end %>
+            </div>
+            <% end %>
+        </div>
+    </div>
+
+    <div class="col-9">
+    <div class="container mt-5">
+        <div class="col-12 banner-tema">
+            <h2 class="banner-titulo">Productos</h2>
+        </div>
+        <div class="row">
+        <% @productos.each do |producto| %>
+            <div class="card ml-3 mr-3" style="width: 17rem;">
+                <div class="card-body">
+                    <%= link_to product_path(producto.id) do %>
+                    <img class="card-img-top" <%= image_tag(producto.urlimagen) %> 
+                    <% end %>
+                    <h5 class="titulo-producto mt-4" style="text-align: center;"><%= producto.nombre %></h5>
+                </div>
+                <div class="card-body">
+
+                <%= form_for(@carrito) do |f| %>
+                    <div class="d-flex justify-content-between">
+                        <p class="precio-titulo" style="color: #737373;">Precio: </p>
+                        <p class="precio-numero">S/.<%= producto.precio %></p>  
+                    </div>    
+                    <div class="row">
+                        <div class="col-sm-3 p-0">
+                            <%= f.text_field :cantidad , class:"form-control", style:'height:100%;background-color: #f2f2f2;font-size: .875rem;text-align: center;border:0;font-weight: 600;', value:'1'%>
+                        </div>
+                        <div class="column p-0">
+                            <div class="col-sm-3">
+                            <button type="button" class="btn btn-dark p-0 pl-2 pr-2" style="border:none;"><i class="material-icons md-light md-12">add</i></button>
+                            </div>
+                            <div class="col-sm-3 h-25">
+                            <button type="button" class="btn btn-secondary p-0 pl-2 pr-2" style="border:none;"><i class="material-icons md-light md-12">remove</i></button>
+                            </div>
+                        </div>
+                        <div class="row m-1">
+                        </div>
+                        <%= f.text_field :nombre , class:"form-control", style:'display:none', value:producto.nombre%>
+                        <%= f.text_field :precio , class:"form-control", style:'display:none', value:producto.precio%>
+                        <% if user_signed_in? %>
+                        <%= f.text_field :user , class:"form-control", style:'display:none', value:current_user.id%>
+                        <%= f.submit "AGREGAR",class:'btn text-light p-1 pl-4 pr-4', style:'background-color:  #ec1c24;font-weight: 600;'%>
+                        <% else %>
+                        <button class="btn text-light p-1 pl-4 pr-4 disabled" style="background-color:  #ec1c24;font-weight: 600;" disabled>AGREGAR</button>
+                        <% end %>
+
+                </div>
+            </div>
+        <% end %>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+):
+1:    <div class="col-12">
+2:    <div class="row">
+3:        <div class="col-3">
+4:            <div class="container mt-5 ml-3">
+5:                <div class="col">   
+6:                    <a class="tienda-categorias mr-2">Tienda</a>
+7:                    <a>|</a>
+8:                    <a class="title-categoria-banner ml-2" style="color: #f01612;"><%= @categoria.nombre %></a>
+9:                </div>
+10:                <% @categorias.each do |categoria| %>
+11:                <div class="col mt-3">
+12:                <%= link_to categoria_path(categoria.id) do %>
+13:                <%= categoria.nombre %>
+14:                <% end %>
+15:                </div>
+16:                <% end %>
+17:            </div>
+18:        </div>
+19:    
+20:        <div class="col-9">
+21:        <div class="container mt-5">
+22:            <div class="col-12 banner-tema">
+23:                <h2 class="banner-titulo">Productos</h2>
+24:            </div>
+25:            <div class="row">
+26:            <% @productos.each do |producto| %>
+27:                <div class="card ml-3 mr-3" style="width: 17rem;">
+28:                    <div class="card-body">
+29:                        <%= link_to product_path(producto.id) do %>
+30:                        <img class="card-img-top" <%= image_tag(producto.urlimagen) %> 
+31:                        <% end %>
+32:                        <h5 class="titulo-producto mt-4" style="text-align: center;"><%= producto.nombre %></h5>
+33:                    </div>
+34:                    <div class="card-body">
+35:    
+36:                    <%= form_for(@carrito) do |f| %>
+37:                        <div class="d-flex justify-content-between">
+38:                            <p class="precio-titulo" style="color: #737373;">Precio: </p>
+39:                            <p class="precio-numero">S/.<%= producto.precio %></p>  
+40:                        </div>    
+41:                        <div class="row">
+42:                            <div class="col-sm-3 p-0">
+43:                                <%= f.text_field :cantidad , class:"form-control", style:'height:100%;background-color: #f2f2f2;font-size: .875rem;text-align: center;border:0;font-weight: 600;', value:'1'%>
+44:                            </div>
+45:                            <div class="column p-0">
+46:                                <div class="col-sm-3">
+47:                                <button type="button" class="btn btn-dark p-0 pl-2 pr-2" style="border:none;"><i class="material-icons md-light md-12">add</i></button>
+48:                                </div>
+49:                                <div class="col-sm-3 h-25">
+50:                                <button type="button" class="btn btn-secondary p-0 pl-2 pr-2" style="border:none;"><i class="material-icons md-light md-12">remove</i></button>
+51:                                </div>
+52:                            </div>
+53:                            <div class="row m-1">
+54:                            </div>
+55:                            <%= f.text_field :nombre , class:"form-control", style:'display:none', value:producto.nombre%>
+56:                            <%= f.text_field :precio , class:"form-control", style:'display:none', value:producto.precio%>
+57:                            <% if user_signed_in? %>
+58:                            <%= f.text_field :user , class:"form-control", style:'display:none', value:current_user.id%>
+59:                            <%= f.submit "AGREGAR",class:'btn text-light p-1 pl-4 pr-4', style:'background-color:  #ec1c24;font-weight: 600;'%>
+60:                            <% else %>
+61:                            <button class="btn text-light p-1 pl-4 pr-4 disabled" style="background-color:  #ec1c24;font-weight: 600;" disabled>AGREGAR</button>
+62:                            <% end %>
+63:    
+64:                    </div>
+65:                </div>
+66:            <% end %>
+67:            </div>
+68:        </div>
+69:        </div>
+70:    </div>
+71:    </div>
+  
+app/views/categorias/show.html.erb:73: syntax error, unexpected end-of-input, expecting end
+app/views/categorias/show.html.erb:73: syntax error, unexpected end-of-input, expecting end
+app/views/categorias/show.html.erb:73: syntax error, unexpected end-of-input, expecting end
+app/views/categorias/show.html.erb:73: syntax error, unexpected end-of-input, expecting end
+app/views/categorias/show.html.erb:73: syntax error, unexpected end-of-input, expecting end
+app/views/categorias/show.html.erb:73: syntax error, unexpected end-of-input, expecting end
+Started GET "/categorias/2" for ::1 at 2020-04-29 18:03:04 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 64.6ms | Allocations: 9165)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 168ms (Views: 124.5ms | ActiveRecord: 6.4ms | Allocations: 28972)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 18:03:06 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 17.3ms | Allocations: 3088)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 83ms (Views: 65.7ms | ActiveRecord: 1.1ms | Allocations: 10991)
+
+
+Started GET "/categorias/1" for ::1 at 2020-04-29 18:03:08 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 1]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 25.3ms | Allocations: 6018)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 89ms (Views: 76.8ms | ActiveRecord: 1.1ms | Allocations: 13924)
+
+
+Started GET "/categorias/3" for ::1 at 2020-04-29 18:03:08 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 3]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 24.2ms | Allocations: 5985)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 88ms (Views: 77.1ms | ActiveRecord: 0.9ms | Allocations: 13890)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 18:03:09 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.2ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.9ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 14.5ms | Allocations: 3086)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 73ms (Views: 61.5ms | ActiveRecord: 1.4ms | Allocations: 10992)
+
+
+Started GET "/categorias/1" for ::1 at 2020-04-29 18:03:10 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 1]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 30.0ms | Allocations: 6017)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 88ms (Views: 73.0ms | ActiveRecord: 1.0ms | Allocations: 13938)
+
+
+Started GET "/categorias/3" for ::1 at 2020-04-29 18:03:11 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 3]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 28.1ms | Allocations: 5985)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 104ms (Views: 86.7ms | ActiveRecord: 0.9ms | Allocations: 13880)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 18:03:11 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 21.8ms | Allocations: 3085)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 104ms (Views: 80.4ms | ActiveRecord: 1.3ms | Allocations: 10980)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 18:03:26 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 31.8ms | Allocations: 3439)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 104ms (Views: 98.0ms | ActiveRecord: 0.9ms | Allocations: 13138)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 18:04:31 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 41.4ms | Allocations: 3828)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 108ms (Views: 100.4ms | ActiveRecord: 0.9ms | Allocations: 13526)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 18:04:46 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 44.1ms | Allocations: 3793)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 120ms (Views: 113.2ms | ActiveRecord: 0.9ms | Allocations: 13490)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 18:05:52 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 44.4ms | Allocations: 3950)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 137ms (Views: 130.0ms | ActiveRecord: 0.9ms | Allocations: 13659)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 18:06:12 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 48.4ms | Allocations: 3961)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 127ms (Views: 121.3ms | ActiveRecord: 1.0ms | Allocations: 13656)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 18:06:38 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 44.4ms | Allocations: 3958)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 126ms (Views: 118.8ms | ActiveRecord: 0.9ms | Allocations: 13647)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 18:07:04 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 58.8ms | Allocations: 4455)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 124ms (Views: 118.4ms | ActiveRecord: 0.9ms | Allocations: 14102)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 18:07:17 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 86.8ms | Allocations: 4459)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 160ms (Views: 149.9ms | ActiveRecord: 1.2ms | Allocations: 14130)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 18:07:19 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 16.9ms | Allocations: 3854)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 82ms (Views: 63.9ms | ActiveRecord: 1.1ms | Allocations: 11713)
+
+
+Started GET "/categorias/3" for ::1 at 2020-04-29 18:07:20 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 3]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 32.1ms | Allocations: 8165)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 102ms (Views: 89.8ms | ActiveRecord: 1.0ms | Allocations: 16014)
+
+
+Started GET "/categorias/1" for ::1 at 2020-04-29 18:07:22 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 1]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 49.4ms | Allocations: 8198)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 107ms (Views: 95.1ms | ActiveRecord: 1.1ms | Allocations: 16072)
+
+
+Started GET "/categorias/1" for ::1 at 2020-04-29 18:07:22 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 1]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 46.3ms | Allocations: 8197)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 101ms (Views: 89.9ms | ActiveRecord: 1.2ms | Allocations: 16052)
+
+
