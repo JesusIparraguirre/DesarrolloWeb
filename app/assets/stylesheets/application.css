@@ -48,6 +48,14 @@
     letter-spacing: 1px;
 }
 
+.titulo-crear{
+    font-size: 11px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+}
+
 .elemento-categoria{
     line-height: 24px;
     font-size: 1.125rem;

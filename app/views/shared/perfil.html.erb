@@ -2,5 +2,12 @@
 <h3 >INFORMACION DE USUARIO</h3>
 </div>
 <div class="col-12">
-    <label for="">Informacion de la cuenta</label>
+    <div class="row">
+        <div class="col">
+        <strong><p>Informacion de la cuenta</p></strong>
+        <p>Nombre</p>
+        <p><%= current_user.email %></p>
+        <p>Cambiar clave</p>
+        </div>
+    </div>
 </div>
