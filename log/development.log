@@ -20696,3 +20696,366 @@ Processing by ProductosController#index as HTML
 Completed 200 OK in 83ms (Views: 79.1ms | ActiveRecord: 1.4ms | Allocations: 10828)
 
 
+Started GET "/" for ::1 at 2020-04-29 13:11:41 -0500
+  [1m[35m (6.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant ProductosController
+Did you mean?  ProductsController):
+  
+activesupport (6.0.2.2) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.2.2) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.2.2) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.2.2) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.2.2) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.2.2) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.2.2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.2.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-04-29 13:11:59 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.9ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 1826.3ms | Allocations: 68504)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2146ms (Views: 2120.3ms | ActiveRecord: 3.8ms | Allocations: 99538)
+
+
+Started GET "/products/1" for ::1 at 2020-04-29 13:12:03 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:8:in `show'
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 6.3ms | Allocations: 971)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 82ms (Views: 57.0ms | ActiveRecord: 1.3ms | Allocations: 9521)
+
+
+Started GET "/products/2" for ::1 at 2020-04-29 13:12:05 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:8:in `show'
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 758)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 55.3ms | ActiveRecord: 0.3ms | Allocations: 8493)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 13:12:06 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:10:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ?[0m  [["id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 17.8ms | Allocations: 2684)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 69.3ms | ActiveRecord: 1.2ms | Allocations: 11255)
+
+
+Started GET "/products/2" for ::1 at 2020-04-29 13:12:07 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:8:in `show'
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 759)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 56.2ms | ActiveRecord: 0.5ms | Allocations: 8521)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 13:12:20 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 215)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 58.2ms | ActiveRecord: 0.0ms | Allocations: 8157)
+
+
+Started GET "/administrador/producto" for ::1 at 2020-04-29 13:12:24 -0500
+Processing by AdministradorController#producto as HTML
+  Rendering administrador/producto.html.erb within layouts/application
+  Rendered administrador/producto.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1178)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 58.1ms | ActiveRecord: 0.0ms | Allocations: 8640)
+
+
+Started GET "/administrador/producto" for ::1 at 2020-04-29 13:12:40 -0500
+Processing by AdministradorController#producto as HTML
+  Rendering administrador/producto.html.erb within layouts/application
+  Rendered administrador/producto.html.erb within layouts/application (Duration: 3.4ms | Allocations: 564)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.0ms | Allocations: 7872)
+
+
+Started POST "/products" for ::1 at 2020-04-29 13:12:52 -0500
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for ProductsController):
+  
+actionpack (6.0.2.2) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/products" for ::1 at 2020-04-29 13:13:27 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"RwLiAb6CRDkroaDbBAErw9rqAEzJzZhBmdshSTH9y2//WVrupBa2dsIGPNNnRYmR8HuJuHBfno7KAG6t9obwAg==", "product"=>{"nombre"=>"PRODUCTO", "categoria"=>"PRODUCTO", "descripcion"=>"PRODUCTO", "precio"=>"5.00", "stock"=>"40", "urlimagen"=>"producto.jpg"}, "commit"=>"AGREGAR PRODUCTO"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1211)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/products_controller.rb:11:in `create'
+Started GET "/administrador/producto" for ::1 at 2020-04-29 13:14:18 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AdministradorController#producto as HTML
+  Rendering administrador/producto.html.erb within layouts/application
+  Rendered administrador/producto.html.erb within layouts/application (Duration: 2.7ms | Allocations: 637)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 86ms (Views: 57.7ms | ActiveRecord: 1.2ms | Allocations: 14793)
+
+
+Started GET "/" for ::1 at 2020-04-29 13:14:25 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (3.9ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 49.0ms | Allocations: 6766)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 130ms (Views: 119.6ms | ActiveRecord: 5.7ms | Allocations: 14855)
+
+
+Started POST "/products" for ::1 at 2020-04-29 13:14:38 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"b8hixXzJbCjdrjd9QNZZ0P08R2s7huqbEfF1rroIuKrXk9oqZl2eZzQJq3UjkvuC163On4IU7FRCKjpKfXODxw==", "product"=>{"nombre"=>"PRODUCTO", "categoria"=>"PRODUCTO", "descripcion"=>"PRODUCTO", "precio"=>"5.00", "stock"=>"40", "urlimagen"=>"producto.jpg"}, "commit"=>"AGREGAR PRODUCTO"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 804)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'marca' for Product.):
+  
+app/controllers/products_controller.rb:11:in `create'
+Started POST "/products" for ::1 at 2020-04-29 13:14:53 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"b8hixXzJbCjdrjd9QNZZ0P08R2s7huqbEfF1rroIuKrXk9oqZl2eZzQJq3UjkvuC163On4IU7FRCKjpKfXODxw==", "product"=>{"nombre"=>"PRODUCTO", "categoria"=>"PRODUCTO", "descripcion"=>"PRODUCTO", "precio"=>"5.00", "stock"=>"40", "urlimagen"=>"producto.jpg"}, "commit"=>"AGREGAR PRODUCTO"}
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.3ms | Allocations: 7412)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'tock' for Product.):
+  
+app/controllers/products_controller.rb:11:in `create'
+Started POST "/products" for ::1 at 2020-04-29 13:15:59 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"b8hixXzJbCjdrjd9QNZZ0P08R2s7huqbEfF1rroIuKrXk9oqZl2eZzQJq3UjkvuC163On4IU7FRCKjpKfXODxw==", "product"=>{"nombre"=>"PRODUCTO", "categoria"=>"1", "descripcion"=>"PRODUCTO", "precio"=>"5.00", "stock"=>"40", "urlimagen"=>"producto.jpg"}, "commit"=>"AGREGAR PRODUCTO"}
+Completed 500 Internal Server Error in 175ms (ActiveRecord: 2.3ms | Allocations: 62484)
+
+
+  
+NoMethodError (undefined method `to' for #<ProductsController:0x000000000ac28c60>
+Did you mean?  t):
+  
+app/controllers/products_controller.rb:17:in `create'
+Started POST "/products" for ::1 at 2020-04-29 13:16:19 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"b8hixXzJbCjdrjd9QNZZ0P08R2s7huqbEfF1rroIuKrXk9oqZl2eZzQJq3UjkvuC163On4IU7FRCKjpKfXODxw==", "product"=>{"nombre"=>"PRODUCTO", "categoria"=>"1", "descripcion"=>"PRODUCTO", "precio"=>"5.00", "stock"=>"40", "urlimagen"=>"producto.jpg"}, "commit"=>"AGREGAR PRODUCTO"}
+Completed 500 Internal Server Error in 195ms (ActiveRecord: 3.9ms | Allocations: 62461)
+
+
+  
+NoMethodError (undefined method `to' for #<ProductsController:0x000000000aac1868>
+Did you mean?  t):
+  
+app/controllers/products_controller.rb:17:in `create'
+Started POST "/products" for ::1 at 2020-04-29 13:16:24 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"b8hixXzJbCjdrjd9QNZZ0P08R2s7huqbEfF1rroIuKrXk9oqZl2eZzQJq3UjkvuC163On4IU7FRCKjpKfXODxw==", "product"=>{"nombre"=>"PRODUCTO", "categoria"=>"1", "descripcion"=>"PRODUCTO", "precio"=>"5.00", "stock"=>"40", "urlimagen"=>"producto.jpg"}, "commit"=>"AGREGAR PRODUCTO"}
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 3.1ms | Allocations: 62469)
+
+
+  
+NoMethodError (undefined method `to' for #<ProductsController:0x0000000007a4eb68>
+Did you mean?  t):
+  
+app/controllers/products_controller.rb:17:in `create'
+Started POST "/products" for ::1 at 2020-04-29 13:16:44 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"m3yzKvPCMxODhL/Qf79AXksQL75LHTb29A4o7fderyQjJwvF6VbBXGojI9gc++IMYYGmSvKPMDmn1WcJMCWUSQ==", "product"=>{"nombre"=>"PRODUCTO", "categoria"=>"PRODUCTO", "descripcion"=>"PRODUCTO", "precio"=>"5.00", "stock"=>"40", "urlimagen"=>"producto.jpg"}, "commit"=>"AGREGAR PRODUCTO"}
+Redirected to http://localhost:3000/products
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.4ms | Allocations: 7684)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/products_controller.rb:17:in `create'
+Started POST "/products" for ::1 at 2020-04-29 13:16:58 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"b8hixXzJbCjdrjd9QNZZ0P08R2s7huqbEfF1rroIuKrXk9oqZl2eZzQJq3UjkvuC163On4IU7FRCKjpKfXODxw==", "product"=>{"nombre"=>"PRODUCTO", "categoria"=>"1", "descripcion"=>"PRODUCTO", "precio"=>"5.00", "stock"=>"40", "urlimagen"=>"producto.jpg"}, "commit"=>"AGREGAR PRODUCTO"}
+Redirected to http://localhost:3000/products
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 892)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/products_controller.rb:17:in `create'
+Started POST "/products" for ::1 at 2020-04-29 13:18:16 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductsController#create as HTML
+  Parameters: {"authenticity_token"=>"m3yzKvPCMxODhL/Qf79AXksQL75LHTb29A4o7fderyQjJwvF6VbBXGojI9gc++IMYYGmSvKPMDmn1WcJMCWUSQ==", "product"=>{"nombre"=>"PRODUCTO", "categoria"=>"PRODUCTO", "descripcion"=>"PRODUCTO", "precio"=>"5.00", "stock"=>"40", "urlimagen"=>"producto.jpg"}, "commit"=>"AGREGAR PRODUCTO"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:17:in `create'
+  [1m[36mProduct Create (18.0ms)[0m  [1m[32mINSERT INTO "products" ("nombre", "descripcion", "precio", "stock", "urlimagen", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "PRODUCTO"], ["descripcion", "PRODUCTO"], ["precio", 5.0], ["stock", 40], ["urlimagen", "producto.jpg"], ["categoria", 0], ["created_at", "2020-04-29 18:18:16.805960"], ["updated_at", "2020-04-29 18:18:16.805960"]]
+  ↳ app/controllers/products_controller.rb:17:in `create'
+  [1m[35m (107.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:17:in `create'
+Redirected to http://localhost:3000/products/4
+Completed 302 Found in 259ms (ActiveRecord: 126.9ms | Allocations: 9362)
+
+
+Started GET "/products/4" for ::1 at 2020-04-29 13:18:17 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:8:in `show'
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 761)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 55.9ms | ActiveRecord: 0.4ms | Allocations: 8828)
+
+
+Started GET "/" for ::1 at 2020-04-29 13:18:32 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (1.1ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 31.7ms | Allocations: 7423)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 83ms (Views: 75.5ms | ActiveRecord: 3.3ms | Allocations: 15330)
+
+
