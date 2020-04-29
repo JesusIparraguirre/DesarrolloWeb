@@ -1,6 +1,7 @@
 class ProductosController < ApplicationController
     def index
         @productos = Product.all
+        @categorias = Categorium.all
     end
     #GET /productos/:id
     def show

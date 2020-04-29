@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'administrador/stock'
   get 'administrador/producto'
   get 'administrador/codigo'
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.
   
   root 'productos#index'

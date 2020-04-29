@@ -36,10 +36,32 @@
 }
 @media only screen and (min-width: 720px) {
     .busc{
-        width: 550px;
+        width: 570px;
     }
 }
 
+.tienda-categorias{
+    color: #000;
+    font-weight: 300;
+    font-family: "Nunito Sans", sans-serif!important;
+    font-size: .75rem;
+    letter-spacing: 1px;
+}
+
+.elemento-categoria{
+    line-height: 24px;
+    font-size: 1.125rem;
+    font-weight: 300;
+    font-family: "Nunito Sans", sans-serif!important;
+    letter-spacing: -0.2px;
+}
+
+.title-categoria-banner{
+    color: #f01612;
+    font-size: .75rem;
+    letter-spacing: 1px;
+    font-family: "Nunito Sans", sans-serif!important;
+}
 
 .titulo-carrito{
     font-size: 1.6875rem;

@@ -1,3 +1,49 @@
 <div class="col-12 bg-light pt-3 pb-3">
-<h3 >ACTUALIZACION DE STOCK</h3>
+<h3 >ACTUALIZACION DE STOCK Y PRECIO</h3>
+</div>
+<div class="col-12 col-sm-12 col-lg-12 col-xl-12">
+    <div class="row">
+        <div class="container">
+            <div class="col-12 mt-3">
+                <table class="table ">
+                    <thead>
+                    <tr class="cabecera">
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Stock</th>
+                        <th scope="col"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+            
+                        <% @productos.each do |producto| %>
+                            <tr>
+                                <td>       
+                                <%= producto.nombre %>     
+                                </td>
+                                <td>   
+                                <input class="form-control" value=<%= producto.precio %>
+                                </td>
+                                <td>   
+                                <input class="form-control" value=<%= producto.stock %>
+                                </td>
+                                <td>   
+                                <button class="btn btn-secondary">ACTUALIZAR</button>
+                                </td>
+                            </tr>
+                        <% end %>  
+                    
+                    </tbody>  
+                </table>
+            </div>
+
+
+            <div class="row mt-2">
+                <div class="col">
+                    <button class="btn btn-dark">ACTUALIZAR TODO</button>
+                    <%= link_to "<button class='btn btn-light'>REGRESAR</button>".html_safe, 'javascript:history.back()' %>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
