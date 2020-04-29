@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources:productos
+  resources:products
   resources:categorias
-
+  resources:carritos
   
   get 'login/index', as: 'login'
 
@@ -22,5 +22,5 @@ Rails.application.routes.draw do
   get 'shared/compras'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.
   
-  root 'productos#index'
+  root 'products#index'
 end

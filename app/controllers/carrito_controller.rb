@@ -1,5 +1,5 @@
 class CarritoController < ApplicationController
     def index
-        @carrito = Carrito.all
+        @carritos = Carrito.all
     end
 end
