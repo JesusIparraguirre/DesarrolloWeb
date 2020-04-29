@@ -128,6 +128,12 @@
           <%= form_for(:user, as: :user, url: registration_path(:user)) do |f| %>
               <label class="mt-0">E-mail</label>
               <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
+              <label class="mt-0">Nombres</label>
+              <%= f.text_field :nombres, autofocus: true, class:"form-control" %>
+              <label class="mt-0">Apellidos</label>
+              <%= f.text_field :apellidos, autofocus: true, class:"form-control" %>
+              <label class="mt-0">Celular</label>
+              <%= f.text_field :celular, autofocus: true, class:"form-control" %>
               <label class="mt-4">Contraseña</label>
               <% if @minimum_password_length %>
               <em>(<%= @minimum_password_length %> characters minimum)</em>

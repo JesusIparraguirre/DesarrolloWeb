@@ -1,5 +1,5 @@
 class SharedController < ApplicationController
     def perfil
-        @usuario = User.all
+        @usuario = User.where(id:current_user.id)
     end
 end

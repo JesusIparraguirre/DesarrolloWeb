@@ -5,9 +5,17 @@
     <div class="row">
         <div class="col">
         <strong><p>Informacion de la cuenta</p></strong>
-        <p>Nombre</p>
-        <p><%= current_user.email %></p>
+
+        <% @usuario.each do |usuariop| %>
+        <p>Nombres</p>
+        <p><%= usuariop.nombres %></p>
+        <p>Apellidos</p>
+        <p><%= usuariop.apellidos %></p>
+        <p>Celular</p>
+        <p><%= usuariop.celular %></p>
         <p>Cambiar clave</p>
+        <% end %>
+
         </div>
     </div>
 </div>
