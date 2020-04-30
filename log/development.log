@@ -29487,3 +29487,2657 @@ Processing by ProductsController#index as HTML
 Completed 200 OK in 181ms (Views: 178.0ms | ActiveRecord: 0.7ms | Allocations: 44897)
 
 
+Started GET "/" for ::1 at 2020-04-29 19:07:49 -0500
+  [1m[35m (33.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 45749.9ms | Allocations: 130278)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+C:/Ruby26-x64/lib/ruby/2.6.0/psych.rb:16:in `require': Interrupt
+	from C:/Ruby26-x64/lib/ruby/2.6.0/psych.rb:16:in `rescue in <top (required)>'
+	from C:/Ruby26-x64/lib/ruby/2.6.0/psych.rb:13:in `<top (required)>'
+	from C:/Ruby26-x64/lib/ruby/2.6.0/yaml.rb:4:in `require'
+	from C:/Ruby26-x64/lib/ruby/2.6.0/yaml.rb:4:in `<top (required)>'
+	from C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/webpacker-4.2.2/lib/webpacker/configuration.rb:1:in `require'
+	from C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/webpacker-4.2.2/lib/webpacker/configuration.rb:1:in `<top (required)>'
+	from C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/webpacker-4.2.2/lib/webpacker.rb:40:in `require'
+	from C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/webpacker-4.2.2/lib/webpacker.rb:40:in `<top (required)>'
+	from ./bin/webpack:12:in `require'
+	from ./bin/webpack:12:in `<main>'
+C:/Ruby26-x64/lib/ruby/2.6.0/psych.rb:14:in `require': cannot load such file -- 2.6/psych.so (LoadError)
+	from C:/Ruby26-x64/lib/ruby/2.6.0/psych.rb:14:in `<top (required)>'
+	from C:/Ruby26-x64/lib/ruby/2.6.0/yaml.rb:4:in `require'
+	from C:/Ruby26-x64/lib/ruby/2.6.0/yaml.rb:4:in `<top (required)>'
+	from C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/webpacker-4.2.2/lib/webpacker/configuration.rb:1:in `require'
+	from C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/webpacker-4.2.2/lib/webpacker/configuration.rb:1:in `<top (required)>'
+	from C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/webpacker-4.2.2/lib/webpacker.rb:40:in `require'
+	from C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/webpacker-4.2.2/lib/webpacker.rb:40:in `<top (required)>'
+	from ./bin/webpack:12:in `require'
+	from ./bin/webpack:12:in `<main>'
+
+Completed 200 OK in 77507ms (Views: 77119.5ms | ActiveRecord: 5.3ms | Allocations: 176918)
+
+
+  [1m[35m (29.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-04-29 19:14:56 -0500
+  [1m[35m (95.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 8111.3ms | Allocations: 63728)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9818ms (Views: 9589.8ms | ActiveRecord: 6.0ms | Allocations: 93486)
+
+
+Started GET "/carritos/index" for ::1 at 2020-04-29 19:15:23 -0500
+Processing by CarritosController#show as HTML
+  Parameters: {"id"=>"index"}
+Completed 500 Internal Server Error in 216ms (ActiveRecord: 0.0ms | Allocations: 1126)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/carritos_controller.rb:11:in `show'
+Started GET "/carritos/index" for ::1 at 2020-04-29 19:16:11 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarritosController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering carritos/show.html.erb within layouts/application
+  [1m[36mCarrito Load (38.9ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" WHERE "carritos"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/carritos/show.html.erb:31
+  Rendered carritos/show.html.erb within layouts/application (Duration: 403.8ms | Allocations: 1557)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 488ms (Views: 440.1ms | ActiveRecord: 39.5ms | Allocations: 10902)
+
+
+Started GET "/carritos/index" for ::1 at 2020-04-29 19:17:29 -0500
+Processing by CarritosController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering carritos/show.html.erb within layouts/application
+  [1m[36mCarrito Load (0.3ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" WHERE "carritos"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/carritos/show.html.erb:30
+  Rendered carritos/show.html.erb within layouts/application (Duration: 109.7ms | Allocations: 985)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 169ms (Views: 165.8ms | ActiveRecord: 0.3ms | Allocations: 10500)
+
+
+Started GET "/carritos/index" for ::1 at 2020-04-29 19:20:10 -0500
+Processing by CarritosController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering carritos/show.html.erb within layouts/application
+  [1m[36mCarrito Load (0.3ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" WHERE "carritos"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/carritos/show.html.erb:30
+  Rendered carritos/show.html.erb within layouts/application (Duration: 108.9ms | Allocations: 993)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 715ms (Views: 710.9ms | ActiveRecord: 0.3ms | Allocations: 10513)
+
+
+Started GET "/carritos/index" for ::1 at 2020-04-29 19:20:43 -0500
+Processing by CarritosController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering carritos/show.html.erb within layouts/application
+  [1m[36mCarrito Load (0.6ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" WHERE "carritos"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/carritos/show.html.erb:30
+  Rendered carritos/show.html.erb within layouts/application (Duration: 47.8ms | Allocations: 997)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 119ms (Views: 115.6ms | ActiveRecord: 0.6ms | Allocations: 10532)
+
+
+Started GET "/carritos/index" for ::1 at 2020-04-29 19:20:56 -0500
+Processing by CarritosController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering carritos/show.html.erb within layouts/application
+  [1m[36mCarrito Load (0.4ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" WHERE "carritos"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/carritos/show.html.erb:30
+  Rendered carritos/show.html.erb within layouts/application (Duration: 46.2ms | Allocations: 993)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 119ms (Views: 111.8ms | ActiveRecord: 0.4ms | Allocations: 10501)
+
+
+Started GET "/carritos/index" for ::1 at 2020-04-29 19:21:10 -0500
+Processing by CarritosController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering carritos/show.html.erb within layouts/application
+  [1m[36mCarrito Load (0.3ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" WHERE "carritos"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/carritos/show.html.erb:30
+  Rendered carritos/show.html.erb within layouts/application (Duration: 30.0ms | Allocations: 1004)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 103ms (Views: 100.2ms | ActiveRecord: 0.3ms | Allocations: 10535)
+
+
+Started GET "/carritos/index" for ::1 at 2020-04-29 19:22:08 -0500
+Processing by CarritosController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering carritos/show.html.erb within layouts/application
+  [1m[36mCarrito Load (0.4ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" WHERE "carritos"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/carritos/show.html.erb:30
+  Rendered carritos/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 992)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 244ms (Views: 240.3ms | ActiveRecord: 0.4ms | Allocations: 10547)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:22:09 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 1110.4ms | Allocations: 41181)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1251ms (Views: 1175.1ms | ActiveRecord: 4.6ms | Allocations: 61061)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:22:25 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 155.2ms | Allocations: 38003)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 364ms (Views: 361.1ms | ActiveRecord: 0.9ms | Allocations: 47370)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:22:35 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.2ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 150.2ms | Allocations: 38012)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1717ms (Views: 1713.7ms | ActiveRecord: 0.6ms | Allocations: 47408)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:22:59 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (6.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 181.5ms | Allocations: 38000)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 478ms (Views: 464.8ms | ActiveRecord: 6.5ms | Allocations: 47400)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:23:14 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (2.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 169.9ms | Allocations: 38001)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 408ms (Views: 401.8ms | ActiveRecord: 2.8ms | Allocations: 47401)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:23:18 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 20.5ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 94ms (Views: 91.8ms | ActiveRecord: 0.0ms | Allocations: 8476)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:23:31 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 55.8ms | ActiveRecord: 0.0ms | Allocations: 7633)
+
+
+Started GET "/administrador/stock" for ::1 at 2020-04-29 19:23:32 -0500
+Processing by AdministradorController#stock as HTML
+  Rendering administrador/stock.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/administrador/stock.html.erb:19
+  Rendered administrador/stock.html.erb within layouts/application (Duration: 101.4ms | Allocations: 1551)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 189ms (Views: 185.4ms | ActiveRecord: 0.6ms | Allocations: 9311)
+
+
+Started GET "/administrador/producto" for ::1 at 2020-04-29 19:23:34 -0500
+Processing by AdministradorController#producto as HTML
+  Rendering administrador/producto.html.erb within layouts/application
+  Rendered administrador/producto.html.erb within layouts/application (Duration: 403.8ms | Allocations: 1160)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 505ms (Views: 500.9ms | ActiveRecord: 0.0ms | Allocations: 8910)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:25:11 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 35.9ms | Allocations: 282)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 609ms (Views: 605.5ms | ActiveRecord: 0.0ms | Allocations: 9682)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:25:51 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 285)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.0ms | Allocations: 9689)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:25:52 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 269.7ms | Allocations: 38001)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 355ms (Views: 350.6ms | ActiveRecord: 1.1ms | Allocations: 46149)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:26:44 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.2ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 128.7ms | Allocations: 38002)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 385ms (Views: 379.1ms | ActiveRecord: 0.8ms | Allocations: 47401)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:27:09 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 156.7ms | Allocations: 37998)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 339ms (Views: 334.9ms | ActiveRecord: 0.9ms | Allocations: 47412)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:27:12 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 280)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 54.5ms | ActiveRecord: 0.0ms | Allocations: 8475)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:27:24 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 194.8ms | Allocations: 37423)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 249ms (Views: 246.9ms | ActiveRecord: 0.7ms | Allocations: 44936)
+
+
+Started GET "/categorias/1" for ::1 at 2020-04-29 19:27:38 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategorium Load (16.1ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 1]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 123.1ms | Allocations: 8843)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 215ms (Views: 189.2ms | ActiveRecord: 16.8ms | Allocations: 17692)
+
+
+Started GET "/categorias/administrador/index" for ::1 at 2020-04-29 19:27:56 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/categorias/administrador/index"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/categorias/1" for ::1 at 2020-04-29 19:28:02 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.2ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 1]]
+  ↳ app/views/categorias/show.html.erb:26
+  Rendered categorias/show.html.erb within layouts/application (Duration: 36.4ms | Allocations: 8198)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 89ms (Views: 84.6ms | ActiveRecord: 0.8ms | Allocations: 16256)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:28:04 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 145.0ms | Allocations: 37423)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 189ms (Views: 187.4ms | ActiveRecord: 0.7ms | Allocations: 44940)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:28:05 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 86)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 82ms (Views: 81.0ms | ActiveRecord: 0.0ms | Allocations: 7652)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:29:18 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 97.7ms | Allocations: 967)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 166ms (Views: 164.0ms | ActiveRecord: 0.0ms | Allocations: 10364)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:29:23 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 957)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 132ms (Views: 130.3ms | ActiveRecord: 0.0ms | Allocations: 10371)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:30:02 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 962)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 88ms (Views: 84.2ms | ActiveRecord: 0.0ms | Allocations: 10365)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:30:13 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 87.0ms | Allocations: 960)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 170ms (Views: 167.2ms | ActiveRecord: 0.0ms | Allocations: 10361)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:30:36 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 98.9ms | Allocations: 959)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 176ms (Views: 172.9ms | ActiveRecord: 0.0ms | Allocations: 10358)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:30:41 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 75.8ms | Allocations: 959)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 140ms (Views: 137.6ms | ActiveRecord: 0.0ms | Allocations: 10382)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:30:47 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 77.2ms | Allocations: 959)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 144ms (Views: 139.2ms | ActiveRecord: 0.0ms | Allocations: 10368)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:31:06 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 958)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 85ms (Views: 82.7ms | ActiveRecord: 0.0ms | Allocations: 10351)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:31:07 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 153.0ms | Allocations: 37998)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 204ms (Views: 201.2ms | ActiveRecord: 0.7ms | Allocations: 46186)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:31:54 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 176.5ms | Allocations: 38068)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 238ms (Views: 234.9ms | ActiveRecord: 0.8ms | Allocations: 47489)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:31:56 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 125.9ms | Allocations: 957)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 191ms (Views: 188.1ms | ActiveRecord: 0.0ms | Allocations: 9151)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:32:28 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 50.7ms | Allocations: 895)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 145ms (Views: 139.4ms | ActiveRecord: 0.0ms | Allocations: 10314)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:32:44 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 81.3ms | Allocations: 901)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 143ms (Views: 139.7ms | ActiveRecord: 0.0ms | Allocations: 10302)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:32:53 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 53.3ms | Allocations: 896)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 115ms (Views: 109.4ms | ActiveRecord: 0.0ms | Allocations: 10285)
+
+
+Started GET "/administrador/producto" for ::1 at 2020-04-29 19:33:20 -0500
+Processing by AdministradorController#producto as HTML
+  Rendering administrador/producto.html.erb within layouts/application
+  Rendered administrador/producto.html.erb within layouts/application (Duration: 122.6ms | Allocations: 1095)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 233ms (Views: 207.4ms | ActiveRecord: 0.0ms | Allocations: 10578)
+
+
+Started GET "/administrador/producto" for ::1 at 2020-04-29 19:34:08 -0500
+Processing by AdministradorController#producto as HTML
+  Rendering administrador/producto.html.erb within layouts/application
+  Rendered administrador/producto.html.erb within layouts/application (Duration: 110.4ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 187ms (Views: 184.4ms | ActiveRecord: 0.0ms | Allocations: 10563)
+
+
+Started GET "/administrador/producto" for ::1 at 2020-04-29 19:34:45 -0500
+Processing by AdministradorController#producto as HTML
+  Rendering administrador/producto.html.erb within layouts/application
+  Rendered administrador/producto.html.erb within layouts/application (Duration: 124.8ms | Allocations: 1687)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 210ms (Views: 205.7ms | ActiveRecord: 0.0ms | Allocations: 11150)
+
+
+Started GET "/administrador/stock" for ::1 at 2020-04-29 19:34:49 -0500
+Processing by AdministradorController#stock as HTML
+  Rendering administrador/stock.html.erb within layouts/application
+  Rendered administrador/stock.html.erb within layouts/application (Duration: 42.6ms | Allocations: 1046)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 110ms (Views: 105.4ms | ActiveRecord: 0.0ms | Allocations: 8751)
+
+
+Started GET "/administrador/stock" for ::1 at 2020-04-29 19:35:07 -0500
+Processing by AdministradorController#stock as HTML
+  Rendering administrador/stock.html.erb within layouts/application
+  Rendered administrador/stock.html.erb within layouts/application (Duration: 99.3ms | Allocations: 983)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 207ms (Views: 205.0ms | ActiveRecord: 0.0ms | Allocations: 10444)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:35:30 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.6ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 150.7ms | Allocations: 38002)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 216ms (Views: 211.3ms | ActiveRecord: 1.1ms | Allocations: 46188)
+
+
+Started GET "/products/1" for ::1 at 2020-04-29 19:35:31 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 46.6ms | Allocations: 1053)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 122ms (Views: 115.4ms | ActiveRecord: 0.6ms | Allocations: 9342)
+
+
+Started GET "/carritos/index" for ::1 at 2020-04-29 19:35:38 -0500
+Processing by CarritosController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering carritos/show.html.erb within layouts/application
+  [1m[36mCarrito Load (0.2ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" WHERE "carritos"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/carritos/show.html.erb:30
+  Rendered carritos/show.html.erb within layouts/application (Duration: 45.2ms | Allocations: 997)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 103ms (Views: 100.5ms | ActiveRecord: 0.2ms | Allocations: 9355)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:36:20 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 170.9ms | Allocations: 37998)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 264ms (Views: 260.3ms | ActiveRecord: 0.6ms | Allocations: 47388)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:36:22 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 66.0ms | Allocations: 902)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 129ms (Views: 126.2ms | ActiveRecord: 0.0ms | Allocations: 9095)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:37:36 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 69.5ms | Allocations: 941)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 139ms (Views: 131.4ms | ActiveRecord: 0.0ms | Allocations: 10337)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:37:41 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 135.1ms | Allocations: 37998)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 185ms (Views: 182.2ms | ActiveRecord: 0.7ms | Allocations: 46160)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:37:56 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 544)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 95ms (Views: 93.6ms | ActiveRecord: 0.0ms | Allocations: 8083)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:38:08 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 533)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.0ms | Allocations: 8060)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-04-29 19:38:12 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"8mTwAs6LSQxqBMeDBsQvPWPlHz9D5dvSxcFs2OfoX7NWLLpJ99Lri8qVgX4VdO9SxuXWZXOlufkbTTNm60ww1A==", "user"=>{"email"=>"jesus@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Iniciar sesion"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "jesus@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 622ms (ActiveRecord: 2.5ms | Allocations: 14958)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:38:13 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 148.9ms | Allocations: 40847)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 198ms (Views: 196.3ms | ActiveRecord: 1.0ms | Allocations: 48397)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:39:26 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.7ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 225.6ms | Allocations: 41402)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 509ms (Views: 503.1ms | ActiveRecord: 2.2ms | Allocations: 50858)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:39:29 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/administrador/index.html.erb:1
+  Rendered administrador/index.html.erb within layouts/application (Duration: 17.2ms | Allocations: 1306)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 88ms (Views: 85.1ms | ActiveRecord: 0.4ms | Allocations: 9568)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:39:34 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/administrador/index.html.erb:1
+  Rendered administrador/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 902)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.2ms | Allocations: 8497)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:39:37 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.2ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 135.5ms | Allocations: 40820)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 193ms (Views: 190.4ms | ActiveRecord: 0.9ms | Allocations: 48365)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:39:42 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 146.8ms | Allocations: 40807)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 210ms (Views: 207.3ms | ActiveRecord: 1.0ms | Allocations: 48343)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:39:42 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.2ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 152.8ms | Allocations: 40806)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 200ms (Views: 197.3ms | ActiveRecord: 0.8ms | Allocations: 48356)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:39:44 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 243.7ms | Allocations: 40870)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 300ms (Views: 297.4ms | ActiveRecord: 1.0ms | Allocations: 48424)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:39:45 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 132.3ms | Allocations: 40832)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 189ms (Views: 186.8ms | ActiveRecord: 1.3ms | Allocations: 48394)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:39:48 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 134.7ms | Allocations: 40806)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 186ms (Views: 183.8ms | ActiveRecord: 1.2ms | Allocations: 48370)
+
+
+Started GET "/carritos/index" for ::1 at 2020-04-29 19:39:54 -0500
+Processing by CarritosController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/carritos_controller.rb:6:in `show'
+  Rendering carritos/show.html.erb within layouts/application
+  [1m[36mCarrito Load (0.3ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" WHERE "carritos"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/carritos/show.html.erb:30
+  Rendered carritos/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 999)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 60.8ms | ActiveRecord: 0.5ms | Allocations: 10140)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:39:56 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.9ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (1.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 138.9ms | Allocations: 40819)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 199ms (Views: 194.2ms | ActiveRecord: 2.9ms | Allocations: 48384)
+
+
+Started POST "/carritos" for ::1 at 2020-04-29 19:40:01 -0500
+Processing by CarritosController#create as HTML
+  Parameters: {"authenticity_token"=>"HOZJYANsZbRelYok4Ib1WcY9LXpKHFO83LZWhYClcNvk+oJ9iZXPeVAsqGXAEnAyYMWamsuPY+IeFTAsx4UMUw==", "carrito"=>{"cantidad"=>"2", "nombre"=>"Leche gloria", "precio"=>"3.5", "user"=>"1"}, "commit"=>"AGREGAR"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/carritos_controller.rb:23:in `create'
+  [1m[36mCarrito Create (43.0ms)[0m  [1m[32mINSERT INTO "carritos" ("nombre", "precio", "cantidad", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "Leche gloria"], ["precio", 3.5], ["cantidad", 2], ["created_at", "2020-04-30 00:40:01.241529"], ["updated_at", "2020-04-30 00:40:01.241529"], ["user_id", 1]]
+  ↳ app/controllers/carritos_controller.rb:23:in `create'
+  [1m[35m (188.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/carritos_controller.rb:23:in `create'
+Redirected to http://localhost:3000/carritos/12
+Completed 302 Found in 289ms (ActiveRecord: 232.0ms | Allocations: 2729)
+
+
+Started GET "/carritos/12" for ::1 at 2020-04-29 19:40:01 -0500
+Processing by CarritosController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/carritos_controller.rb:6:in `show'
+  Rendering carritos/show.html.erb within layouts/application
+  [1m[36mCarrito Load (0.2ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" WHERE "carritos"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/carritos/show.html.erb:30
+  Rendered carritos/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 658)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 70ms (Views: 65.2ms | ActiveRecord: 0.6ms | Allocations: 9124)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:40:27 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.6ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 263.9ms | Allocations: 40806)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 309ms (Views: 305.5ms | ActiveRecord: 1.8ms | Allocations: 48372)
+
+
+Started POST "/carritos" for ::1 at 2020-04-29 19:40:30 -0500
+Processing by CarritosController#create as HTML
+  Parameters: {"authenticity_token"=>"uPqTIfR8wcKWpIDsifs15VRQLn6vBGM6iERqV2nRBnpA5lg8foVrD5gdoq2pb7CO8qiZni6XU2RK5wz+LvF68g==", "carrito"=>{"cantidad"=>"4", "nombre"=>"Leche condensada nestle", "precio"=>"4.9", "user"=>"1"}, "commit"=>"AGREGAR"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/carritos_controller.rb:23:in `create'
+  [1m[36mCarrito Create (1.9ms)[0m  [1m[32mINSERT INTO "carritos" ("nombre", "precio", "cantidad", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "Leche condensada nestle"], ["precio", 4.9], ["cantidad", 4], ["created_at", "2020-04-30 00:40:30.578879"], ["updated_at", "2020-04-30 00:40:30.578879"], ["user_id", 1]]
+  ↳ app/controllers/carritos_controller.rb:23:in `create'
+  [1m[35m (126.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/carritos_controller.rb:23:in `create'
+Redirected to http://localhost:3000/carritos/13
+Completed 302 Found in 144ms (ActiveRecord: 128.6ms | Allocations: 2525)
+
+
+Started GET "/carritos/13" for ::1 at 2020-04-29 19:40:30 -0500
+Processing by CarritosController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/carritos_controller.rb:6:in `show'
+  Rendering carritos/show.html.erb within layouts/application
+  [1m[36mCarrito Load (0.5ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" WHERE "carritos"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/carritos/show.html.erb:30
+  Rendered carritos/show.html.erb within layouts/application (Duration: 7.8ms | Allocations: 668)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 70.7ms | ActiveRecord: 0.7ms | Allocations: 9143)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:41:08 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 154.8ms | Allocations: 40806)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 203ms (Views: 201.2ms | ActiveRecord: 1.0ms | Allocations: 48350)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 19:41:10 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categorias/show.html.erb:57
+  Rendered categorias/show.html.erb within layouts/application (Duration: 31.9ms | Allocations: 5434)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 92ms (Views: 86.3ms | ActiveRecord: 1.1ms | Allocations: 14201)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 19:41:19 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.2ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categorias/show.html.erb:57
+  Rendered categorias/show.html.erb within layouts/application (Duration: 20.7ms | Allocations: 4827)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 79ms (Views: 74.0ms | ActiveRecord: 1.1ms | Allocations: 12903)
+
+
+Started GET "/categorias/3" for ::1 at 2020-04-29 19:41:21 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategorium Load (0.2ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 3]]
+  ↳ app/views/categorias/show.html.erb:26
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categorias/show.html.erb:57
+  Rendered categorias/show.html.erb within layouts/application (Duration: 44.9ms | Allocations: 9454)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 126ms (Views: 121.2ms | ActiveRecord: 1.7ms | Allocations: 17539)
+
+
+Started GET "/categorias/shared/perfil" for ::1 at 2020-04-29 19:41:42 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/categorias/shared/perfil"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/categorias/3" for ::1 at 2020-04-29 19:41:48 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.2ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 3]]
+  ↳ app/views/categorias/show.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categorias/show.html.erb:57
+  Rendered categorias/show.html.erb within layouts/application (Duration: 104.7ms | Allocations: 9455)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 498ms (Views: 494.3ms | ActiveRecord: 1.2ms | Allocations: 17547)
+
+
+Started GET "/categorias/2" for ::1 at 2020-04-29 19:41:49 -0500
+Processing by CategoriasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria" WHERE "categoria"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/categorias_controller.rb:12:in `show'
+  Rendering categorias/show.html.erb within layouts/application
+  [1m[36mCategorium Load (0.2ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/categorias/show.html.erb:10
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."categoria_id" = ?[0m  [["categoria_id", 2]]
+  ↳ app/views/categorias/show.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categorias/show.html.erb:57
+  Rendered categorias/show.html.erb within layouts/application (Duration: 20.1ms | Allocations: 4826)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 70.2ms | ActiveRecord: 1.1ms | Allocations: 12903)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:41:49 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 1281.1ms | Allocations: 40820)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1384ms (Views: 1382.0ms | ActiveRecord: 1.0ms | Allocations: 48393)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 19:43:19 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/administrador/index.html.erb:1
+  Rendered administrador/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 903)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.3ms | Allocations: 8521)
+
+
+Started GET "/administrador/producto" for ::1 at 2020-04-29 19:43:21 -0500
+Processing by AdministradorController#producto as HTML
+  Rendering administrador/producto.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/administrador/producto.html.erb:1
+  Rendered administrador/producto.html.erb within layouts/application (Duration: 145.3ms | Allocations: 2231)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 192ms (Views: 189.0ms | ActiveRecord: 0.3ms | Allocations: 10018)
+
+
+Started GET "/administrador/stock" for ::1 at 2020-04-29 19:43:33 -0500
+Processing by AdministradorController#stock as HTML
+  Rendering administrador/stock.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/administrador/stock.html.erb:1
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/administrador/stock.html.erb:20
+  Rendered administrador/stock.html.erb within layouts/application (Duration: 64.1ms | Allocations: 2648)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 110ms (Views: 106.4ms | ActiveRecord: 0.8ms | Allocations: 10421)
+
+
+Started GET "/administrador/codigo" for ::1 at 2020-04-29 19:43:52 -0500
+Processing by AdministradorController#codigo as HTML
+  Rendering administrador/codigo.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/administrador/codigo.html.erb:1
+  Rendered administrador/codigo.html.erb within layouts/application (Duration: 65.3ms | Allocations: 1231)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 118ms (Views: 115.6ms | ActiveRecord: 0.2ms | Allocations: 8952)
+
+
+  [1m[35m (18.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "admin@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.6ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "created_at", "updated_at", "email", "encrypted_password", "apellidos", "rol") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "admin"], ["created_at", "2020-04-30 00:48:21.812144"], ["updated_at", "2020-04-30 00:48:21.812144"], ["email", "admin@gmail.com"], ["encrypted_password", "$2a$11$VtP1lAehzROlFuicJjPoB.vPV03juBDpcQksHitlGN5yD/pi3U/d2"], ["apellidos", "admin"], ["rol", 1]]
+  [1m[35m (127.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "cliente@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "created_at", "updated_at", "email", "encrypted_password", "apellidos", "rol") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "cliente"], ["created_at", "2020-04-30 00:48:56.000219"], ["updated_at", "2020-04-30 00:48:56.000219"], ["email", "cliente@gmail.com"], ["encrypted_password", "$2a$11$eKHDXegQkdL7XOe3rjeE6OGnURqkuaseIAq/YrjeW8VDYdZCI3gHe"], ["apellidos", "admin"], ["rol", 2]]
+  [1m[35m (92.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "empleado@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "created_at", "updated_at", "email", "encrypted_password", "apellidos", "celular", "rol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "empleado"], ["created_at", "2020-04-30 00:53:11.807235"], ["updated_at", "2020-04-30 00:53:11.807235"], ["email", "empleado@gmail.com"], ["encrypted_password", "$2a$11$LKul4fG1uI3s0RDMO.iyw.aSkJbVq8wzn9chQSLgMLe6W41NAwf/W"], ["apellidos", "empleado"], ["celular", "999999"], ["rol", 2]]
+  [1m[35m (143.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "cliente@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "cliente1@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("nombre", "created_at", "updated_at", "email", "encrypted_password", "apellidos", "celular", "rol") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "cliente"], ["created_at", "2020-04-30 00:54:06.343857"], ["updated_at", "2020-04-30 00:54:06.343857"], ["email", "cliente1@gmail.com"], ["encrypted_password", "$2a$11$QEllUQj8/i04hcol44X2q.dY90oKfAfNjvMdRxGsOusYR4SmJEMdK"], ["apellidos", "cliente"], ["celular", "999999"], ["rol", 3]]
+  [1m[35m (87.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2020-04-29 19:58:04 -0500
+  [1m[35m (27.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 8852.3ms | Allocations: 77446)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11446ms (Views: 11284.3ms | ActiveRecord: 7.2ms | Allocations: 107331)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:59:03 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 195.6ms | Allocations: 41407)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 507ms (Views: 501.5ms | ActiveRecord: 1.3ms | Allocations: 50902)
+
+
+Started GET "/" for ::1 at 2020-04-29 19:59:07 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.2ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 152.5ms | Allocations: 40825)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 211ms (Views: 208.9ms | ActiveRecord: 0.8ms | Allocations: 48405)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 20:00:32 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/administrador/index.html.erb:1
+  Rendered administrador/index.html.erb within layouts/application (Duration: 196.1ms | Allocations: 1318)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 573ms (Views: 570.3ms | ActiveRecord: 0.3ms | Allocations: 10862)
+
+
+Started GET "/administrador/codigo" for ::1 at 2020-04-29 20:00:41 -0500
+Processing by AdministradorController#codigo as HTML
+  Rendering administrador/codigo.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/administrador/codigo.html.erb:1
+  Rendered administrador/codigo.html.erb within layouts/application (Duration: 22.8ms | Allocations: 1233)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 88ms (Views: 84.7ms | ActiveRecord: 0.3ms | Allocations: 8958)
+
+
+Started GET "/administrador/stock" for ::1 at 2020-04-29 20:00:45 -0500
+Processing by AdministradorController#stock as HTML
+  Rendering administrador/stock.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/administrador/stock.html.erb:1
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/administrador/stock.html.erb:20
+  Rendered administrador/stock.html.erb within layouts/application (Duration: 47.0ms | Allocations: 2650)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 107ms (Views: 100.9ms | ActiveRecord: 0.9ms | Allocations: 10434)
+
+
+Started GET "/administrador/producto" for ::1 at 2020-04-29 20:00:52 -0500
+Processing by AdministradorController#producto as HTML
+  Rendering administrador/producto.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/administrador/producto.html.erb:1
+  Rendered administrador/producto.html.erb within layouts/application (Duration: 206.3ms | Allocations: 2427)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 258ms (Views: 254.4ms | ActiveRecord: 0.2ms | Allocations: 10206)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:01:05 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 216.4ms | Allocations: 41373)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 276ms (Views: 272.3ms | ActiveRecord: 1.1ms | Allocations: 49623)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:01:45 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 166.6ms | Allocations: 41399)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 425ms (Views: 420.6ms | ActiveRecord: 1.0ms | Allocations: 50926)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 20:02:08 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/administrador/index.html.erb:1
+  Rendered administrador/index.html.erb within layouts/application (Duration: 27.6ms | Allocations: 1299)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 84ms (Views: 81.5ms | ActiveRecord: 0.3ms | Allocations: 9562)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:02:59 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 290.2ms | Allocations: 41439)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 709ms (Views: 698.7ms | ActiveRecord: 7.7ms | Allocations: 50913)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:04:25 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (2.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 242.5ms | Allocations: 41438)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 314ms (Views: 307.1ms | ActiveRecord: 2.8ms | Allocations: 50917)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:04:44 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 173.7ms | Allocations: 41437)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 251ms (Views: 246.9ms | ActiveRecord: 1.0ms | Allocations: 50906)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:04:54 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 251.0ms | Allocations: 41438)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 333ms (Views: 329.5ms | ActiveRecord: 0.9ms | Allocations: 50919)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:05:01 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 211.9ms | Allocations: 41438)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 291ms (Views: 287.4ms | ActiveRecord: 0.9ms | Allocations: 50913)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:06:39 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 268.6ms | Allocations: 41442)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCarrito Load (0.4ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.0ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.0ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.4ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.0ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.0ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.0ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.0ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+Completed 500 Internal Server Error in 1687ms (ActiveRecord: 2.1ms | Allocations: 240188)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_current' for #<#<Class:0x000000000a954c78>:0x000000000a95ede0>):
+    33:         <li class="nav-item">
+    34:         <%= link_to "<i class='material-icons md-light'>shopping_cart</i>".html_safe, "/carritos/index", class:"navbar-brand ml-4 mr-2" %>
+    35:         </li>
+    36:         <% if user_signed_in? && user_current.rol=1%>
+    37:         <li class="nav-item dropdown">
+    38:           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    39:             <i class="material-icons md-light">account_circle</i>
+  
+app/views/layouts/application.html.erb:36
+Started GET "/" for ::1 at 2020-04-29 20:06:55 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 169.2ms | Allocations: 41486)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCarrito Load (0.3ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.0ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.0ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.0ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.0ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.0ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.0ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.0ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+Completed 500 Internal Server Error in 1203ms (ActiveRecord: 1.3ms | Allocations: 239609)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_current' for #<#<Class:0x00000000095b6608>:0x00000000095b41f0>):
+    33:         <li class="nav-item">
+    34:         <%= link_to "<i class='material-icons md-light'>shopping_cart</i>".html_safe, "/carritos/index", class:"navbar-brand ml-4 mr-2" %>
+    35:         </li>
+    36:         <% if user_signed_in? && user_current.rol==1%>
+    37:         <li class="nav-item dropdown">
+    38:           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    39:             <i class="material-icons md-light">account_circle</i>
+  
+app/views/layouts/application.html.erb:36
+Started GET "/" for ::1 at 2020-04-29 20:07:10 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 164.5ms | Allocations: 41436)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCarrito Load (0.3ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.0ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.0ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.1ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.0ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.0ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.0ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Carrito Load (0.0ms)[0m  [1m[34mSELECT "carritos".* FROM "carritos" LIMIT ?[0m  [["LIMIT", 11]]
+Completed 500 Internal Server Error in 1365ms (ActiveRecord: 1.7ms | Allocations: 239434)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_current' for #<#<Class:0x0000000008c61828>:0x0000000008c78258>):
+    33:         <li class="nav-item">
+    34:         <%= link_to "<i class='material-icons md-light'>shopping_cart</i>".html_safe, "/carritos/index", class:"navbar-brand ml-4 mr-2" %>
+    35:         </li>
+    36:         <% if user_signed_in? && user_current.rol== (1)%>
+    37:         <li class="nav-item dropdown">
+    38:           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    39:             <i class="material-icons md-light">account_circle</i>
+  
+app/views/layouts/application.html.erb:36
+Started GET "/" for ::1 at 2020-04-29 20:09:40 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 194.1ms | Allocations: 41437)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 418ms (Views: 414.8ms | ActiveRecord: 0.9ms | Allocations: 50915)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:10:04 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 163.8ms | Allocations: 41437)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 425ms (Views: 421.2ms | ActiveRecord: 1.0ms | Allocations: 50902)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:12:37 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 221.1ms | Allocations: 53326)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 410ms (Views: 351.1ms | ActiveRecord: 6.9ms | Allocations: 73564)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:14:04 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 282.4ms | Allocations: 41442)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 515ms (Views: 510.9ms | ActiveRecord: 1.2ms | Allocations: 50927)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:14:11 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 212.2ms | Allocations: 41438)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 486ms (ActiveRecord: 1.2ms | Allocations: 50741)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    34:         <%= link_to "<i class='material-icons md-light'>shopping_cart</i>".html_safe, "/carritos/index", class:"navbar-brand ml-4 mr-2" %>
+    35:         </li>
+    36:         <% if user_signed_in? && %>
+    37:         <%= @usuario.email %>
+    38:         <li class="nav-item dropdown">
+    39:           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    40:             <i class="material-icons md-light">account_circle</i>
+  
+app/views/layouts/application.html.erb:37
+Started GET "/" for ::1 at 2020-04-29 20:14:51 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 275.9ms | Allocations: 53965)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 534ms (ActiveRecord: 9.0ms | Allocations: 75695)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    34:         <%= link_to "<i class='material-icons md-light'>shopping_cart</i>".html_safe, "/carritos/index", class:"navbar-brand ml-4 mr-2" %>
+    35:         </li>
+    36:         <% if user_signed_in? && %>
+    37:         <%= @usuario.email %>
+    38:         <li class="nav-item dropdown">
+    39:           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    40:             <i class="material-icons md-light">account_circle</i>
+  
+app/views/layouts/application.html.erb:37
+Started GET "/" for ::1 at 2020-04-29 20:14:58 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 171.9ms | Allocations: 41437)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 385ms (ActiveRecord: 1.5ms | Allocations: 50723)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    34:         <%= link_to "<i class='material-icons md-light'>shopping_cart</i>".html_safe, "/carritos/index", class:"navbar-brand ml-4 mr-2" %>
+    35:         </li>
+    36:         <% if user_signed_in? && %>
+    37:         <% @usuario.email %>
+    38:         <li class="nav-item dropdown">
+    39:           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    40:             <i class="material-icons md-light">account_circle</i>
+  
+app/views/layouts/application.html.erb:37
+Started GET "/" for ::1 at 2020-04-29 20:15:14 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.5ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (1.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 236.0ms | Allocations: 53928)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 477ms (ActiveRecord: 10.9ms | Allocations: 75641)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    34:         <%= link_to "<i class='material-icons md-light'>shopping_cart</i>".html_safe, "/carritos/index", class:"navbar-brand ml-4 mr-2" %>
+    35:         </li>
+    36:         <% if user_signed_in? && %>
+    37:         <%= @usuario.email %>
+    38:         <li class="nav-item dropdown">
+    39:           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    40:             <i class="material-icons md-light">account_circle</i>
+  
+app/views/layouts/application.html.erb:37
+Started GET "/" for ::1 at 2020-04-29 20:15:51 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 150.8ms | Allocations: 41437)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 476ms (Views: 470.0ms | ActiveRecord: 1.3ms | Allocations: 51001)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:16:05 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 157.7ms | Allocations: 41436)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 473ms (Views: 469.6ms | ActiveRecord: 1.0ms | Allocations: 51024)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:16:16 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 223.4ms | Allocations: 41437)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 500ms (ActiveRecord: 1.7ms | Allocations: 53296)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<User::ActiveRecord_Relation:0x000000000963d928>):
+    35:         </li>
+    36:         <% if user_signed_in? && %>
+    37:         <%= usuario = User.where(id:current_user.id) %>
+    38:         <%= usuario.email %>
+    39:         <li class="nav-item dropdown">
+    40:           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    41:             <i class="material-icons md-light">account_circle</i>
+  
+app/views/layouts/application.html.erb:38
+Started GET "/" for ::1 at 2020-04-29 20:16:24 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.2ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 185.0ms | Allocations: 41437)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 442ms (ActiveRecord: 1.1ms | Allocations: 53248)
+
+
+  
+ActionView::Template::Error (undefined method `nombres' for #<User::ActiveRecord_Relation:0x000000000dc17188>):
+    35:         </li>
+    36:         <% if user_signed_in? && %>
+    37:         <%= usuario = User.where(id:current_user.id) %>
+    38:         <%= usuario.nombres %>
+    39:         <li class="nav-item dropdown">
+    40:           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    41:             <i class="material-icons md-light">account_circle</i>
+  
+app/views/layouts/application.html.erb:38
+Started GET "/" for ::1 at 2020-04-29 20:16:35 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.2ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 142.2ms | Allocations: 41436)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 433ms (Views: 425.3ms | ActiveRecord: 0.8ms | Allocations: 50968)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:16:56 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 178.8ms | Allocations: 53934)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 464ms (Views: 427.6ms | ActiveRecord: 5.9ms | Allocations: 75891)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:17:27 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 197.7ms | Allocations: 41436)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 449ms (Views: 444.7ms | ActiveRecord: 1.9ms | Allocations: 51619)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:17:40 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (1.8ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 175.0ms | Allocations: 41437)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 408ms (Views: 402.3ms | ActiveRecord: 2.7ms | Allocations: 51612)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:17:45 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 174.8ms | Allocations: 41436)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 432ms (Views: 428.4ms | ActiveRecord: 1.2ms | Allocations: 51606)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:18:02 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 227.7ms | Allocations: 41437)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 490ms (Views: 484.0ms | ActiveRecord: 1.2ms | Allocations: 51611)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:18:30 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 212.2ms | Allocations: 41440)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 598ms (Views: 594.3ms | ActiveRecord: 1.5ms | Allocations: 51682)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:18:36 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (2.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 201.3ms | Allocations: 41437)
+Completed 500 Internal Server Error in 429ms (ActiveRecord: 3.6ms | Allocations: 44779)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Proyecto</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+  
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark pt-4 pb-4 tema">
+        <div class="col-lg-1"></div>
+        <a class="navbar-brand ml-5 pl-5" <%= link_to "Tienda Online", root_path %></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+       
+        <div class="busc">
+        <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+        </div>
+        <li class="nav-item">
+        <%= link_to "<i class='material-icons md-light'>shopping_cart</i>".html_safe, "/carritos/index", class:"navbar-brand ml-4 mr-2" %>
+        </li>
+        <% if user_signed_in? %>
+        <% @usuario = User.where(id:current_user.id) %>
+        <% @usuario.each do |user| %>
+        <%= user.rol%>
+        <% if user_signed_in? %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons md-light">account_circle</i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" <%= link_to "Perfil", 'shared/perfil' %></a>
+            <a class="dropdown-item" <%= link_to "Mis compras", 'shared/compras' %></a>
+            <a class="dropdown-item" <%= link_to "Panel admin", 'administrador/index' %></a>
+            <a class="dropdown-item" <%= link_to "Cierra sesion", destroy_user_session_path, method:"delete" %></a>
+          </div>
+        </li>
+        <% if user_signed_in? %>
+        <% end %>
+        <% else %>
+        <li class="nav-item">
+        <a type="button" class="navbar-brand ml-2 mr-3" data-toggle="modal" data-target="#exampleModalLong"><i class="material-icons md-light">account_circle</i></a>
+        </li>
+        <% end %>
+
+        
+        </ul>
+        </div>
+      </nav>
+      
+    </header>
+    <!--
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+            <h4 class="titulo-login">Iniciar Sesion</h4>
+          </div>
+          <div class="modal-body">
+            <%= form_for(:user, :url => session_path(:user)) do |f| %>
+              <label class="mt-0">E-mail</label>
+              <%= f.text_field :email, class:"form-control" %>
+              <label class="mt-4">Contraseña</label>
+              <%= f.password_field :password, class:"form-control" %>
+              
+              <div class="d-flex justify-content-between mt-3">
+                <div>
+                <%= f.check_box :remember_me %>
+                <%= f.label :Recuerdame %>
+                </div>
+                <div>
+                <a type="button" class="text-primary" data-toggle="modal" data-dismiss="modal" data-target="#olvido">¿Olvidó su contraseña?</a>
+                </div>
+                <div>
+                <%= link_to "Aministrador", 'administrador/index', class:"text-primary",type:"button" %>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end">
+              <a type="button" class="text-dark" data-toggle="modal" data-dismiss="modal" data-target="#register">¿No tiene cuenta? Cree una aqui</a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <%= f.submit 'Iniciar sesion',class:"btn btn-outline-danger" %>
+              <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="olvido" tabindex="-1" role="dialog" aria-labelledby="Olvido contraseña" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+            <h4 class="titulo-login">Recuperacion de contraseña</h4>
+          </div>
+          <div class="modal-body">
+          <%= form_for(:user, as: :user, url: password_path(:user), html: { method: :post }) do |f| %>
+              <label class="mt-0">E-mail</label>
+              <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
+              
+            </div>
+            <div class="modal-footer">
+              <%= f.submit "Enviar correo de recuperacion",class:"btn btn-outline-danger" %>
+              <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+            <h4 class="titulo-login">Registro de usuario</h4>
+          </div>
+          <div class="modal-body">
+          <%= form_for(:user, as: :user, url: registration_path(:user)) do |f| %>
+              <label class="mt-0">E-mail</label>
+              <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
+              <label class="mt-0">Nombres</label>
+              <%= f.text_field :nombres, autofocus: true, class:"form-control" %>
+              <label class="mt-0">Apellidos</label>
+              <%= f.text_field :apellidos, autofocus: true, class:"form-control" %>
+              <label class="mt-0">Celular</label>
+              <%= f.text_field :celular, autofocus: true, class:"form-control" %>
+              <label class="mt-4">Contraseña</label>
+              <% if @minimum_password_length %>
+              <em>(<%= @minimum_password_length %> characters minimum)</em>
+              <% end %><br />
+              <%= f.password_field :password, autocomplete: "new-password", class:"form-control" %>
+
+              <label class="mt-4">Repite la contraseña</label>
+              <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control" %>
+              
+            </div>
+            <div class="modal-footer">
+              <%= f.submit "Registrarse",class:"btn btn-outline-danger" %>
+              <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%= yield %>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>Proyecto</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:    
+11:        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+12:          rel="stylesheet">
+13:          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+14:    
+15:      </head>
+16:    
+17:      <body>
+18:      
+19:        <header>
+20:          <nav class="navbar navbar-expand-lg navbar-dark pt-4 pb-4 tema">
+21:            <div class="col-lg-1"></div>
+22:            <a class="navbar-brand ml-5 pl-5" <%= link_to "Tienda Online", root_path %></a>
+23:            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+24:              <span class="navbar-toggler-icon"></span>
+25:            </button>
+26:    
+27:            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+28:            <ul class="navbar-nav mr-auto">
+29:           
+30:            <div class="busc">
+31:            <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+32:            </div>
+33:            <li class="nav-item">
+34:            <%= link_to "<i class='material-icons md-light'>shopping_cart</i>".html_safe, "/carritos/index", class:"navbar-brand ml-4 mr-2" %>
+35:            </li>
+36:            <% if user_signed_in? %>
+37:            <% @usuario = User.where(id:current_user.id) %>
+38:            <% @usuario.each do |user| %>
+39:            <%= user.rol%>
+40:            <% if user_signed_in? %>
+41:            <li class="nav-item dropdown">
+42:              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+43:                <i class="material-icons md-light">account_circle</i>
+44:              </a>
+45:              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+46:                <a class="dropdown-item" <%= link_to "Perfil", 'shared/perfil' %></a>
+47:                <a class="dropdown-item" <%= link_to "Mis compras", 'shared/compras' %></a>
+48:                <a class="dropdown-item" <%= link_to "Panel admin", 'administrador/index' %></a>
+49:                <a class="dropdown-item" <%= link_to "Cierra sesion", destroy_user_session_path, method:"delete" %></a>
+50:              </div>
+51:            </li>
+52:            <% if user_signed_in? %>
+53:            <% end %>
+54:            <% else %>
+55:            <li class="nav-item">
+56:            <a type="button" class="navbar-brand ml-2 mr-3" data-toggle="modal" data-target="#exampleModalLong"><i class="material-icons md-light">account_circle</i></a>
+57:            </li>
+58:            <% end %>
+59:    
+60:            
+61:            </ul>
+62:            </div>
+63:          </nav>
+64:          
+65:        </header>
+66:        <!--
+67:        <p class="notice"><%= notice %></p>
+68:        <p class="alert"><%= alert %></p>
+69:        -->
+70:        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+71:          <div class="modal-dialog" role="document">
+72:            <div class="modal-content">
+73:              <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+74:                <h4 class="titulo-login">Iniciar Sesion</h4>
+75:              </div>
+76:              <div class="modal-body">
+77:                <%= form_for(:user, :url => session_path(:user)) do |f| %>
+78:                  <label class="mt-0">E-mail</label>
+79:                  <%= f.text_field :email, class:"form-control" %>
+80:                  <label class="mt-4">Contraseña</label>
+81:                  <%= f.password_field :password, class:"form-control" %>
+82:                  
+83:                  <div class="d-flex justify-content-between mt-3">
+84:                    <div>
+85:                    <%= f.check_box :remember_me %>
+86:                    <%= f.label :Recuerdame %>
+87:                    </div>
+88:                    <div>
+89:                    <a type="button" class="text-primary" data-toggle="modal" data-dismiss="modal" data-target="#olvido">¿Olvidó su contraseña?</a>
+90:                    </div>
+91:                    <div>
+92:                    <%= link_to "Aministrador", 'administrador/index', class:"text-primary",type:"button" %>
+93:                    </div>
+94:                  </div>
+95:                  <div class="d-flex justify-content-end">
+96:                  <a type="button" class="text-dark" data-toggle="modal" data-dismiss="modal" data-target="#register">¿No tiene cuenta? Cree una aqui</a>
+97:                  </div>
+98:                </div>
+99:                <div class="modal-footer">
+100:                  <%= f.submit 'Iniciar sesion',class:"btn btn-outline-danger" %>
+101:                  <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+102:                </div>
+103:                <% end %>
+104:              </div>
+105:            </div>
+106:          </div>
+107:        </div>
+108:    
+109:        <div class="modal fade" id="olvido" tabindex="-1" role="dialog" aria-labelledby="Olvido contraseña" aria-hidden="true">
+110:          <div class="modal-dialog" role="document">
+111:            <div class="modal-content">
+112:              <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+113:                <h4 class="titulo-login">Recuperacion de contraseña</h4>
+114:              </div>
+115:              <div class="modal-body">
+116:              <%= form_for(:user, as: :user, url: password_path(:user), html: { method: :post }) do |f| %>
+117:                  <label class="mt-0">E-mail</label>
+118:                  <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
+119:                  
+120:                </div>
+121:                <div class="modal-footer">
+122:                  <%= f.submit "Enviar correo de recuperacion",class:"btn btn-outline-danger" %>
+123:                  <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+124:                </div>
+125:                <% end %>
+126:              </div>
+127:            </div>
+128:          </div>
+129:        </div>
+130:        
+131:        <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+132:          <div class="modal-dialog" role="document">
+133:            <div class="modal-content">
+134:              <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+135:                <h4 class="titulo-login">Registro de usuario</h4>
+136:              </div>
+137:              <div class="modal-body">
+138:              <%= form_for(:user, as: :user, url: registration_path(:user)) do |f| %>
+139:                  <label class="mt-0">E-mail</label>
+140:                  <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
+141:                  <label class="mt-0">Nombres</label>
+142:                  <%= f.text_field :nombres, autofocus: true, class:"form-control" %>
+143:                  <label class="mt-0">Apellidos</label>
+144:                  <%= f.text_field :apellidos, autofocus: true, class:"form-control" %>
+145:                  <label class="mt-0">Celular</label>
+146:                  <%= f.text_field :celular, autofocus: true, class:"form-control" %>
+147:                  <label class="mt-4">Contraseña</label>
+148:                  <% if @minimum_password_length %>
+149:                  <em>(<%= @minimum_password_length %> characters minimum)</em>
+150:                  <% end %><br />
+151:                  <%= f.password_field :password, autocomplete: "new-password", class:"form-control" %>
+152:    
+153:                  <label class="mt-4">Repite la contraseña</label>
+154:                  <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control" %>
+155:                  
+156:                </div>
+157:                <div class="modal-footer">
+158:                  <%= f.submit "Registrarse",class:"btn btn-outline-danger" %>
+159:                  <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+160:                </div>
+161:                <% end %>
+162:              </div>
+163:            </div>
+164:          </div>
+165:        </div>
+166:    
+167:        <%= yield %>
+168:        
+169:        
+170:        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+171:        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+172:        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+173:      </body>
+174:    </html>
+  
+app/views/layouts/application.html.erb:177: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:177: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:177: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:177: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:177: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:177: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2020-04-29 20:18:45 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 167.8ms | Allocations: 40806)
+Completed 500 Internal Server Error in 175ms (ActiveRecord: 1.0ms | Allocations: 43294)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Proyecto</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+  
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark pt-4 pb-4 tema">
+        <div class="col-lg-1"></div>
+        <a class="navbar-brand ml-5 pl-5" <%= link_to "Tienda Online", root_path %></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+       
+        <div class="busc">
+        <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+        </div>
+        <li class="nav-item">
+        <%= link_to "<i class='material-icons md-light'>shopping_cart</i>".html_safe, "/carritos/index", class:"navbar-brand ml-4 mr-2" %>
+        </li>
+        <% if user_signed_in? %>
+        <% @usuario = User.where(id:current_user.id) %>
+        <% @usuario.each do |user| %>
+        <%= user.rol%>
+        <% if user_signed_in? %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons md-light">account_circle</i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" <%= link_to "Perfil", 'shared/perfil' %></a>
+            <a class="dropdown-item" <%= link_to "Mis compras", 'shared/compras' %></a>
+            <a class="dropdown-item" <%= link_to "Panel admin", 'administrador/index' %></a>
+            <a class="dropdown-item" <%= link_to "Cierra sesion", destroy_user_session_path, method:"delete" %></a>
+          </div>
+        </li>
+        <% if user_signed_in? %>
+        <% end %>
+        <% else %>
+        <li class="nav-item">
+        <a type="button" class="navbar-brand ml-2 mr-3" data-toggle="modal" data-target="#exampleModalLong"><i class="material-icons md-light">account_circle</i></a>
+        </li>
+        <% end %>
+
+        
+        </ul>
+        </div>
+      </nav>
+      
+    </header>
+    <!--
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+            <h4 class="titulo-login">Iniciar Sesion</h4>
+          </div>
+          <div class="modal-body">
+            <%= form_for(:user, :url => session_path(:user)) do |f| %>
+              <label class="mt-0">E-mail</label>
+              <%= f.text_field :email, class:"form-control" %>
+              <label class="mt-4">Contraseña</label>
+              <%= f.password_field :password, class:"form-control" %>
+              
+              <div class="d-flex justify-content-between mt-3">
+                <div>
+                <%= f.check_box :remember_me %>
+                <%= f.label :Recuerdame %>
+                </div>
+                <div>
+                <a type="button" class="text-primary" data-toggle="modal" data-dismiss="modal" data-target="#olvido">¿Olvidó su contraseña?</a>
+                </div>
+                <div>
+                <%= link_to "Aministrador", 'administrador/index', class:"text-primary",type:"button" %>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end">
+              <a type="button" class="text-dark" data-toggle="modal" data-dismiss="modal" data-target="#register">¿No tiene cuenta? Cree una aqui</a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <%= f.submit 'Iniciar sesion',class:"btn btn-outline-danger" %>
+              <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="olvido" tabindex="-1" role="dialog" aria-labelledby="Olvido contraseña" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+            <h4 class="titulo-login">Recuperacion de contraseña</h4>
+          </div>
+          <div class="modal-body">
+          <%= form_for(:user, as: :user, url: password_path(:user), html: { method: :post }) do |f| %>
+              <label class="mt-0">E-mail</label>
+              <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
+              
+            </div>
+            <div class="modal-footer">
+              <%= f.submit "Enviar correo de recuperacion",class:"btn btn-outline-danger" %>
+              <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+            <h4 class="titulo-login">Registro de usuario</h4>
+          </div>
+          <div class="modal-body">
+          <%= form_for(:user, as: :user, url: registration_path(:user)) do |f| %>
+              <label class="mt-0">E-mail</label>
+              <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
+              <label class="mt-0">Nombres</label>
+              <%= f.text_field :nombres, autofocus: true, class:"form-control" %>
+              <label class="mt-0">Apellidos</label>
+              <%= f.text_field :apellidos, autofocus: true, class:"form-control" %>
+              <label class="mt-0">Celular</label>
+              <%= f.text_field :celular, autofocus: true, class:"form-control" %>
+              <label class="mt-4">Contraseña</label>
+              <% if @minimum_password_length %>
+              <em>(<%= @minimum_password_length %> characters minimum)</em>
+              <% end %><br />
+              <%= f.password_field :password, autocomplete: "new-password", class:"form-control" %>
+
+              <label class="mt-4">Repite la contraseña</label>
+              <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control" %>
+              
+            </div>
+            <div class="modal-footer">
+              <%= f.submit "Registrarse",class:"btn btn-outline-danger" %>
+              <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%= yield %>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>Proyecto</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:    
+11:        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+12:          rel="stylesheet">
+13:          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+14:    
+15:      </head>
+16:    
+17:      <body>
+18:      
+19:        <header>
+20:          <nav class="navbar navbar-expand-lg navbar-dark pt-4 pb-4 tema">
+21:            <div class="col-lg-1"></div>
+22:            <a class="navbar-brand ml-5 pl-5" <%= link_to "Tienda Online", root_path %></a>
+23:            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+24:              <span class="navbar-toggler-icon"></span>
+25:            </button>
+26:    
+27:            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+28:            <ul class="navbar-nav mr-auto">
+29:           
+30:            <div class="busc">
+31:            <input type="text" class="form-control " placeholder="Buscar producto" id="buscador">
+32:            </div>
+33:            <li class="nav-item">
+34:            <%= link_to "<i class='material-icons md-light'>shopping_cart</i>".html_safe, "/carritos/index", class:"navbar-brand ml-4 mr-2" %>
+35:            </li>
+36:            <% if user_signed_in? %>
+37:            <% @usuario = User.where(id:current_user.id) %>
+38:            <% @usuario.each do |user| %>
+39:            <%= user.rol%>
+40:            <% if user_signed_in? %>
+41:            <li class="nav-item dropdown">
+42:              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+43:                <i class="material-icons md-light">account_circle</i>
+44:              </a>
+45:              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+46:                <a class="dropdown-item" <%= link_to "Perfil", 'shared/perfil' %></a>
+47:                <a class="dropdown-item" <%= link_to "Mis compras", 'shared/compras' %></a>
+48:                <a class="dropdown-item" <%= link_to "Panel admin", 'administrador/index' %></a>
+49:                <a class="dropdown-item" <%= link_to "Cierra sesion", destroy_user_session_path, method:"delete" %></a>
+50:              </div>
+51:            </li>
+52:            <% if user_signed_in? %>
+53:            <% end %>
+54:            <% else %>
+55:            <li class="nav-item">
+56:            <a type="button" class="navbar-brand ml-2 mr-3" data-toggle="modal" data-target="#exampleModalLong"><i class="material-icons md-light">account_circle</i></a>
+57:            </li>
+58:            <% end %>
+59:    
+60:            
+61:            </ul>
+62:            </div>
+63:          </nav>
+64:          
+65:        </header>
+66:        <!--
+67:        <p class="notice"><%= notice %></p>
+68:        <p class="alert"><%= alert %></p>
+69:        -->
+70:        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+71:          <div class="modal-dialog" role="document">
+72:            <div class="modal-content">
+73:              <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+74:                <h4 class="titulo-login">Iniciar Sesion</h4>
+75:              </div>
+76:              <div class="modal-body">
+77:                <%= form_for(:user, :url => session_path(:user)) do |f| %>
+78:                  <label class="mt-0">E-mail</label>
+79:                  <%= f.text_field :email, class:"form-control" %>
+80:                  <label class="mt-4">Contraseña</label>
+81:                  <%= f.password_field :password, class:"form-control" %>
+82:                  
+83:                  <div class="d-flex justify-content-between mt-3">
+84:                    <div>
+85:                    <%= f.check_box :remember_me %>
+86:                    <%= f.label :Recuerdame %>
+87:                    </div>
+88:                    <div>
+89:                    <a type="button" class="text-primary" data-toggle="modal" data-dismiss="modal" data-target="#olvido">¿Olvidó su contraseña?</a>
+90:                    </div>
+91:                    <div>
+92:                    <%= link_to "Aministrador", 'administrador/index', class:"text-primary",type:"button" %>
+93:                    </div>
+94:                  </div>
+95:                  <div class="d-flex justify-content-end">
+96:                  <a type="button" class="text-dark" data-toggle="modal" data-dismiss="modal" data-target="#register">¿No tiene cuenta? Cree una aqui</a>
+97:                  </div>
+98:                </div>
+99:                <div class="modal-footer">
+100:                  <%= f.submit 'Iniciar sesion',class:"btn btn-outline-danger" %>
+101:                  <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+102:                </div>
+103:                <% end %>
+104:              </div>
+105:            </div>
+106:          </div>
+107:        </div>
+108:    
+109:        <div class="modal fade" id="olvido" tabindex="-1" role="dialog" aria-labelledby="Olvido contraseña" aria-hidden="true">
+110:          <div class="modal-dialog" role="document">
+111:            <div class="modal-content">
+112:              <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+113:                <h4 class="titulo-login">Recuperacion de contraseña</h4>
+114:              </div>
+115:              <div class="modal-body">
+116:              <%= form_for(:user, as: :user, url: password_path(:user), html: { method: :post }) do |f| %>
+117:                  <label class="mt-0">E-mail</label>
+118:                  <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
+119:                  
+120:                </div>
+121:                <div class="modal-footer">
+122:                  <%= f.submit "Enviar correo de recuperacion",class:"btn btn-outline-danger" %>
+123:                  <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+124:                </div>
+125:                <% end %>
+126:              </div>
+127:            </div>
+128:          </div>
+129:        </div>
+130:        
+131:        <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+132:          <div class="modal-dialog" role="document">
+133:            <div class="modal-content">
+134:              <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+135:                <h4 class="titulo-login">Registro de usuario</h4>
+136:              </div>
+137:              <div class="modal-body">
+138:              <%= form_for(:user, as: :user, url: registration_path(:user)) do |f| %>
+139:                  <label class="mt-0">E-mail</label>
+140:                  <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
+141:                  <label class="mt-0">Nombres</label>
+142:                  <%= f.text_field :nombres, autofocus: true, class:"form-control" %>
+143:                  <label class="mt-0">Apellidos</label>
+144:                  <%= f.text_field :apellidos, autofocus: true, class:"form-control" %>
+145:                  <label class="mt-0">Celular</label>
+146:                  <%= f.text_field :celular, autofocus: true, class:"form-control" %>
+147:                  <label class="mt-4">Contraseña</label>
+148:                  <% if @minimum_password_length %>
+149:                  <em>(<%= @minimum_password_length %> characters minimum)</em>
+150:                  <% end %><br />
+151:                  <%= f.password_field :password, autocomplete: "new-password", class:"form-control" %>
+152:    
+153:                  <label class="mt-4">Repite la contraseña</label>
+154:                  <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control" %>
+155:                  
+156:                </div>
+157:                <div class="modal-footer">
+158:                  <%= f.submit "Registrarse",class:"btn btn-outline-danger" %>
+159:                  <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+160:                </div>
+161:                <% end %>
+162:              </div>
+163:            </div>
+164:          </div>
+165:        </div>
+166:    
+167:        <%= yield %>
+168:        
+169:        
+170:        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+171:        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+172:        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+173:      </body>
+174:    </html>
+  
+app/views/layouts/application.html.erb:177: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:177: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:177: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:177: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:177: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:177: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2020-04-29 20:19:46 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 182.7ms | Allocations: 41438)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 453ms (Views: 449.6ms | ActiveRecord: 1.3ms | Allocations: 51630)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:19:50 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 141.4ms | Allocations: 41436)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 359ms (Views: 354.1ms | ActiveRecord: 1.3ms | Allocations: 51548)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:20:22 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 215.4ms | Allocations: 41441)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 474ms (Views: 469.0ms | ActiveRecord: 1.3ms | Allocations: 51573)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:20:39 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.4ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 185.7ms | Allocations: 41437)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 585ms (Views: 581.3ms | ActiveRecord: 1.4ms | Allocations: 51696)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:20:46 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 251.1ms | Allocations: 41437)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 607ms (Views: 601.4ms | ActiveRecord: 1.7ms | Allocations: 51703)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2020-04-29 20:20:51 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KCz5+6BYytznHoVAFhhjZ6hqRw4gOkCGMgXvx8DOwX21yLEtc5uD66XmPfFclzwdE1or0G/RILEDlQMZrChAwQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 131ms (ActiveRecord: 0.3ms | Allocations: 2932)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:20:52 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.2ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 167.0ms | Allocations: 37436)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 214ms (Views: 211.7ms | ActiveRecord: 0.6ms | Allocations: 44936)
+
+
+Started GET "/administrador/index" for ::1 at 2020-04-29 20:21:05 -0500
+Processing by AdministradorController#index as HTML
+  Rendering administrador/index.html.erb within layouts/application
+  Rendered administrador/index.html.erb within layouts/application (Duration: 32.2ms | Allocations: 958)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 116ms (Views: 113.2ms | ActiveRecord: 0.0ms | Allocations: 9149)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-04-29 20:21:16 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"2eeUCqnpFiaaKsv4SZQCnyTjolIa5N4j3FnEZa70yGsq7vbfXpYVFYXvqAqIwdgtk7cLU+OVMjfDoMXbThEHdQ==", "user"=>{"email"=>"cliente@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Iniciar sesion"}
+  [1m[36mUser Load (25.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "cliente@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 3049ms (ActiveRecord: 25.5ms | Allocations: 5085)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:21:19 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 241.5ms | Allocations: 40824)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 7]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 299ms (Views: 296.4ms | ActiveRecord: 1.2ms | Allocations: 49025)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:21:42 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (3.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 215.1ms | Allocations: 41443)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 7]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 490ms (Views: 477.4ms | ActiveRecord: 4.8ms | Allocations: 51699)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:21:50 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.3ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/products/index.html.erb:56
+  Rendered products/index.html.erb within layouts/application (Duration: 261.2ms | Allocations: 41440)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 7]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 611ms (Views: 606.1ms | ActiveRecord: 1.3ms | Allocations: 51760)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2020-04-29 20:21:57 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GtMFYqtp5MPY6PyYQnG0UGTK5mq6EuTDFbHq1OXNPaLZxR0p8+ZuTzbeSvvWA9PoeGDRJpJQm7/mjAQK3TJMaQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms | Allocations: 2115)
+
+
+Started GET "/" for ::1 at 2020-04-29 20:21:57 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mCategorium Load (0.2ms)[0m  [1m[34mSELECT "categoria".* FROM "categoria"[0m
+  ↳ app/views/products/index.html.erb:10
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:26
+  Rendered products/index.html.erb within layouts/application (Duration: 173.3ms | Allocations: 38049)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 399ms (Views: 391.7ms | ActiveRecord: 0.6ms | Allocations: 47619)
+
+

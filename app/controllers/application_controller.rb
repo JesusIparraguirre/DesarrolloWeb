@@ -1,5 +1,8 @@
 class ApplicationController < ActionController::Base
 
+    def application
+      @usuario = User.where(id:current_user.id)
+    end
 
     def resource_name
         :user

@@ -1,3 +1,4 @@
+<% if user_signed_in? %>
 <div class="col-12 bg-light pt-3 pb-3">
 <h3 >PANEL DE ADMINISTRADOR</h3>
 </div>
@@ -15,3 +16,38 @@
         </div>
     </div>
 </div>
+<% else %>
+<h3 >INGRESA SESION CON ROL ADMINISTRADOR</h3>
+<a type="button" class="navbar-brand ml-2 mr-3 btn btn-dark text-light" data-toggle="modal" data-target="#admin">INGRESAR</a>
+<%= link_to "<button class='form-control btn btn-outline-secondary'>VOLVER</button>".html_safe, root_path %>
+<div class="modal fade" id="admin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="d-flex justify-content-center" style="background-color: #f4f4f4;">
+            <h4 class="titulo-login">Iniciar Sesion</h4>
+          </div>
+          <div class="modal-body">
+            <%= form_for(:user, :url => session_path(:user)) do |f| %>
+              <label class="mt-0">E-mail</label>
+              <%= f.text_field :email, class:"form-control" %>
+              <label class="mt-4">Contraseña</label>
+              <%= f.password_field :password, class:"form-control" %>
+              
+              <div class="d-flex justify-content-between mt-3">
+                <div>
+                <%= f.check_box :remember_me %>
+                <%= f.label :Recuerdame %>
+                </div>
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              <%= f.submit 'Iniciar sesion',class:"btn btn-outline-danger" %>
+              <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+<% end %>

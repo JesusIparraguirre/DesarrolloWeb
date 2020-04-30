@@ -3,9 +3,14 @@ class CarritosController < ApplicationController
         @carritos = Carrito.all
     end
     def show
-        @usuario = current_user.id
-        @carritos = Carrito.where(user_id:current_user.id)
-        @sub 
+        if user_signed_in?
+            @usuario = current_user.id
+            @carritos = Carrito.where(user_id:current_user.id)
+        else
+            @usuario = 1
+            @carritos = Carrito.where(user_id:1)
+        end
+        
     end
     def create
         a = params[:carrito][:cantidad].to_f 
