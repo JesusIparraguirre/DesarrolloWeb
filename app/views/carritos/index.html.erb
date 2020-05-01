@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-8">
             <div class="col-12 mt-3 ml-3">
-                <p class="titulo-cantidad">Tienes n items</p>
+                <p class="titulo-cantidad">Productos</p>
             </div>
             <div class="col-12 mt-5 ml-3">
                 <table class="table ">
@@ -18,19 +18,29 @@
                     <th scope="col">Precio</th>
                     <th scope="col">Cantidad</th>
                     <th scope="col">Subtotal</th>
+                    <th scope="col"></th>
                 </tr>
                 </thead>
                 <tbody>
 
+                <% if @carritos.nil? %>
+                <tr>
+                    <th>NO TIENE NADA EN EL CARRITO</th>
+                </tr>
+                <% else %>
                 <% @carritos.each do |carrito| %>
                 <tr>
-                    <th scope="row"><%= producto.nombre %></th>
-                    <td><%= producto.precio %></td>
-                    <td><%= producto.cantidad %></td>
-                    <td>@<%= producto.subtotal %></td>
+                    <th><%= carrito.nombre %></th>
+                    <td><%= carrito.precio %></td>
+                    <td><%= carrito.cantidad %></td>
+                    <td><%= carrito.cantidad*carrito.precio %></td>
+                    <td><%= link_to "eliminar",  carrito, method:'delete' %></td>
                 </tr>
+                <% @sub =+ carrito.cantidad*carrito.precio%>
                 <% end %> 
 
+                <% end %> 
+                <%= @sub %>
                 
                 
                 </tbody>
@@ -49,11 +59,11 @@
                     </div>
                     <div class="d-flex justify-content-between mt-3">
                         <p class="subtotal">Subtotal</p>
-                        <p class="subtotal">S/.10000</p>
+                        <p class="subtotal"></p>
                     </div>
                     <div class="d-flex justify-content-between pt-3" style="border-top: 1px solid #b3b3b3;">
                         <p class="total-label">Total</p>
-                        <p class="total-prec">S/.10000</p>
+                        <p class="total-prec"></p>
                     </div>
                 </div>
             </div>
@@ -64,10 +74,23 @@
                 </div>   
             </div>
             <div class="col-12 ml-5 mt-2">
-                <button class="form-control btn btn-danger">FINALIZAR COMPRA</button>
+            
+                <button class="form-control btn btn-danger" data-toggle="modal" data-target="#compra">FINALIZAR COMPRA</button>
             </div>
             <div class="col-12 ml-5 mt-2">
                 <%= link_to "<button class='form-control btn btn-outline-secondary'>VOLVER</button>".html_safe, root_path %>
             </div>
         </div>
+    </div>
+
+    <div class="modal fade" id="compra" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <label>Compra finalizada</label>
+            <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Volver</button>
+
+          </div>
+        </div>
+      </div>
     </div>

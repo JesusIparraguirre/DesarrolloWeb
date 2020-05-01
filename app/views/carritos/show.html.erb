@@ -18,6 +18,7 @@
                     <th scope="col">Precio</th>
                     <th scope="col">Cantidad</th>
                     <th scope="col">Subtotal</th>
+                    <th scope="col"></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -33,6 +34,7 @@
                     <td><%= carrito.precio %></td>
                     <td><%= carrito.cantidad %></td>
                     <td><%= carrito.cantidad*carrito.precio %></td>
+                    <td><%= link_to "eliminar",  carrito, method:'delete' %></td>
                 </tr>
                 <% @sub =+ carrito.cantidad*carrito.precio%>
                 <% end %> 
@@ -72,6 +74,7 @@
                 </div>   
             </div>
             <div class="col-12 ml-5 mt-2">
+            
                 <button class="form-control btn btn-danger" data-toggle="modal" data-target="#compra">FINALIZAR COMPRA</button>
             </div>
             <div class="col-12 ml-5 mt-2">

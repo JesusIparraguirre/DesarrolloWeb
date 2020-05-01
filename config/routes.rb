@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
   get 'categorias/show'
 
+  #get 'delete carrito', to 'carrito#destroy'
+
   get 'administrador/index'
   get 'administrador/stock'
   get 'administrador/producto'

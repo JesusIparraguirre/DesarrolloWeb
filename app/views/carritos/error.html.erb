@@ -1,0 +1,18 @@
+<div class="col-12 bg-light">
+    <div clasS="row ml-4">
+        <i class='material-icons md-dark md-48 mt-2'>shopping_cart</i>
+        <p class="titulo-carrito ml-3 mt-2">Mi carrito</p>
+    </div>
+</div>
+<div class="col-12 mt-4">
+    <div class="row">
+        <div class="col-9">
+        <% @carrito.errors.full_messages.each do |mensaje| %>
+            <h1>Debes agregar 1 o mas cantidad de ese producto</h1>
+        <% end %>
+        </div>
+        <div class="col-2 mr-3">
+        <%= link_to "<button class='form-control btn btn-outline-secondary'>VOLVER</button>".html_safe, root_path %>
+        </div>
+    </div>
+</div>

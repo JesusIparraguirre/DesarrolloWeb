@@ -5,13 +5,13 @@
             <div class="col">   
                 <a class="tienda-categorias mr-2">Tienda</a>
                 <a>|</a>
-                <a class="title-categoria-banner ml-2" style="color: #f01612;"><%= @categoria.nombre %></a>
+                <a class="title-categoria-banner ml-2" style="color: #f01612;">Categorias</a>
             </div>
             <% @categorias.each do |categoria| %>
             <div class="col mt-3">
             <%= link_to categoria_path(categoria.id) do %>
-            <%= categoria.nombre %>
-            <% end %>
+                <%= categoria.nombre %>
+                <% end %>
             </div>
             <% end %>
         </div>
@@ -32,36 +32,38 @@
                     <h5 class="titulo-producto mt-4" style="text-align: center;"><%= producto.nombre %></h5>
                 </div>
                 <div class="card-body">
-
                     <%= form_for(@carrito) do |f| %>
-                        <div class="d-flex justify-content-between">
-                            <p class="precio-titulo" style="color: #737373;">Precio: </p>
-                            <p class="precio-numero">S/.<%= producto.precio %></p>  
-                        </div> 
-                        <div class="row">
-                            <div class="col-sm-3 p-0">
-                                <%= f.text_field :cantidad , class:"form-control", style:'height:100%;background-color: #f2f2f2;font-size: .875rem;text-align: center;border:0;font-weight: 600;', value:'1'%>
-                            </div>
-                            <div class="column p-0">
-                                <div class="col-sm-3">
-                                <button type="button" class="btn btn-dark p-0 pl-2 pr-2" style="border:none;"><i class="material-icons md-light md-12">add</i></button>
-                                </div>
-                                <div class="col-sm-3 h-25">
-                                <button type="button" class="btn btn-secondary p-0 pl-2 pr-2" style="border:none;"><i class="material-icons md-light md-12">remove</i></button>
-                                </div>
-                            </div>
-                            <div class="row m-1">
-                            </div>
-                            <%= f.text_field :nombre , class:"form-control", style:'display:none', value:producto.nombre%>
-                            <%= f.text_field :precio , class:"form-control", style:'display:none', value:producto.precio%>
-                            <% if user_signed_in? %>
-                            <%= f.text_field :user , class:"form-control", style:'display:none', value:current_user.id%>
-                            <%= f.submit "AGREGAR",class:'btn text-light p-1 pl-4 pr-4', style:'background-color:  #ec1c24;font-weight: 600;'%>
-                            <% else %>
-                            <button class="btn text-light p-1 pl-4 pr-4 disabled" style="background-color:  #ec1c24;font-weight: 600;" disabled>AGREGAR</button>
-                            <% end %>
+                    <div class="d-flex justify-content-between">
+                        <p class="precio-titulo" style="color: #737373;">Precio: </p>
+                        <p class="precio-numero">S/.<%= producto.precio %></p>  
+                    </div>    
+                    <div class="row">
+                        <div class="col-sm-3 p-0">
+                            <%= f.text_field :cantidad , class:"form-control", style:'height:100%;background-color: #f2f2f2;font-size: .875rem;text-align: center;border:0;font-weight: 600;', value:'1'%>
                         </div>
-                    <% end %>   
+                        <div class="column p-0">
+                            <div class="col-sm-3">
+                            <button type="button" class="btn btn-dark p-0 pl-2 pr-2" style="border:none;"><i class="material-icons md-light md-12">add</i></button>
+                            </div>
+                            <div class="col-sm-3 h-25">
+                            <button type="button" class="btn btn-secondary p-0 pl-2 pr-2" style="border:none;"><i class="material-icons md-light md-12">remove</i></button>
+                            </div>
+                        </div>
+                        <div class="row m-1">
+                        </div>
+                        <%= f.text_field :nombre , class:"form-control", style:'display:none', value:producto.nombre%>
+                        <%= f.text_field :precio , class:"form-control", style:'display:none', value:producto.precio%>
+                        <%= f.text_field :stock ,type:"number", class:"form-control", style:'display:none', value:producto.stock%>
+                        <%= f.text_field :id , class:"form-control", style:'display:none', value:producto.id%>
+                        <% if user_signed_in? %>
+                        <%= f.text_field :user , class:"form-control", style:'display:none', value:current_user.id%>
+                        <%= f.submit "AGREGAR",class:'btn text-light p-1 pl-4 pr-4', style:'background-color:  #ec1c24;font-weight: 600;'%>
+                        <% else %>
+                        <button class="btn text-light p-1 pl-4 pr-4 disabled" style="background-color:  #ec1c24;font-weight: 600;" disabled>AGREGAR</button>
+                        <% end %>
+                        
+                    </div>
+                    <% end %>
                 </div>
             </div>
         <% end %>

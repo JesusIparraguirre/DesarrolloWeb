@@ -1,5 +1,6 @@
 <div class="container mt-5">
     <div class="d-flex justify-content-center">
+        <%= form_for(@carrito) do |f| %>
         <div class="row">
             <div class="column">
                 <%= image_tag(@producto.urlimagen) %> 
@@ -26,7 +27,7 @@
                 </div>
                 <div class="row" >
                     <div class="col-sm-3 p-0">
-                        <input class="form-control" style="height:100%" type="text" value="1">
+                        <%= f.text_field :cantidad , class:"form-control", style:'height:100%;background-color: #f2f2f2;font-size: .875rem;text-align: center;border:0;font-weight: 600;', value:'1'%>
                     </div>
                     <div class="column p-0">
                         <div class="col-sm-3">
@@ -39,12 +40,21 @@
                     <div class="row m-1">
                          
                     </div>
+                    <%= f.text_field :nombre , class:"form-control", style:'display:none', value:@producto.nombre%>
+                        <%= f.text_field :precio , class:"form-control", style:'display:none', value:@producto.precio%>
+                        <%= f.text_field :stock ,type:"number", class:"form-control", style:'display:none', value:@producto.stock%>
+                        <%= f.text_field :id , class:"form-control", style:'display:none', value:@producto.id%>
                     <div class="row">
-                        <button type="button" class="btn text-light p-1 pl-4 pr-4" style="background-color:  rgb(236, 28, 36);font-weight: 600;">AGREGAR AL CARRITO</button>
+                    <% if user_signed_in? %>
+                    <%= f.text_field :user , class:"form-control", style:'display:none', value:current_user.id%>
+                    <%= f.submit "AGREGAR",class:'btn text-light p-1 pl-4 pr-4', style:'background-color:  #ec1c24;font-weight: 600;'%>
+                    <% else %>
+                    <button class="btn text-light p-1 pl-4 pr-4 disabled" style="background-color:  #ec1c24;font-weight: 600;" disabled>AGREGAR</button>
+                    <% end %>                    
                     </div>
                 </div>
             </div>
-            
+        <% end %>
         </div>
     </div>
 </div>

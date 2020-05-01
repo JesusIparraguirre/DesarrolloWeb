@@ -9,6 +9,10 @@ class ProductsController < ApplicationController
     #GET /productos/:id
     def show
         @producto = Product.find(params[:id])
+        @carrito = Carrito.new
+    end
+    def edit
+        @producto = Product.find(params[:id])
     end
     def create
         @producto = Product.new(nombre: params[:product][:nombre],
@@ -17,7 +21,10 @@ class ProductsController < ApplicationController
                                     stock: params[:product][:stock],
                                     urlimagen: params[:product][:urlimagen],
                                     categoria: params[:product][:categoria])
-        @producto.save 
-        redirect_to @producto
+        if @producto.save 
+            redirect_to @producto
+        else
+            render:error
+        end
     end
 end
