@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources:products
   resources:categorias
   resources:carritos
+  resources:orders
   
   get 'login/index', as: 'login'
 

@@ -1,0 +1,37 @@
+<div class="col-12 bg-light">
+    <div clasS="row ml-4">
+        <i class='material-icons md-dark md-48 mt-2'>shopping_cart</i>
+        <p class="titulo-carrito ml-3 mt-2">Mis ordenes</p>
+    </div>
+</div>
+
+<div class="col-12 mt-4">
+<table class="table ">
+<thead>
+<tr class="cabecera">
+    <th scope="col">Producto</th>
+    <th scope="col">Precio</th>
+    <th scope="col">Cantidad</th>
+    <th scope="col">Fecha</th>
+    <th scope="col"></th>
+</tr>
+</thead>
+<tbody>
+
+
+<% @ordenes.each do |orden| %>
+<tr>
+    <th><%= orden.nombre %></th>
+    <td><%= orden.precio %></td>
+    <td><%= orden.cantidad %></td>
+    <td><%= orden.fecha %></td>
+</tr>
+
+<% end %> 
+<%= @sub %>
+
+
+</tbody>
+</table>
+
+</div>

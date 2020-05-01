@@ -48,7 +48,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" <%= link_to "Perfil", 'shared/perfil' %></a>
-            <a class="dropdown-item" <%= link_to "Mis compras", 'shared/compras' %></a>
+            <a class="dropdown-item" <%= link_to "Mis compras", 'orders/index' %></a>
             <a class="dropdown-item" <%= link_to "Cierra sesion", destroy_user_session_path, method:"delete" %></a>
           </div>
         </li>
@@ -59,7 +59,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" <%= link_to "Perfil", 'shared/perfil' %></a>
-            <a class="dropdown-item" <%= link_to "Mis compras", 'shared/compras' %></a>
+            <a class="dropdown-item" <%= link_to "Mis compras", 'orders/index' %></a>
             <a class="dropdown-item" <%= link_to "Panel admin", 'administrador/index' %></a>
             <a class="dropdown-item" <%= link_to "Cierra sesion", destroy_user_session_path, method:"delete" %></a>
           </div>

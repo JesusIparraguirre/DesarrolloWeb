@@ -5,6 +5,7 @@
     </div>
 </div>
 <div class="col-12 mt-4">
+    
     <div class="row">
         <div class="col-8">
             <div class="col-12 mt-3 ml-3">
@@ -73,14 +74,27 @@
                     <p class="terminos">He leído y acepto los Términos y Condiciones del sitio. Acepto también la Política de Privacidad y Seguridad y la Política de Cookies.</p>
                 </div>   
             </div>
-            <div class="col-12 ml-5 mt-2">
             
-                <button class="form-control btn btn-danger" data-toggle="modal" data-target="#compra">FINALIZAR COMPRA</button>
+            <div class="col-12 ml-5 mt-2">
+            <% @carritos.each do |carrito| %>
+            <%= form_for(@orden) do |f| %>
+                
+                    <%= f.text_field :nombre , style:'display:none', value:carrito.nombre %>
+                    <%= f.text_field :precio , style:'display:none', value:carrito.precio %>
+                    <%= f.text_field :cantidad , style:'display:none', value:carrito.cantidad %>
+                    <%= f.text_field :time , style:'display:none', value:Time.now %>
+                    <%= f.text_field :user_id , style:'display:none', value:current_user.id %>
+                    
+
+                <%= f.submit "FINALIZAR COMPRA",class:'form-control btn btn-danger'%>
             </div>
+            
             <div class="col-12 ml-5 mt-2">
                 <%= link_to "<button class='form-control btn btn-outline-secondary'>VOLVER</button>".html_safe, root_path %>
             </div>
+            <% end %>
         </div>
+        <% end %> 
     </div>
 
     <div class="modal fade" id="compra" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">

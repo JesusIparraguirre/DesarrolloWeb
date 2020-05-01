@@ -1,4 +1,5 @@
 class Product < ApplicationRecord
+    belongs_to:Categorium
     validates_presence_of :nombre, :message => " vacio, ingrese nombre del producto" 
     validates_presence_of :precio, :message => "vacio, ingrese precio del producto" 
     validates_presence_of :stock, :message => "vacio, ingrese stock del producto" 

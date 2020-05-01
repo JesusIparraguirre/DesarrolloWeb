@@ -3,7 +3,7 @@ class CarritosController < ApplicationController
         if user_signed_in?
             @usuario = current_user.id
             @carritos = Carrito.where(user_id:current_user.id)
-            
+            @orden = Order.new
             @compra = Carrito.delete(user_id:current_user.id)
         else
             @carritos = nil
@@ -16,7 +16,9 @@ class CarritosController < ApplicationController
             @usuario = current_user.id
             @carritos = Carrito.where(user_id:current_user.id)
             @compra = Carrito.delete(user_id:current_user.id)
+            @orden = Order.new
         else
+            @orden = Order.new
             @compra = nil
             @usuario = nil
         end
